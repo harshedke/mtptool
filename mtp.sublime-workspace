@@ -1,0 +1,637 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"e",
+				"extension"
+			],
+			[
+				"pr",
+				"previousimage"
+			],
+			[
+				"cu",
+				"currentimage"
+			],
+			[
+				"pre",
+				"previousvideo"
+			],
+			[
+				"im",
+				"image"
+			],
+			[
+				"v",
+				"video"
+			],
+			[
+				"arra",
+				"array"
+			],
+			[
+				"els",
+				"else"
+			],
+			[
+				"file",
+				"file"
+			],
+			[
+				"fil",
+				"file"
+			],
+			[
+				"na",
+				"name"
+			],
+			[
+				"_",
+				"_FILES"
+			],
+			[
+				"IMG",
+				"img	Tag"
+			],
+			[
+				"use",
+				"user_id"
+			],
+			[
+				"fi",
+				"file"
+			],
+			[
+				"f",
+				"file_path"
+			],
+			[
+				"r",
+				"row"
+			],
+			[
+				"user",
+				"user"
+			],
+			[
+				"u",
+				"user_id"
+			],
+			[
+				"incl",
+				"include_once"
+			],
+			[
+				"Use",
+				"username"
+			],
+			[
+				"echo",
+				"echo	echo \"…\""
+			],
+			[
+				"us",
+				"user_id"
+			],
+			[
+				"qu",
+				"query"
+			],
+			[
+				"dat",
+				"database"
+			],
+			[
+				"sess",
+				"session_start"
+			],
+			[
+				"USER",
+				"Username"
+			],
+			[
+				"sc",
+				"script"
+			],
+			[
+				"t",
+				"target_path"
+			],
+			[
+				"imag",
+				"image_name"
+			],
+			[
+				"ex",
+				"extension"
+			],
+			[
+				"upl",
+				"upload-file-form"
+			],
+			[
+				"em",
+				"email"
+			],
+			[
+				"P",
+				"Passwords"
+			],
+			[
+				"cty",
+				"ctype_alnum"
+			],
+			[
+				"n",
+				"name"
+			],
+			[
+				"ctype_al",
+				"ctype_alpha"
+			],
+			[
+				"alphan",
+				"alphanum"
+			],
+			[
+				"al",
+				"alpha"
+			],
+			[
+				"p",
+				"password"
+			],
+			[
+				"fo",
+				"focus"
+			],
+			[
+				"ge",
+				"getElementById"
+			],
+			[
+				"m",
+				"MatchEmailPattern"
+			],
+			[
+				"li",
+				"link	Tag"
+			],
+			[
+				"D",
+				"DBConnection"
+			],
+			[
+				"da",
+				"database"
+			],
+			[
+				"re",
+				"result"
+			],
+			[
+				"con",
+				"confirmpassword"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"empl",
+				"emptable"
+			],
+			[
+				"q",
+				"query"
+			],
+			[
+				"emp",
+				"employee"
+			],
+			[
+				"Code",
+				"CodeIgniter"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"gi",
+				"Git: Init"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: li",
+				"Package Control: List Packages"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"cus",
+				"Git: Custom Command"
+			],
+			[
+				"st",
+				"Git: Status"
+			],
+			[
+				"cu",
+				"Git: Custom Command"
+			],
+			[
+				"stash",
+				"Git: Stash Apply"
+			],
+			[
+				"cust",
+				"Git: Custom Command"
+			],
+			[
+				"c",
+				"Git: Custom Command"
+			],
+			[
+				"git lo",
+				"Git: Log All"
+			],
+			[
+				"gitcus",
+				"Git: Custom Command"
+			],
+			[
+				"git",
+				"Git: Pull"
+			],
+			[
+				"git com",
+				"Git: Custom Command"
+			],
+			[
+				"bra",
+				"Git: Change Branch"
+			],
+			[
+				"sho",
+				"Git: Show Tags"
+			],
+			[
+				"git ",
+				"Git: Status"
+			],
+			[
+				"fe",
+				"Git: Fetch"
+			],
+			[
+				"git pus",
+				"Git: Push"
+			],
+			[
+				"git ad",
+				"Git: Add Current File"
+			],
+			[
+				"git:co",
+				"Git: Commit"
+			],
+			[
+				"GIT",
+				"Git: Push"
+			],
+			[
+				"push",
+				"Git: Push Current Branch"
+			],
+			[
+				"cha",
+				"Git: Change Branch"
+			],
+			[
+				"git pu",
+				"Git: Push"
+			],
+			[
+				"git l",
+				"Git: Log All"
+			],
+			[
+				"pu",
+				"Git: Push Current Branch"
+			],
+			[
+				"git:st",
+				"Git: Status"
+			],
+			[
+				"git am",
+				"Git: Amend Commit"
+			],
+			[
+				"gitc",
+				"Git: Commit"
+			],
+			[
+				"add",
+				"Git: Add Current File"
+			],
+			[
+				"new",
+				"Git: New Branch"
+			],
+			[
+				"branc",
+				"Git: Pull Current Branch"
+			],
+			[
+				"git: push ",
+				"Git: Push Current Branch"
+			],
+			[
+				"git add",
+				"Git: Reset (hard) HEAD"
+			],
+			[
+				"",
+				"Git: Commit"
+			],
+			[
+				"gire",
+				"Git: Reset (hard) HEAD"
+			],
+			[
+				"git mo",
+				"Git: Open Modified Files"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"git p",
+				"Git: Push"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"ch",
+				"Git: Change Branch"
+			],
+			[
+				"git p ",
+				"Git: Push"
+			],
+			[
+				"p",
+				"Git: Push"
+			],
+			[
+				"tag",
+				"Git: New Tag"
+			],
+			[
+				"gitk",
+				"Git: Gitk"
+			],
+			[
+				"de",
+				"Git: Delete Branch"
+			],
+			[
+				"git c",
+				"Git: Fetch"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 147.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/wamp/www/MTP/includes/user.php",
+		"/C/wamp/www/MTP/includes/file.php",
+		"/C/wamp/www/MTP/edit-file.php",
+		"/C/wamp/www/MTP/includes/edit-file-processing.php",
+		"/C/wamp/www/MTP/includes/upload-file-processing.php",
+		"/C/wamp/www/MTP/index.php",
+		"/C/wamp/www/MTP/includes/login-processing.php",
+		"/C/wamp/www/MTP/view-file.php",
+		"/C/wamp/www/tinymce_3.5.8/tinymce/examples/index.html",
+		"/D/New Folder/Finance/public/viewvoucher.php",
+		"/C/wamp/www/MTP/upload-file.php",
+		"/C/wamp/www/MTP/includes/edit-file.php",
+		"/C/wamp/www/MTP/js/validation.js",
+		"/C/wamp/www/MTP/register.php",
+		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/wamp/www/MTP/stylesheet/stylesheet.css",
+		"/C/wamp/www/MTP/header.php",
+		"/D/New Folder/Finance/public/menu.php",
+		"/C/wamp/www/MTP/includes/dbconnect.php",
+		"/C/wamp/www/MTP/queries.txt",
+		"/C/wamp/www/MTP/includes/dbconfig.php",
+		"/C/wamp/www/MTP/footer.php",
+		"/C/wamp/www/MTP/includes/dblibrary.php",
+		"/D/New Folder/Finance/public/javascript/validate.js",
+		"/C/wamp/www/MTP/login.php",
+		"/C/wamp/www/code_igniter/application/models/Employee_model.php",
+		"/C/wamp/www/code_igniter/application/controllers/mysite.php",
+		"/C/wamp/www/code_igniter/application/views/employee.php",
+		"/C/wamp/www/code_igniter/application/config/database.php",
+		"/C/wamp/www/code_igniter/application/models/connection.php",
+		"/C/wamp/www/code_igniter/application/index.html",
+		"/C/wamp/www/code_igniter/application/config/config.php",
+		"/C/wamp/www/code_igniter/application/config/constants.php",
+		"/E/Codeignetar/ci/application/views/about.php",
+		"/C/wamp/www/testfile.php",
+		"/C/wamp/www/code_igniter/application/controllers/index.html",
+		"/C/wamp/www/code_igniter/application/controllers/welcome.php",
+		"/C/wamp/www/Codeignitar/ci/index.php",
+		"/E/Codeignetar/ci/application/controllers/mysite.php",
+		"/C/wamp/www/code_igniter/application/views/welcome_message.php",
+		"/C/wamp/www/Codeignitar/ci/application/config/database.php",
+		"/C/wamp/www/Codeignitar/ci/application/config/config.php",
+		"/C/wamp/www/code_igniter/application/views/about.php",
+		"/C/wamp/www/code_igniter/application/views/index.html",
+		"/C/wamp/www/code_igniter/application/models/index.html",
+		"/c/Documents and Settings/Admin/My Documents/GitHub/.git/COMMIT_EDITMSG",
+		"/C/Documents and Settings/Admin/.ssh/sshkey.txt.pub",
+		"/C/Documents and Settings/Admin/My Documents/GitHub/datafiles/Hit tis file once",
+		"/C/Documents and Settings/Admin/My Documents/GitHub/datafiles/Test.sublime-workspace",
+		"/C/Documents and Settings/Admin/My Documents/GitHub/datafiles/Test.sublime-project",
+		"/C/Documents and Settings/Admin/My Documents/GitHub/datafiles/COMMIT_EDITMSG.COMMIT_EDITMSG",
+		"/C/Documents and Settings/Admin/My Documents/GitHub/datafiles/data.txt"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"$file",
+			"file",
+			"</button>",
+			"<button>",
+			"\"",
+			"upload-file-form",
+			"login",
+			"uploaded",
+			"file",
+			"FILE",
+			"file",
+			"FILE",
+			"file",
+			"name",
+			"		\n",
+			"// document.getElementById(\"validation\").innerHTML=error;",
+			"-Id",
+			"Id",
+			"email",
+			"Email",
+			"email",
+			"Email",
+			"email",
+			"Email",
+			"email",
+			"is",
+			"echo",
+			"mysql>",
+			"<",
+			"empid",
+			"mpid",
+			"empid",
+			"\\"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.git":
+	{
+		"height": 263.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 170.0,
+	"status_bar_visible": true
+}

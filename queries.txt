@@ -1,0 +1,19 @@
+create database webtool
+
+use webtool
+
+
+create table user(id bigint primary key auto_increment, name varchar(50) not null,email varchar(256) unique not null,username varchar(30) unique not null, password varchar(100) not null)
+
+
+create table file(
+	id bigint primary key auto_increment,
+	user_id bigint,
+	name varchar(50) not null,
+	file_path varchar(100) not null,
+	image_name varchar(50) not null,
+	FOREIGN KEY (user_id) REFERENCES user(id) on delete cascade
+	);
+
+
+----> website id has to be added in file table ...
