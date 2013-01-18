@@ -12,4 +12,8 @@
 	<button><a href="view-file.php">View Files</a></button>
 </body>
 
-<?php include_once("footer.php");?>
+
+<?php include_once("footer.php");
+session_start();
+print_r($_SESSION);
+?>

@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"pri",
+				"print_r"
+			],
+			[
 				"e",
 				"extension"
 			],
@@ -223,13 +227,81 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "upload-file.php",
+			"settings":
+			{
+				"buffer_size": 554,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 219.0,
 		"selected_items":
 		[
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"cu",
+				"Git: Custom Command"
+			],
+			[
+				"cut",
+				"Git: Custom Command"
+			],
+			[
+				"st",
+				"Git: Status"
+			],
+			[
+				"cus",
+				"Git: Custom Command"
+			],
+			[
+				"com",
+				"Git: Commit"
+			],
+			[
+				"git",
+				"Git: Status"
+			],
+			[
+				"gcu",
+				"Git: Custom Command"
+			],
+			[
+				"",
+				"Git: Add..."
+			],
+			[
+				"sta",
+				"Git: Status"
+			],
+			[
+				"stat",
+				"Git: Status"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"git ad",
+				"Git: Add..."
+			],
+			[
+				"cuto",
+				"Git: Custom Command"
+			],
 			[
 				"Package Control: in",
 				"Package Control: Install Package"
@@ -239,28 +311,12 @@
 				"Git: Init"
 			],
 			[
-				"Package Control: ",
-				"Package Control: List Packages"
-			],
-			[
 				"Package Control: li",
 				"Package Control: List Packages"
 			],
 			[
 				"inst",
 				"Package Control: Install Package"
-			],
-			[
-				"cus",
-				"Git: Custom Command"
-			],
-			[
-				"st",
-				"Git: Status"
-			],
-			[
-				"cu",
-				"Git: Custom Command"
 			],
 			[
 				"stash",
@@ -281,10 +337,6 @@
 			[
 				"gitcus",
 				"Git: Custom Command"
-			],
-			[
-				"git",
-				"Git: Pull"
 			],
 			[
 				"git com",
@@ -311,20 +363,12 @@
 				"Git: Push"
 			],
 			[
-				"git ad",
-				"Git: Add Current File"
-			],
-			[
 				"git:co",
 				"Git: Commit"
 			],
 			[
 				"GIT",
 				"Git: Push"
-			],
-			[
-				"push",
-				"Git: Push Current Branch"
 			],
 			[
 				"cha",
@@ -355,10 +399,6 @@
 				"Git: Commit"
 			],
 			[
-				"add",
-				"Git: Add Current File"
-			],
-			[
 				"new",
 				"Git: New Branch"
 			],
@@ -373,10 +413,6 @@
 			[
 				"git add",
 				"Git: Reset (hard) HEAD"
-			],
-			[
-				"",
-				"Git: Commit"
 			],
 			[
 				"gire",
@@ -444,6 +480,15 @@
 	},
 	"file_history":
 	[
+		"/C/wamp/www/MTP/COMMIT_EDITMSG.COMMIT_EDITMSG",
+		"/C/wamp/www/MTP/twitter.test",
+		"/C/WINDOWS/system32/drivers/etc/hosts",
+		"/C/wamp/www/MTP/test.php",
+		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/Git/Git.sublime-settings",
+		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Git.sublime-settings",
+		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Documents and Settings/Admin/.ssh/id_rsa.pub",
 		"/C/wamp/www/MTP/includes/user.php",
 		"/C/wamp/www/MTP/includes/file.php",
 		"/C/wamp/www/MTP/edit-file.php",
@@ -458,7 +503,6 @@
 		"/C/wamp/www/MTP/includes/edit-file.php",
 		"/C/wamp/www/MTP/js/validation.js",
 		"/C/wamp/www/MTP/register.php",
-		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/C/wamp/www/MTP/stylesheet/stylesheet.css",
 		"/C/wamp/www/MTP/header.php",
 		"/D/New Folder/Finance/public/menu.php",
@@ -563,8 +607,35 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "upload-file.php",
+					"settings":
+					{
+						"buffer_size": 554,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								551,
+								551
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
