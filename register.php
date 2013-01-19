@@ -9,7 +9,7 @@ Confirm Password :<input type ='password' name ='confirmpassword'> <br/>
 <input type ='submit' name ='btnsubmit' value ='Submit' onClick="return validateregister()"> 
 <input type ='reset' name ='btnreset' value ='Clear'><br/>
 
-<button><a href="index.php">Go Back</a></button>
+<a href="index.php">Go Back</a>
  
 </form>
 </body>

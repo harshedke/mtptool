@@ -2,15 +2,20 @@
 /*
 * View 
 */
+session_start();
+if ($_SESSION['username'] != null) {
+	
 	include_once("header.php");
+	include_once('menu.php');
 	include_once('includes/file.php');
 	include_once('includes/user.php');
-	session_start();
+	
 	// echo "In View ";
 	$username = $_SESSION['username'];
 	// echo "Username ".$username."<br>";
 ?>
-	<button><a href='upload-file.php'>Add new file</a></button><br>
+	<a href='upload-file.php'>Add new file</a>
+	<a href="upload-file.php">Go Back</a><br><br>
 <?php
 	$file = new Fileclass();
 	$user = new User();
@@ -42,4 +47,8 @@
 
 ?>
 
-<?php include_once("footer.php");?>
+<?php include_once("footer.php");
+} else {
+	header('Location: ./index.php');
+}
+?>

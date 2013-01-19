@@ -1,4 +1,9 @@
-<?php include_once("header.php");?>
+<?php 
+include_once("header.php");
+include_once('menu.php');
+session_start();
+if ($_SESSION['username']!= '') {
+?>
 
 <body>
 	<h1>File upload</h1>
@@ -9,11 +14,13 @@
 	<input type ='reset' name ='Clear'>  
 	</form>
 
-	<button><a href="view-file.php">View Files</a></button>
+	<a href="view-file.php">View Files</a>
 </body>
 
 
-<?php include_once("footer.php");
-session_start();
-print_r($_SESSION);
+<?php 
+include_once("footer.php");
+} else {
+	header('Location: ./index.php');
+}
 ?>

@@ -14,19 +14,19 @@ class User
 
 	public function adduser($name,$email,$username,$password)
 	{
-		$query ="INSERT INTO user (name,email,username,password)values('$name','$email','$username','$password')";
+		$query ="INSERT INTO userinfo (name,email,username,password)values('$name','$email','$username','$password')";
 		$result_set = $this->database->query($query);
 		return $result_set;
 	}
 	public function login($username,$password)
 	{
-		$query ="SELECT username FROM user WHERE username ='$username' and password='$password'";
+		$query ="SELECT username ,status FROM userinfo WHERE username ='$username' and password='$password'";
 		$result_set = $this->database->query($query);
 		return $result_set;	
 	}
 	public function getuserid($username)
 	{
-		$query ="SELECT id FROM user WHERE username ='$username'";
+		$query ="SELECT id FROM userinfo WHERE username ='$username'";
 		$result_set = $this->database->query($query);
 		return $result_set;		
 	}

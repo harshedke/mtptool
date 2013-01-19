@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"ba",
+				"background-color"
+			],
+			[
+				"bo",
+				"border-style"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"unse",
+				"unset"
+			],
+			[
+				"session_",
+				"session_destroy"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
 				"pri",
 				"print_r"
 			],
@@ -74,10 +110,6 @@
 			[
 				"r",
 				"row"
-			],
-			[
-				"user",
-				"user"
 			],
 			[
 				"u",
@@ -228,10 +260,34 @@
 	"buffers":
 	[
 		{
-			"file": "upload-file.php",
+			"file": "/C/wamp/www/twitteroauth-master/html.inc",
 			"settings":
 			{
-				"buffer_size": 554,
+				"buffer_size": 449,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/wamp/www/twitteroauth-master/index.php",
+			"settings":
+			{
+				"buffer_size": 1647,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "logout.php",
+			"settings":
+			{
+				"buffer_size": 107,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.php",
+			"settings":
+			{
+				"buffer_size": 711,
 				"line_ending": "Windows"
 			}
 		}
@@ -239,27 +295,47 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 219.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
-				"add",
-				"Git: Add..."
+				"",
+				"About"
 			],
 			[
 				"cu",
 				"Git: Custom Command"
 			],
 			[
-				"cut",
-				"Git: Custom Command"
+				"ad",
+				"Git: Add..."
+			],
+			[
+				"sta",
+				"Git: Status"
 			],
 			[
 				"st",
 				"Git: Status"
 			],
 			[
+				"cust",
+				"Git: Custom Command"
+			],
+			[
 				"cus",
+				"Git: Custom Command"
+			],
+			[
+				"git",
+				"Git: Status"
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"cut",
 				"Git: Custom Command"
 			],
 			[
@@ -267,20 +343,8 @@
 				"Git: Commit"
 			],
 			[
-				"git",
-				"Git: Status"
-			],
-			[
 				"gcu",
 				"Git: Custom Command"
-			],
-			[
-				"",
-				"Git: Add..."
-			],
-			[
-				"sta",
-				"Git: Status"
 			],
 			[
 				"stat",
@@ -321,10 +385,6 @@
 			[
 				"stash",
 				"Git: Stash Apply"
-			],
-			[
-				"cust",
-				"Git: Custom Command"
 			],
 			[
 				"c",
@@ -480,6 +540,22 @@
 	},
 	"file_history":
 	[
+		"/C/wamp/www/twitteroauth-master/logout.php",
+		"/C/wamp/www/MTP/instructions.php",
+		"/C/wamp/www/MTP/includes/login-processing.php",
+		"/C/wamp/www/MTP/includes/user.php",
+		"/C/wamp/www/websachin/Facebook2/config/functions.php",
+		"/C/wamp/www/websachin/Facebook2/facebook/facebook.php",
+		"/C/wamp/www/websachin/Facebook2/config/fbconfig.php",
+		"/C/wamp/www/MTP/register.php",
+		"/C/wamp/www/MTP/upload-file.php",
+		"/C/wamp/www/MTP/stylesheet/stylesheet.css",
+		"/C/wamp/www/MTP/view-file.php",
+		"/C/wamp/www/MTP/edit-file.php",
+		"/C/wamp/www/websachin/Facebook2/home.php",
+		"/C/wamp/www/MTP/index.php",
+		"/C/wamp/www/MTP/menu.php",
+		"/C/wamp/www/MTP/logout.php",
 		"/C/wamp/www/MTP/COMMIT_EDITMSG.COMMIT_EDITMSG",
 		"/C/wamp/www/MTP/twitter.test",
 		"/C/WINDOWS/system32/drivers/etc/hosts",
@@ -489,21 +565,13 @@
 		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Git.sublime-settings",
 		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/C/Documents and Settings/Admin/.ssh/id_rsa.pub",
-		"/C/wamp/www/MTP/includes/user.php",
 		"/C/wamp/www/MTP/includes/file.php",
-		"/C/wamp/www/MTP/edit-file.php",
 		"/C/wamp/www/MTP/includes/edit-file-processing.php",
 		"/C/wamp/www/MTP/includes/upload-file-processing.php",
-		"/C/wamp/www/MTP/index.php",
-		"/C/wamp/www/MTP/includes/login-processing.php",
-		"/C/wamp/www/MTP/view-file.php",
 		"/C/wamp/www/tinymce_3.5.8/tinymce/examples/index.html",
 		"/D/New Folder/Finance/public/viewvoucher.php",
-		"/C/wamp/www/MTP/upload-file.php",
 		"/C/wamp/www/MTP/includes/edit-file.php",
 		"/C/wamp/www/MTP/js/validation.js",
-		"/C/wamp/www/MTP/register.php",
-		"/C/wamp/www/MTP/stylesheet/stylesheet.css",
 		"/C/wamp/www/MTP/header.php",
 		"/D/New Folder/Finance/public/menu.php",
 		"/C/wamp/www/MTP/includes/dbconnect.php",
@@ -543,7 +611,7 @@
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -557,6 +625,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"</button>",
+			"<button>",
 			"$file",
 			"file",
 			"</button>",
@@ -607,23 +677,103 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "upload-file.php",
+					"file": "/C/wamp/www/twitteroauth-master/html.inc",
 					"settings":
 					{
-						"buffer_size": 554,
+						"buffer_size": 449,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								551,
-								551
+								158,
+								158
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/wamp/www/twitteroauth-master/index.php",
+					"settings":
+					{
+						"buffer_size": 1647,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 57.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "logout.php",
+					"settings":
+					{
+						"buffer_size": 107,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								107,
+								107
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "index.php",
+					"settings":
+					{
+						"buffer_size": 711,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								678,
+								678
 							]
 						],
 						"settings":
@@ -672,7 +822,7 @@
 	"menu_visible": true,
 	"output.git":
 	{
-		"height": 263.0
+		"height": 103.0
 	},
 	"replace":
 	{
