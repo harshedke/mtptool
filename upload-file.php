@@ -14,7 +14,8 @@ if ($_SESSION['username']!= '') {
 	<input type ='reset' name ='Clear'>  
 	</form>
 
-	<a href="view-file.php">View Files</a>
+	<!-- <a href="view-file.php">View Files</a> -->
+	<button type='button' onClick="return goto(this.value)" value='view-file.php'>View Files</button>
 </body>
 
 

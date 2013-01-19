@@ -110,6 +110,11 @@ function validatefileupload () {
 	}
 }
 
+function goto (link) {
+	// alert(argument);
+	self.location = link;
+}
+
 function validatelogin () {
 	
 	x=document.forms["login-form"]["username"].value;
@@ -129,3 +134,70 @@ function validatelogin () {
 		return false;
 	}
 }
+
+function validateseoform () {
+	// alert('test');
+	// return false;
+	x=document.forms["seo-form"]["website"].value;
+	if (x==null || x=="")
+	{
+		// error="Please select website.";
+		error="Please enter website.";
+		alert(error);
+		document.forms["seo-form"]["website"].focus();
+		return false;
+	}
+
+	x=document.forms["seo-form"]["keywords"].value;
+	if (x==null || x=="")
+	{
+		error="Please enter keywords.";
+		alert(error);
+		document.forms["seo-form"]["keywords"].focus();
+		return false;
+	}
+
+	x=document.forms["seo-form"]["metatags"].value;
+	if (x==null || x=="")
+	{
+		error="Please enter meta tags.";
+		alert(error);
+		document.forms["seo-form"]["metatags"].focus();
+		return false;
+	}
+	x=document.forms["seo-form"]["sitetitle"].value;
+	if (x==null || x=="")
+	{
+		error="Please enter site title.";
+		alert(error);
+		document.forms["seo-form"]["sitetitle"].focus();
+		return false;
+	}
+	x=document.forms["seo-form"]["description"].value;
+	if (x==null || x=="")
+	{
+		error="Please enter meta description.";
+		alert(error);
+		document.forms["seo-form"]["description"].focus();
+		return false;
+	}
+
+}
+/*
+x=document.forms[""][""].value;
+	if (x==null || x=="")
+	{
+		error="Enter .";
+		alert(error);
+		document.forms[""][""].focus();
+		return false;
+	}
+	x=document.forms[""][""].value;
+	if (x==null || x=="")
+	{
+		error="Enter .";
+		alert(error);
+		document.forms[""][""].focus();
+		return false;
+	}
+*/

@@ -14,8 +14,11 @@ if ($_SESSION['username'] != null) {
 	$username = $_SESSION['username'];
 	// echo "Username ".$username."<br>";
 ?>
-	<a href='upload-file.php'>Add new file</a>
-	<a href="upload-file.php">Go Back</a><br><br>
+	<!-- <a href='upload-file.php'>Add new file</a> -->
+	<!-- <a href="upload-file.php">Go Back</a> -->
+	<button type='button' onClick="return goto(this.value)" value='upload-file.php'>Add new file</button>
+	<button type='button' onClick="return goto(this.value)" value='upload-file.php'>Go Back</button>
+	<br><br>
 <?php
 	$file = new Fileclass();
 	$user = new User();

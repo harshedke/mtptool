@@ -14,7 +14,8 @@ if ($_SESSION['username'] != null) {
 	if ($action == 'edit') {
 		// echo "Editing image";
 	?>
-		<a href="view-file.php">Go Back</a><br>
+		<!-- <a href="view-file.php">Go Back</a><br> -->
+		<button type='button' onClick="return goto(this.value)" value='view-file.php'>Go Back</button>
 		<form name ='upload-file-form' method='POST' action='includes/edit-file-processing.php' enctype="multipart/form-data">
 		<input type='hidden' name='id' value='<?php echo $id;?>'>	
 		Select Image/Video Files <input type = 'file' name= 'file'> <br />

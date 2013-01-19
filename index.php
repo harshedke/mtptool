@@ -14,7 +14,8 @@ Username :<input type ='text' name ='username' autofocus> <br/>
 Password :<input type ='password' name ='password'> <br/> 
 <input type ='submit' name ='btnsubmit' value ='Submit' onClick="return validatelogin()"> 
 <input type ='reset' name ='btnreset' value ='Clear'>
-<a href="register.php">Register Here</a>
+<!-- <input type='button' onClick="return gotoRegister()" value='Register Here'> -->
+<button type='button' onClick="return goto(this.value)" value='register.php'>Register Here</button>
 </form>
 </body>
 

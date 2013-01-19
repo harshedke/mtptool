@@ -31,8 +31,9 @@ if (isset($_POST['btnsubmit']))
 		{
 			$row = $user->fetch_object($result);
 			if ($row->status!='inactive') {
-				$_SESSION['username']= $username;
-				echo "<script>alert('Login Successful')</script>";
+				$_SESSION['username'] = $username;
+				$_SESSION['user_id'] = $row->id;
+ 				echo "<script>alert('Login Successful')</script>";
 				echo "<script>window.location.href='../upload-file.php'</script>";
 			} else {
 				echo "<script>alert('Please verify your account.')</script>";

@@ -20,7 +20,7 @@ class User
 	}
 	public function login($username,$password)
 	{
-		$query ="SELECT username ,status FROM userinfo WHERE username ='$username' and password='$password'";
+		$query ="SELECT username ,id ,status FROM userinfo WHERE username ='$username' and password='$password'";
 		$result_set = $this->database->query($query);
 		return $result_set;	
 	}
