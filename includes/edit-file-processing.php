@@ -1,15 +1,6 @@
 <?php
 include_once('file.php');
 $id = $_POST['id'];
-// echo "$id";
-
-// $result = $file->getfile($id);
-
-// $row = $file->fettch_object($result);
-// $filename = $row->file_path.$row->file_name;
-// echo "<img src='$filename' height='100' width='100'>";
-// if (isset($_POST['btnupload'])) {
-// $result = $file->updatefile($id)
 
 if (isset($_POST['btnupload'])) {
 	$file = new Fileclass();
@@ -30,6 +21,7 @@ if (isset($_POST['btnupload'])) {
 		$row = $file->fetch_object($result);
 		$filename = $row->file_path.$row->file_name;
 		// echo "test ".$filename."<br>";
+		
 		unlink($filename);
 		$extension = pathinfo($_FILES['file']['name'], PATHINFO_EXTENSION);
 		

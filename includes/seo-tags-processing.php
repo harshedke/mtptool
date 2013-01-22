@@ -1,25 +1,24 @@
 <?php
 include_once('website.php');
 if (isset($_POST['btnsubmit'])) {
-	$website_id = $_POST['website_id'];
-	$keywords = $_POST['keywords'];
-	$metatags = $_POST['metatags'];
-	$sitetitle = $_POST['sitetitle'];
-	$description = $_POST['description'];
+	$website_id = trim($_POST['website_id']);
+	$keywords = trim($_POST['keywords']);
+	$sitetitle = trim($_POST['sitetitle']);
+	$description = trim($_POST['description']);
 	$error = '';
 	if (empty($website_id)) {
 		// $error .= "Please select website.";
 		$error .= "Please enter website.<br>";
 	}
-	if (empty($keywords)) {
-		$error .= "Please enter keywords.<br>";
-	}
-	if (empty($metatags)) {
-		$error .= "Please enter meta tags.<br>";
-	}
+
 	if (empty($sitetitle)) {
 		$error .= "Please enter site title.<br>";
 	}
+
+	if (empty($keywords)) {
+		$error .= "Please enter keywords.<br>";
+	}
+	
 	if (empty($description)) {
 		$error .= "Please enter meta description.<br>";
 	}
@@ -28,7 +27,7 @@ if (isset($_POST['btnsubmit'])) {
 	} else {
 		$website = new Website();
 		$website_id =1;
-		$result = $website->setseotags($website_id,$keywords,$metatags,$sitetitle,$description);
+		$result = $website->setseotags($website_id,$keywords,$sitetitle,$description);
 		if ($website->rowsaffected()>0) {
 			echo "<script>alert('SEO settings has been updated.')</script>";
 			echo "<script>window.location.href='../seo-settings.php'</script>";

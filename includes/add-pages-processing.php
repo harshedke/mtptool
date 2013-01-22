@@ -6,7 +6,7 @@ $website = new Website();
 $default_content = 'Body content will display here';
 $website_id =1;
 foreach ($_POST['page'] as $key => $page_name) {
-	$result = $website->addpage($website_id,$page_name,$default_content);
+	$result = $website->addpage($website_id,trim($page_name),$default_content);
 	if ($website->rowsaffected()>0) {
 		echo "<script>alert('".$page_name." created successfully')</script>";
 		echo "<script>window.location.href= '../add-pages.php'</script>";

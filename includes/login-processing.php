@@ -8,8 +8,8 @@ include_once('user.php');
 if (isset($_POST['btnsubmit']))
 {
 
-	$username = $_POST['username'];
-	$password = $_POST['password'];
+	$username = trim($_POST['username']);
+	$password = trim($_POST['password']);
 	$error= '';
 	if (empty($username)) {
 		$error.= "Username field should not empty<br>";

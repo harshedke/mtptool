@@ -5,7 +5,7 @@ function validateregister () {
 	var error;
 	var MatchEmailPattern =/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
 	// alert('test');
-	x=document.forms["registration-form"]["name"].value;
+	x=document.forms["registration-form"]["name"].value.trim();
 	if (x==null || x=="")
 	{
 		error="Name field should not be empty";
@@ -21,7 +21,7 @@ function validateregister () {
 		return false;	
 	}
 
-	x=document.forms["registration-form"]["email"].value;
+	x=document.forms["registration-form"]["email"].value.trim();
 	if (x==null || x=="")
 	{
 		error="Email-Id field should not be empty";
@@ -38,7 +38,7 @@ function validateregister () {
 		return false;
 	}
 
-	x=document.forms["registration-form"]["username"].value;
+	x=document.forms["registration-form"]["username"].value.trim();
 	if (x==null || x=="")
 	{
 		error="Username field should not be empty";
@@ -55,7 +55,7 @@ function validateregister () {
 		return false;	
 	}
 
-	x=document.forms["registration-form"]["password"].value;
+	x=document.forms["registration-form"]["password"].value.trim();
 	if (x==null || x=="")
 	{
 		error="Password field should not be empty";
@@ -70,7 +70,7 @@ function validateregister () {
 		document.forms["registration-form"]["password"].focus();
 		return false;
 	}
-	x=document.forms["registration-form"]["confirmpassword"].value;
+	x=document.forms["registration-form"]["confirmpassword"].value.trim();
 	if (x==null || x=="")
 	{
 		error="Confirm Password field should not be empty";
@@ -78,8 +78,8 @@ function validateregister () {
 		document.forms["registration-form"]["confirmpassword"].focus();
 		return false;
 	}
-	password=document.forms["registration-form"]["password"].value;
-	confirmpassword=document.forms["registration-form"]["confirmpassword"].value;
+	password=document.forms["registration-form"]["password"].value.trim();
+	confirmpassword=document.forms["registration-form"]["confirmpassword"].value.trim();
 	if (password!=confirmpassword)
 	{
 		error="Password's not matched";
@@ -92,7 +92,7 @@ function validateregister () {
 }
 
 function validatefileupload () {
-	// x=document.forms["upload-file-form"]["filename"].value;
+	// x=document.forms["upload-file-form"]["filename"].value.trim();
 	// if (x==null || x=="")
 	// {
 	// 	error="Enter filename ";
@@ -100,7 +100,7 @@ function validatefileupload () {
 	// 	document.forms["upload-file-form"]["filename"].focus();
 	// 	return false;
 	// }
-	x=document.forms["upload-file-form"]["file"].value;
+	x=document.forms["upload-file-form"]["file"].value.trim();
 	if (x==null || x=="")
 	{
 		error="Select file to upload ";
@@ -117,7 +117,7 @@ function goto (link) {
 
 function validatelogin () {
 	
-	x=document.forms["login-form"]["username"].value;
+	x=document.forms["login-form"]["username"].value.trim();
 	if (x==null || x=="")
 	{
 		error="Enter username field";
@@ -125,7 +125,7 @@ function validatelogin () {
 		document.forms["login-form"]["username"].focus();
 		return false;
 	}
-	x=document.forms["login-form"]["password"].value;
+	x=document.forms["login-form"]["password"].value.trim();
 	if (x==null || x=="")
 	{
 		error="Enter Password field";
@@ -136,19 +136,26 @@ function validatelogin () {
 }
 
 function validateseoform () {
-	// alert('test');
+	//alert('test');
 	// return false;
-	x=document.forms["seo-form"]["website"].value;
+	x=document.forms["seo-form"]["website_id"].value.trim();
 	if (x==null || x=="")
 	{
 		// error="Please select website.";
 		error="Please enter website.";
 		alert(error);
-		document.forms["seo-form"]["website"].focus();
+		document.forms["seo-form"]["website_id"].focus();
 		return false;
 	}
-
-	x=document.forms["seo-form"]["keywords"].value;
+	x=document.forms["seo-form"]["sitetitle"].value.trim();
+	if (x==null || x=="")
+	{
+		error="Please enter site title.";
+		alert(error);
+		document.forms["seo-form"]["sitetitle"].focus();
+		return false;
+	}
+	x=document.forms["seo-form"]["keywords"].value.trim();
 	if (x==null || x=="")
 	{
 		error="Please enter keywords.";
@@ -157,23 +164,7 @@ function validateseoform () {
 		return false;
 	}
 
-	x=document.forms["seo-form"]["metatags"].value;
-	if (x==null || x=="")
-	{
-		error="Please enter meta tags.";
-		alert(error);
-		document.forms["seo-form"]["metatags"].focus();
-		return false;
-	}
-	x=document.forms["seo-form"]["sitetitle"].value;
-	if (x==null || x=="")
-	{
-		error="Please enter site title.";
-		alert(error);
-		document.forms["seo-form"]["sitetitle"].focus();
-		return false;
-	}
-	x=document.forms["seo-form"]["description"].value;
+	x=document.forms["seo-form"]["description"].value.trim();
 	if (x==null || x=="")
 	{
 		error="Please enter meta description.";
@@ -184,7 +175,7 @@ function validateseoform () {
 
 }
 /*
-x=document.forms[""][""].value;
+x=document.forms[""][""].value.trim();
 	if (x==null || x=="")
 	{
 		error="Enter .";
@@ -192,7 +183,7 @@ x=document.forms[""][""].value;
 		document.forms[""][""].focus();
 		return false;
 	}
-	x=document.forms[""][""].value;
+	x=document.forms[""][""].value.trim();
 	if (x==null || x=="")
 	{
 		error="Enter .";

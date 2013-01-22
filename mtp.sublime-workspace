@@ -4,8 +4,44 @@
 		"selected_items":
 		[
 			[
+				"fil",
+				"filename"
+			],
+			[
+				"f",
+				"file_name"
+			],
+			[
+				"tr",
+				"trim"
+			],
+			[
+				"websi",
+				"website_id"
+			],
+			[
+				"include",
+				"include_once"
+			],
+			[
+				"creat",
+				"create-website"
+			],
+			[
+				"Se",
+				"_SESSION"
+			],
+			[
+				"re",
+				"result_set"
+			],
+			[
+				"we",
+				"website"
+			],
+			[
 				"add",
-				"addpage"
+				"addwebsite"
 			],
 			[
 				"h",
@@ -18,10 +54,6 @@
 			[
 				"de",
 				"default_status"
-			],
-			[
-				"we",
-				"website_id"
 			],
 			[
 				"inc",
@@ -54,10 +86,6 @@
 			[
 				"sett",
 				"settings"
-			],
-			[
-				"re",
-				"result"
 			],
 			[
 				"er",
@@ -176,10 +204,6 @@
 				"file"
 			],
 			[
-				"fil",
-				"file"
-			],
-			[
 				"na",
 				"name"
 			],
@@ -198,10 +222,6 @@
 			[
 				"fi",
 				"file"
-			],
-			[
-				"f",
-				"file_path"
 			],
 			[
 				"u",
@@ -335,9 +355,29 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 361.0,
+		"height": 265.0,
 		"selected_items":
 		[
+			[
+				"st",
+				"Git: Status"
+			],
+			[
+				"gi",
+				"Git: Status"
+			],
+			[
+				"sta",
+				"Git: Status"
+			],
+			[
+				"cu",
+				"Git: Custom Command"
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
 			[
 				"git",
 				"Git: Gui"
@@ -347,36 +387,16 @@
 				"Git: Diff Staged"
 			],
 			[
-				"add",
-				"Git: Add..."
-			],
-			[
-				"cu",
-				"Git: Custom Command"
-			],
-			[
 				"push",
 				"Git: Push"
-			],
-			[
-				"gi",
-				"Git: Status"
 			],
 			[
 				"cus",
 				"Git: Custom Command"
 			],
 			[
-				"sta",
-				"Git: Status"
-			],
-			[
 				"ad",
 				"Git: Add..."
-			],
-			[
-				"st",
-				"Git: Status"
 			],
 			[
 				"cust",
@@ -580,30 +600,55 @@
 	},
 	"file_history":
 	[
+		"/C/wamp/www/MTP/edit-file.php",
+		"/C/wamp/www/MTP/includes/edit-file-processing.php",
+		"/C/wamp/www/MTP/js/validation.js",
+		"/C/wamp/www/MTP/includes/register-processing.php",
+		"/C/wamp/www/MTP/includes/website.php",
+		"/C/wamp/www/MTP/includes/website-processing.php",
 		"/C/wamp/www/MTP/includes/seo-tags-processing.php",
 		"/C/wamp/www/MTP/includes/login-processing.php",
-		"/C/wamp/www/MTP/edit-file.php",
-		"/C/wamp/www/MTP/view-file.php",
-		"/C/wamp/www/MTP/includes/website.php",
 		"/C/wamp/www/MTP/includes/add-pages-processing.php",
-		"/C/wamp/www/MTP/add-pages.php",
-		"/C/wamp/www/websachin/public/viewpages.php",
-		"/C/wamp/www/MTP/seo-settings.php",
-		"/C/wamp/www/MTP/includes/add-pages.php",
-		"/C/wamp/www/1.php",
-		"/C/wamp/www/MTP/hello.php",
-		"/C/wamp/www/MTP/1.php",
+		"/C/wamp/www/popup/create-website.php",
+		"/C/wamp/www/popup/includes/website.php",
+		"/C/wamp/www/popup/includes/website-processing.php",
+		"/C/wamp/www/popup/js/jquery-1.8.2.js",
+		"/C/wamp/www/popup/js/jquery-ui.js",
+		"/C/wamp/www/popup/js/jquery_function.js",
+		"/C/wamp/www/popup/header.php",
+		"/C/wamp/www/popup/footer.php",
+		"/C/wamp/www/popup/menu.php",
+		"/C/wamp/www/popup/includes/dbconfig.php",
+		"/C/wamp/www/popup/includes/dbconnect.php",
+		"/C/wamp/www/popup/stylesheet/jquery-ui.css",
+		"/C/wamp/www/popup/stylesheet/style.css",
 		"/C/wamp/www/MTP/menu.php",
-		"/C/wamp/www/MTP/includes/initialize.ph",
+		"/C/wamp/www/MTP/js/jquery_function.js",
+		"/C/wamp/www/MTP/create-website.php",
+		"/C/wamp/www/MTP/hello.php",
+		"/C/wamp/www/MTP/includes/file.php",
 		"/C/wamp/www/MTP/upload-file.php",
-		"/C/wamp/www/MTP/includes/register-processing.php",
-		"/C/wamp/www/MTP/js/validation.js",
+		"/C/wamp/www/MTP/includes/upload-file-processing.php",
+		"/C/wamp/www/MTP/seo-settings.php",
+		"/C/xampp/htdocs/1.php",
+		"/C/wamp/www/MTP/test.php",
+		"/C/wamp/www/MTP/1.php",
+		"/D/New Folder/Finance/public/javascript/jquery_lib.js",
+		"/C/wamp/www/MTP/stylesheet/style.css",
+		"/C/wamp/www/MTP/header.php",
+		"/C/wamp/www/index.php",
+		"/C/wamp/www/1.php",
+		"/C/wamp/www/hello.php",
+		"/C/wamp/www/MTP/add-pages.php",
+		"/C/wamp/www/MTP/view-file.php",
+		"/C/wamp/www/websachin/public/viewpages.php",
+		"/C/wamp/www/MTP/includes/add-pages.php",
+		"/C/wamp/www/MTP/includes/initialize.ph",
 		"/C/wamp/www/MTP/index.php",
 		"/C/wamp/www/MTP/includes/user.php",
 		"/C/wamp/www/MTP/stylesheet/stylesheet.css",
 		"/C/wamp/www/MTP/register.php",
 		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Package Control.sublime-settings",
-		"/C/wamp/www/index.php",
 		"/C/wamp/www/twitteroauth-master/html.inc",
 		"/C/wamp/www/twitteroauth-master/index.php",
 		"/C/wamp/www/MTP/logout.php",
@@ -616,18 +661,13 @@
 		"/C/wamp/www/MTP/COMMIT_EDITMSG.COMMIT_EDITMSG",
 		"/C/wamp/www/MTP/twitter.test",
 		"/C/WINDOWS/system32/drivers/etc/hosts",
-		"/C/wamp/www/MTP/test.php",
 		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/Git/Git.sublime-settings",
 		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Git.sublime-settings",
 		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/C/Documents and Settings/Admin/.ssh/id_rsa.pub",
-		"/C/wamp/www/MTP/includes/file.php",
-		"/C/wamp/www/MTP/includes/edit-file-processing.php",
-		"/C/wamp/www/MTP/includes/upload-file-processing.php",
 		"/C/wamp/www/tinymce_3.5.8/tinymce/examples/index.html",
 		"/D/New Folder/Finance/public/viewvoucher.php",
 		"/C/wamp/www/MTP/includes/edit-file.php",
-		"/C/wamp/www/MTP/header.php",
 		"/D/New Folder/Finance/public/menu.php",
 		"/C/wamp/www/MTP/includes/dbconnect.php",
 		"/C/wamp/www/MTP/queries.txt",
@@ -680,6 +720,11 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"$_POST[",
+			"];",
+			"$_POST",
+			".value;",
+			"].value",
 			"file",
 			"processing",
 			"',",
@@ -795,6 +840,10 @@
 		"selected_items":
 		[
 			[
+				"w",
+				"includes/website.php"
+			],
+			[
 				"",
 				"includes/login-processing.php"
 			]
@@ -813,6 +862,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 222.0,
+	"side_bar_width": 170.0,
 	"status_bar_visible": true
 }

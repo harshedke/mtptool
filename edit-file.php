@@ -34,8 +34,9 @@ if ($_SESSION['username'] != null) {
 		
 		$pos =strpos($filename, '/');
 		$filename = substr($filename, $pos+1);
-		 echo "<br>test Path".$filename."<br>";
-		unlink($filename);
+		// unlink($filename);
+		error_log($filename);
+		copy($filename, "backup/".$filename);
 		$result = $file->deletefile($id);
 		if ($file->affected_rows()>0) {
 			echo "<script>alert('File has been deleted');</script>";

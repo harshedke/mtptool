@@ -11,10 +11,10 @@ class Fileclass
 		$this->database = new DBConnection();
 	}
 
-	public function uploadfile($user_id,$target_path,$file_name)
+	public function uploadfile($id,$user_id,$target_path,$file_name)
 	{
 
-		$query ="INSERT INTO file (user_id,file_path,file_name)values('$user_id','$target_path','$file_name')";
+		$query ="INSERT INTO file (id,user_id,file_path,file_name)values('$id','$user_id','$target_path','$file_name')";
 		error_log(" ".$query);
 		$result_set = $this->database->query($query);
 		return $result_set;
@@ -27,7 +27,7 @@ class Fileclass
 		return $result_set;
 	}
 
-	public function getuserfiles($user_id) //
+	public function getuserfiles($user_id) 
 	{
 		$query ="SELECT id, file_path , file_name FROM file WHERE user_id='$user_id'";
 		$result_set = $this->database->query($query);

@@ -36,24 +36,17 @@ if (isset($_POST['btnupload'])) {
 
 			$file_path = $target_path;
 			$result =$file->getmaxid();
-			
 			$row = $file->fetch_object($result);
-			// while ($row = $file->fetch_array($result)) {
-			// 	$id = $row['id']+1;
-			// }
 			$id = $row->id + 1;
 			$file_name = $id.".".$extension;
-			
 			$final = $target_path . $file_name; 
-
 			$result= $user->getuserid($_SESSION['username']);
 			$row = $user->fetch_object($result);
 			$user_id =$row->id;
-			
 			if(move_uploaded_file($_FILES['file']['tmp_name'], $final)) {
 
 				// echo $final;
-			    $result = $file->uploadfile($user_id,$target_path,$file_name);
+			    $result = $file->uploadfile($id,$user_id,$target_path,$file_name);
 			    if ($file->affected_rows()>0) {
 					// echo "The file ".  basename( $_FILES['file']['name'])." has been uploaded";
 			  

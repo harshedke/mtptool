@@ -8,11 +8,11 @@ include_once('user.php');
 if (isset($_POST['btnsubmit']))
 {
 		
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$username = $_POST['username'];
-	$password = $_POST['password'];
-	$confirmpassword = $_POST['confirmpassword'];
+	$name = trim($_POST['name']);
+	$email = trim($_POST['email']);
+	$username = trim($_POST['username']);
+	$password = trim($_POST['password']);
+	$confirmpassword = trim($_POST['confirmpassword']);
 	$error= '';
 
 	if (empty($name)) {

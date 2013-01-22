@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jan 22, 2013 at 04:40 AM
+-- Generation Time: Jan 22, 2013 at 10:14 AM
 -- Server version: 5.0.51
 -- PHP Version: 5.2.6
 
@@ -44,20 +44,21 @@ CREATE TABLE `category` (
 --
 
 CREATE TABLE `file` (
-  `id` bigint(20) NOT NULL auto_increment,
-  `user_id` bigint(20) default NULL,
+  `id` bigint(20) NOT NULL,
+  `user_id` bigint(20) NOT NULL,
   `file_path` varchar(100) NOT NULL,
   `file_name` varchar(50) NOT NULL,
-  PRIMARY KEY  (`id`),
-  KEY `user_id` (`user_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `file`
 --
 
 INSERT INTO `file` (`id`, `user_id`, `file_path`, `file_name`) VALUES
-(12, 1, '../images/', '12.png');
+(1, 1, '../images/', '1.jpg'),
+(2, 2, '../images/', '2.png'),
+(3, 2, '../images/', '3.png');
 
 -- --------------------------------------------------------
 
@@ -94,17 +95,12 @@ CREATE TABLE `page` (
   `submenu` varchar(5) NOT NULL default 'No',
   PRIMARY KEY  (`page_id`),
   UNIQUE KEY `page_id` (`page_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 --
 -- Dumping data for table `page`
 --
 
-INSERT INTO `page` (`page_id`, `website_id`, `page_name`, `page_content`, `page_status`, `parent_id`, `menu`, `submenu`) VALUES
-(1, 1, 'Home', 'Body content will display here', 'Active', 0, 'No', 'No'),
-(2, 1, 'Services', 'Body content will display here', 'Active', 0, 'No', 'No'),
-(3, 1, 'Carreers', 'Body content will display here', 'Active', 0, 'No', 'No'),
-(4, 1, 'sitemap', 'Body content will display here', 'Active', 0, 'No', 'No');
 
 -- --------------------------------------------------------
 
@@ -116,7 +112,6 @@ CREATE TABLE `seo_settings` (
   `id` bigint(20) NOT NULL auto_increment,
   `website_id` bigint(20) NOT NULL,
   `keyword` text NOT NULL,
-  `meta_tag` text NOT NULL,
   `site_title` varchar(100) NOT NULL,
   `meta_description` text NOT NULL,
   PRIMARY KEY  (`id`)
@@ -126,10 +121,10 @@ CREATE TABLE `seo_settings` (
 -- Dumping data for table `seo_settings`
 --
 
-INSERT INTO `seo_settings` (`id`, `website_id`, `keyword`, `meta_tag`, `site_title`, `meta_description`) VALUES
-(1, 1, 'asdad', 'asdasd', 'asdas', 'sadasd'),
-(2, 1, 'asdasd', 'asdasd', 'asdasd', 'asdsadasd\r\nasdsad'),
-(3, 1, 'asdasd', 'asdasd', 'asdasd', 'asdsad');
+INSERT INTO `seo_settings` (`id`, `website_id`, `keyword`, `site_title`, `meta_description`) VALUES
+(1, 1, 'Alto,Ferrari', 'My Website', 'nthing'),
+(2, 1, 'Sachin', 'test Website ', 'sachin'),
+(3, 1, 'website 2', 'website 2', 'Website 2');
 
 -- --------------------------------------------------------
 
@@ -167,14 +162,12 @@ CREATE TABLE `user` (
   PRIMARY KEY  (`id`),
   UNIQUE KEY `email` (`email`),
   UNIQUE KEY `username` (`username`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 --
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `name`, `email`, `username`, `password`, `status`) VALUES
-(1, 'Harsh Edke', 'harsh.edke@gmail.com', 'harshe', '49db7687173513257476390f4dcadab9', 'active');
 
 -- --------------------------------------------------------
 
@@ -196,21 +189,20 @@ CREATE TABLE `userinfo` (
   `city` varchar(100) NOT NULL,
   `pincode` varchar(100) NOT NULL,
   `timezone` varchar(100) NOT NULL,
-  `status` varchar(100) NOT NULL default 'inactive',
+  `status` varchar(100) NOT NULL default 'Active',
   `oauth_uid` varchar(200) NOT NULL,
   `provider` varchar(100) NOT NULL,
   PRIMARY KEY  (`id`),
   UNIQUE KEY `email_id` (`email`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `userinfo`
 --
 
 INSERT INTO `userinfo` (`id`, `name`, `username`, `password`, `phone`, `email`, `addressline1`, `addressline2`, `country`, `state`, `city`, `pincode`, `timezone`, `status`, `oauth_uid`, `provider`) VALUES
-(1, 'Harsh Edke', 'harshe', '49db7687173513257476390f4dcadab9', '', 'harsh.edke@gmail.com', '', '', '', '', '', '', '', 'active', '', ''),
-(2, 'Sachin Thonge', '', '', '', 'sachinthonge11@gmail.com', '', '', '', '', '', '', '', 'inactive', '100001938682824', 'facebook'),
-(3, 'Harshavardhan Edke', '', '', '', 'harashvaradhan@gmail.com', '', '', '', '', '', '', '', 'inactive', '100004799434107', 'facebook');
+(1, 'Harsh Edke', 'harshe', '49db7687173513257476390f4dcadab9', '', 'harsh.edke@gmail.com', '', '', '', '', '', '', '', 'Active', '', ''),
+(2, 'Sachin Thonge', 'sachin', '15285722f9def45c091725aee9c387cb', '', 'sachin@webiction.com', '', '', '', '', '', '', '', 'Active', '', '');
 
 -- --------------------------------------------------------
 
@@ -223,26 +215,13 @@ CREATE TABLE `website` (
   `user_id` bigint(20) NOT NULL,
   `website_name` varchar(100) NOT NULL,
   PRIMARY KEY  (`website_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `website`
 --
 
 INSERT INTO `website` (`website_id`, `user_id`, `website_name`) VALUES
-(1, 1, 'adasd'),
-(2, 1, 'asdasdsad'),
-(3, 1, 'ASasaSAs'),
-(4, 1, 'sadasdasd'),
-(5, 1, 'asdasdas'),
-(6, 1, 'asdsad');
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `file`
---
-ALTER TABLE `file`
-  ADD CONSTRAINT `file_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE;
+(1, 1, 'Website1'),
+(2, 2, 'Sachinthonge'),
+(3, 2, 'Website2');

@@ -19,6 +19,14 @@ class Website
 		return $result_set;	
 	}
 
+	public function getuserwebsites($user_id)
+	{
+		$query = "SELECT website_name FROM website WHERE user_id='$user_id'";
+		error_log($query);
+		$result_set = $this->database->query($query);
+		return $result_set;	
+	}
+
 	public function addpage($website_id,$page_name,$default_content)
 	{
 		$query ="INSERT INTO page (website_id, page_name, page_content) VALUES('$website_id','$page_name','$default_content')";
@@ -27,9 +35,9 @@ class Website
 		return $result_set;		
 	}
 
-	public function setseotags($website_id,$keywords,$metatags,$sitetitle,$description)
+	public function setseotags($website_id,$keywords,$sitetitle,$description)
 	{
-		$query ="INSERT INTO seo_settings (website_id, keyword, meta_tag, site_title, meta_description)values('$website_id', '$keywords', '$metatags', '$sitetitle', '$description')";
+		$query ="INSERT INTO seo_settings (website_id, keyword, site_title, meta_description)values('$website_id', '$keywords', '$sitetitle', '$description')";
 		error_log($query);
 		$result_set = $this->database->query($query);
 		return $result_set;
@@ -37,6 +45,7 @@ class Website
 
 	public function getwebsites($user_id)
 	{
+		error_log("User id:".$user_id);
 		$query ="SELECT website_id , website_name FROM website WHERE user_id = '$user_id'";
 		error_log($query);
 		$result_set = $this->database->query($query);
@@ -55,6 +64,10 @@ class Website
 	public function fetch_object($result_set)
 	{
 		return $this->database->fetch_object($result_set);
+	}
+	public function fetch_array($result_set)
+	{
+		return $this->database->fetch_array($result_set);	
 	}
 }
 ?>
