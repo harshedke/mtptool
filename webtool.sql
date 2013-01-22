@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jan 19, 2013 at 01:27 PM
+-- Generation Time: Jan 22, 2013 at 04:40 AM
 -- Server version: 5.0.51
 -- PHP Version: 5.2.6
 
@@ -50,15 +50,14 @@ CREATE TABLE `file` (
   `file_name` varchar(50) NOT NULL,
   PRIMARY KEY  (`id`),
   KEY `user_id` (`user_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=13 ;
 
 --
 -- Dumping data for table `file`
 --
 
 INSERT INTO `file` (`id`, `user_id`, `file_path`, `file_name`) VALUES
-(8, 1, '../images/', '8.png'),
-(9, 1, '../videos/', '9.mp4');
+(12, 1, '../images/', '12.png');
 
 -- --------------------------------------------------------
 
@@ -69,8 +68,6 @@ INSERT INTO `file` (`id`, `user_id`, `file_path`, `file_name`) VALUES
 CREATE TABLE `menu` (
   `menu_id` bigint(20) NOT NULL,
   `page_id` bigint(20) NOT NULL,
-  `website_id` bigint(20) NOT NULL,
-  `user_id` bigint(20) NOT NULL,
   `parent_menu` bigint(20) NOT NULL,
   PRIMARY KEY  (`menu_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -83,23 +80,56 @@ CREATE TABLE `menu` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `page`
+--
+
+CREATE TABLE `page` (
+  `page_id` bigint(20) NOT NULL auto_increment,
+  `website_id` bigint(20) NOT NULL,
+  `page_name` varchar(100) NOT NULL,
+  `page_content` text NOT NULL,
+  `page_status` varchar(10) NOT NULL default 'Active',
+  `parent_id` bigint(20) NOT NULL default '0',
+  `menu` varchar(5) NOT NULL default 'No',
+  `submenu` varchar(5) NOT NULL default 'No',
+  PRIMARY KEY  (`page_id`),
+  UNIQUE KEY `page_id` (`page_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `page`
+--
+
+INSERT INTO `page` (`page_id`, `website_id`, `page_name`, `page_content`, `page_status`, `parent_id`, `menu`, `submenu`) VALUES
+(1, 1, 'Home', 'Body content will display here', 'Active', 0, 'No', 'No'),
+(2, 1, 'Services', 'Body content will display here', 'Active', 0, 'No', 'No'),
+(3, 1, 'Carreers', 'Body content will display here', 'Active', 0, 'No', 'No'),
+(4, 1, 'sitemap', 'Body content will display here', 'Active', 0, 'No', 'No');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `seo_settings`
 --
 
 CREATE TABLE `seo_settings` (
   `id` bigint(20) NOT NULL auto_increment,
   `website_id` bigint(20) NOT NULL,
-  `keyword` varchar(100) NOT NULL,
-  `meta_tag` varchar(100) NOT NULL,
+  `keyword` text NOT NULL,
+  `meta_tag` text NOT NULL,
   `site_title` varchar(100) NOT NULL,
-  `meta_description` varchar(500) NOT NULL,
+  `meta_description` text NOT NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `seo_settings`
 --
 
+INSERT INTO `seo_settings` (`id`, `website_id`, `keyword`, `meta_tag`, `site_title`, `meta_description`) VALUES
+(1, 1, 'asdad', 'asdasd', 'asdas', 'sadasd'),
+(2, 1, 'asdasd', 'asdasd', 'asdasd', 'asdsadasd\r\nasdsad'),
+(3, 1, 'asdasd', 'asdasd', 'asdasd', 'asdsad');
 
 -- --------------------------------------------------------
 
@@ -189,16 +219,23 @@ INSERT INTO `userinfo` (`id`, `name`, `username`, `password`, `phone`, `email`, 
 --
 
 CREATE TABLE `website` (
-  `website_id` bigint(20) NOT NULL,
+  `website_id` bigint(20) NOT NULL auto_increment,
   `user_id` bigint(20) NOT NULL,
   `website_name` varchar(100) NOT NULL,
   PRIMARY KEY  (`website_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
 -- Dumping data for table `website`
 --
 
+INSERT INTO `website` (`website_id`, `user_id`, `website_name`) VALUES
+(1, 1, 'adasd'),
+(2, 1, 'asdasdsad'),
+(3, 1, 'ASasaSAs'),
+(4, 1, 'sadasdasd'),
+(5, 1, 'asdasdas'),
+(6, 1, 'asdsad');
 
 --
 -- Constraints for dumped tables
