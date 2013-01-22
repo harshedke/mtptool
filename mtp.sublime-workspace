@@ -4,6 +4,106 @@
 		"selected_items":
 		[
 			[
+				"add",
+				"addpage"
+			],
+			[
+				"h",
+				"h2	Tag"
+			],
+			[
+				"pag",
+				"page_name"
+			],
+			[
+				"de",
+				"default_status"
+			],
+			[
+				"we",
+				"website_id"
+			],
+			[
+				"inc",
+				"incl1	include_once …"
+			],
+			[
+				"websit",
+				"website"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"fo",
+				"form"
+			],
+			[
+				"i",
+				"input	Tag"
+			],
+			[
+				"c",
+				"cnt"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"sett",
+				"settings"
+			],
+			[
+				"re",
+				"result"
+			],
+			[
+				"er",
+				"error_log"
+			],
+			[
+				"key",
+				"keywords"
+			],
+			[
+				"s",
+				"seo-form"
+			],
+			[
+				"r",
+				"result"
+			],
+			[
+				"web",
+				"website"
+			],
+			[
+				"website",
+				"website_name"
+			],
+			[
+				"t",
+				"td	Tag"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"B",
+				"Back"
+			],
+			[
+				"a",
+				"argument"
+			],
+			[
+				"al",
+				"alert"
+			],
+			[
 				"ba",
 				"background-color"
 			],
@@ -22,10 +122,6 @@
 			[
 				"di",
 				"display"
-			],
-			[
-				"user",
-				"username"
 			],
 			[
 				"unse",
@@ -108,10 +204,6 @@
 				"file_path"
 			],
 			[
-				"r",
-				"row"
-			],
-			[
 				"u",
 				"user_id"
 			],
@@ -152,10 +244,6 @@
 				"script"
 			],
 			[
-				"t",
-				"target_path"
-			],
-			[
 				"imag",
 				"image_name"
 			],
@@ -192,16 +280,8 @@
 				"alphanum"
 			],
 			[
-				"al",
-				"alpha"
-			],
-			[
 				"p",
 				"password"
-			],
-			[
-				"fo",
-				"focus"
 			],
 			[
 				"ge",
@@ -224,16 +304,8 @@
 				"database"
 			],
 			[
-				"re",
-				"result"
-			],
-			[
 				"con",
 				"confirmpassword"
-			],
-			[
-				"in",
-				"input	Tag"
 			],
 			[
 				"for",
@@ -259,60 +331,48 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/C/wamp/www/twitteroauth-master/html.inc",
-			"settings":
-			{
-				"buffer_size": 449,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/C/wamp/www/twitteroauth-master/index.php",
-			"settings":
-			{
-				"buffer_size": 1647,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "logout.php",
-			"settings":
-			{
-				"buffer_size": 107,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "index.php",
-			"settings":
-			{
-				"buffer_size": 711,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 361.0,
 		"selected_items":
 		[
 			[
+				"git",
+				"Git: Gui"
+			],
+			[
 				"",
-				"About"
+				"Git: Diff Staged"
+			],
+			[
+				"add",
+				"Git: Add..."
 			],
 			[
 				"cu",
 				"Git: Custom Command"
 			],
 			[
-				"ad",
-				"Git: Add..."
+				"push",
+				"Git: Push"
+			],
+			[
+				"gi",
+				"Git: Status"
+			],
+			[
+				"cus",
+				"Git: Custom Command"
 			],
 			[
 				"sta",
 				"Git: Status"
+			],
+			[
+				"ad",
+				"Git: Add..."
 			],
 			[
 				"st",
@@ -321,18 +381,6 @@
 			[
 				"cust",
 				"Git: Custom Command"
-			],
-			[
-				"cus",
-				"Git: Custom Command"
-			],
-			[
-				"git",
-				"Git: Status"
-			],
-			[
-				"add",
-				"Git: Add..."
 			],
 			[
 				"cut",
@@ -351,10 +399,6 @@
 				"Git: Status"
 			],
 			[
-				"push",
-				"Git: Push"
-			],
-			[
 				"Package Control: ",
 				"Package Control: List Packages"
 			],
@@ -369,10 +413,6 @@
 			[
 				"Package Control: in",
 				"Package Control: Install Package"
-			],
-			[
-				"gi",
-				"Git: Init"
 			],
 			[
 				"Package Control: li",
@@ -523,7 +563,7 @@
 				"Git: Fetch"
 			]
 		],
-		"width": 400.0
+		"width": 512.0
 	},
 	"console":
 	{
@@ -540,28 +580,44 @@
 	},
 	"file_history":
 	[
+		"/C/wamp/www/MTP/includes/seo-tags-processing.php",
+		"/C/wamp/www/MTP/includes/login-processing.php",
+		"/C/wamp/www/MTP/edit-file.php",
+		"/C/wamp/www/MTP/view-file.php",
+		"/C/wamp/www/MTP/includes/website.php",
+		"/C/wamp/www/MTP/includes/add-pages-processing.php",
+		"/C/wamp/www/MTP/add-pages.php",
+		"/C/wamp/www/websachin/public/viewpages.php",
+		"/C/wamp/www/MTP/seo-settings.php",
+		"/C/wamp/www/MTP/includes/add-pages.php",
+		"/C/wamp/www/1.php",
+		"/C/wamp/www/MTP/hello.php",
+		"/C/wamp/www/MTP/1.php",
+		"/C/wamp/www/MTP/menu.php",
+		"/C/wamp/www/MTP/includes/initialize.ph",
+		"/C/wamp/www/MTP/upload-file.php",
+		"/C/wamp/www/MTP/includes/register-processing.php",
+		"/C/wamp/www/MTP/js/validation.js",
+		"/C/wamp/www/MTP/index.php",
+		"/C/wamp/www/MTP/includes/user.php",
+		"/C/wamp/www/MTP/stylesheet/stylesheet.css",
+		"/C/wamp/www/MTP/register.php",
+		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+		"/C/wamp/www/index.php",
+		"/C/wamp/www/twitteroauth-master/html.inc",
+		"/C/wamp/www/twitteroauth-master/index.php",
+		"/C/wamp/www/MTP/logout.php",
 		"/C/wamp/www/twitteroauth-master/logout.php",
 		"/C/wamp/www/MTP/instructions.php",
-		"/C/wamp/www/MTP/includes/login-processing.php",
-		"/C/wamp/www/MTP/includes/user.php",
 		"/C/wamp/www/websachin/Facebook2/config/functions.php",
 		"/C/wamp/www/websachin/Facebook2/facebook/facebook.php",
 		"/C/wamp/www/websachin/Facebook2/config/fbconfig.php",
-		"/C/wamp/www/MTP/register.php",
-		"/C/wamp/www/MTP/upload-file.php",
-		"/C/wamp/www/MTP/stylesheet/stylesheet.css",
-		"/C/wamp/www/MTP/view-file.php",
-		"/C/wamp/www/MTP/edit-file.php",
 		"/C/wamp/www/websachin/Facebook2/home.php",
-		"/C/wamp/www/MTP/index.php",
-		"/C/wamp/www/MTP/menu.php",
-		"/C/wamp/www/MTP/logout.php",
 		"/C/wamp/www/MTP/COMMIT_EDITMSG.COMMIT_EDITMSG",
 		"/C/wamp/www/MTP/twitter.test",
 		"/C/WINDOWS/system32/drivers/etc/hosts",
 		"/C/wamp/www/MTP/test.php",
 		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/Git/Git.sublime-settings",
-		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Package Control.sublime-settings",
 		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Git.sublime-settings",
 		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/C/Documents and Settings/Admin/.ssh/id_rsa.pub",
@@ -571,7 +627,6 @@
 		"/C/wamp/www/tinymce_3.5.8/tinymce/examples/index.html",
 		"/D/New Folder/Finance/public/viewvoucher.php",
 		"/C/wamp/www/MTP/includes/edit-file.php",
-		"/C/wamp/www/MTP/js/validation.js",
 		"/C/wamp/www/MTP/header.php",
 		"/D/New Folder/Finance/public/menu.php",
 		"/C/wamp/www/MTP/includes/dbconnect.php",
@@ -622,9 +677,21 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
+			"file",
+			"processing",
+			"',",
+			"	",
+			"] => ",
+			"[",
+			".\";",
+			"$error .=\"\";",
+			"$error .=;",
+			"Enter",
+			"seo-form",
+			"website",
 			"</button>",
 			"<button>",
 			"$file",
@@ -668,124 +735,17 @@
 		"replace_history":
 		[
 		],
-		"reverse": false,
+		"reverse": true,
 		"show_context": true,
 		"use_buffer2": true,
-		"whole_word": false,
-		"wrap": true
+		"whole_word": true,
+		"wrap": false
 	},
 	"groups":
 	[
 		{
-			"selected": 2,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/C/wamp/www/twitteroauth-master/html.inc",
-					"settings":
-					{
-						"buffer_size": 449,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								158,
-								158
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/C/wamp/www/twitteroauth-master/index.php",
-					"settings":
-					{
-						"buffer_size": 1647,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 57.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "logout.php",
-					"settings":
-					{
-						"buffer_size": 107,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								107,
-								107
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "index.php",
-					"settings":
-					{
-						"buffer_size": 711,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								678,
-								678
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -822,7 +782,7 @@
 	"menu_visible": true,
 	"output.git":
 	{
-		"height": 103.0
+		"height": 181.0
 	},
 	"replace":
 	{
@@ -836,7 +796,7 @@
 		[
 			[
 				"",
-				"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings"
+				"includes/login-processing.php"
 			]
 		],
 		"width": 0.0
@@ -853,6 +813,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 170.0,
+	"side_bar_width": 222.0,
 	"status_bar_visible": true
 }

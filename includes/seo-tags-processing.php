@@ -1,21 +1,13 @@
 <?php
- //print_r($_POST);
-// echo "<br>";
 include_once('website.php');
 if (isset($_POST['btnsubmit'])) {
-	// foreach ($_POST as $key => $value) {
-	// 	if (empty($value)) {
-	// 		echo" Please enter ".$key."<br>";
-	// 	}
-	// }
-
-	$websitename = $_POST['websitename'];
+	$website_id = $_POST['website_id'];
 	$keywords = $_POST['keywords'];
 	$metatags = $_POST['metatags'];
 	$sitetitle = $_POST['sitetitle'];
 	$description = $_POST['description'];
 	$error = '';
-	if (empty($websitename)) {
+	if (empty($website_id)) {
 		// $error .= "Please select website.";
 		$error .= "Please enter website.<br>";
 	}
@@ -37,8 +29,6 @@ if (isset($_POST['btnsubmit'])) {
 		$website = new Website();
 		$website_id =1;
 		$result = $website->setseotags($website_id,$keywords,$metatags,$sitetitle,$description);
-		// echo "string ".$result;
-		// echo "<br>string ".$website->rowsaffected();
 		if ($website->rowsaffected()>0) {
 			echo "<script>alert('SEO settings has been updated.')</script>";
 			echo "<script>window.location.href='../seo-settings.php'</script>";

@@ -34,7 +34,7 @@ if ($_SESSION['username'] != null) {
 		
 		$pos =strpos($filename, '/');
 		$filename = substr($filename, $pos+1);
-		// echo "<br>test Path".$filename."<br>";
+		 echo "<br>test Path".$filename."<br>";
 		unlink($filename);
 		$result = $file->deletefile($id);
 		if ($file->affected_rows()>0) {
