@@ -351,13 +351,41 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "js/jquery_function.js",
+			"settings":
+			{
+				"buffer_size": 2764,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "create-website.php",
+			"settings":
+			{
+				"buffer_size": 1055,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 265.0,
+		"height": 361.0,
 		"selected_items":
 		[
+			[
+				"cu",
+				"Git: Custom Command"
+			],
+			[
+				"ad",
+				"Git: Add..."
+			],
+			[
+				"a",
+				"Git: Add..."
+			],
 			[
 				"st",
 				"Git: Status"
@@ -369,10 +397,6 @@
 			[
 				"sta",
 				"Git: Status"
-			],
-			[
-				"cu",
-				"Git: Custom Command"
 			],
 			[
 				"add",
@@ -393,10 +417,6 @@
 			[
 				"cus",
 				"Git: Custom Command"
-			],
-			[
-				"ad",
-				"Git: Add..."
 			],
 			[
 				"cust",
@@ -583,7 +603,7 @@
 				"Git: Fetch"
 			]
 		],
-		"width": 512.0
+		"width": 416.0
 	},
 	"console":
 	{
@@ -789,8 +809,65 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "js/jquery_function.js",
+					"settings":
+					{
+						"buffer_size": 2764,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								240,
+								240
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "create-website.php",
+					"settings":
+					{
+						"buffer_size": 1055,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								931,
+								931
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],

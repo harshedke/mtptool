@@ -76,17 +76,21 @@ $(function () {
     }
     
     function addToUsers(form,that) {
-        var website_name =$('[name="name"]', form);
+        var websitename =$('[name="name"]', form);
+        website_name = websitename.val();
         var host =window.location.hostname;
-        $.ajax ({
-            url:"http://"+host+"/MTP/includes/website-processing.php",
-            data:"website_name="+website_name.val(),
-            success: function(result){
-                $(that).dialog("close");
-                 // document.location.path = "create-website.php";
-                 window.location.href ='http://'+host+'/MTP/create-website.php';
-            }
-        });
-        // $("#websites tbody").append("<tr>" + "<td>" + website_name.val() + "</td></tr>");
+        jQuery.post("includes/website-processing.php", 
+                {website_name:website_name},
+                function(data, textStatus){
+                if(data == 1){
+
+                    $(that).dialog("close");
+                    window.location.href ='http://'+host+'/MTP/create-website.php';
+                }else{
+                    $(that).dialog("close");
+                    alert('Some error occurred,please try agian');
+                }
+        
+             });
     }
 });

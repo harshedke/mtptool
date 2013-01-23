@@ -174,6 +174,32 @@ function validateseoform () {
 	}
 
 }
+
+function validatepagename () {
+	// x=document.forms["add-pages-form"][""].value.trim();
+
+	x = document.getElementsByName('page[]');
+	for ( var i = 0; i <= x.length; i++ ){
+			
+        if ( x[i].value == "" || x[i].value == null ) {
+            alert("Enter name of page "+(i+1));
+            x[i].focus();
+            return false;
+        }
+    }
+   /* alert('rusty');
+    x=document.forms["add-pages-form"]["page"].value.trim();
+	if (x==null || x=="")
+	{
+		alert('rusty inside');
+		error="Enter page name..";
+		alert(error);
+		document.forms["add-pages-form"]["page"].focus();
+		return false;
+	}
+	*/
+}
+
 /*
 x=document.forms[""][""].value.trim();
 	if (x==null || x=="")

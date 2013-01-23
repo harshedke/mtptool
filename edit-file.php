@@ -5,12 +5,47 @@ if ($_SESSION['username'] != null) {
 	include_once('header.php');
 	include_once('menu.php');
 	include_once('includes/file.php');
+	include_once('includes/user.php');
 	$action = $_GET['action'];
 	$id = $_GET['id'];
-	$user_id = $_GET['user_id'];
+	$username = $_SESSION['username'];
+	$file = new Fileclass();
 	// echo "Action:".$action." Id:".$id." User_id :".$user_id;
+	if ($action == 'replace') {
+		error_log("in Replace");
+	echo"<h3>Select image to replace with </h3><br>";
+	$file = new Fileclass();
+	$user = new User();
+	$result = $user->getuserid($username);
+	$row = $user->fetch_object($result);
+	$user_id = $row->id;
+	$result = $file->gettrashfiles($user_id);
+	if ($file->num_rows($result)>0) {
+			
+		
+		while ($row = $user->fetch_object($result)) {
+			$id = $row->id;
+			$file = $row->file_path.$row->file_name;
+			$pos =strpos($file, '/');
+			$filename = substr($file, $pos+1);
+			error_log("".$file .", ".$filename);
+	?>
+		<img src='<?php echo $file; ?>' height='100' width='100'>
+		<?php echo "<a href='edit-file.php?action=replace&id=$id'> Replace</a>";?>
+		<?php echo " |<a href='edit-file.php?action=edit&id=$id'> Edit</a>";?>
+		<?php echo " |<a href='edit-file.php?action=delete&id=$id'> Delete</a>";?>
+	<?php
+		}
+	} else {
+		echo "No files found.";
+	}
+
+?>
 
 
+
+	<?php
+	}
 	if ($action == 'edit') {
 		// echo "Editing image";
 	?>
@@ -26,18 +61,23 @@ if ($_SESSION['username'] != null) {
 	}
 	if ($action == 'delete') {
 		// echo "Deleting image";
-
-		$file = new Fileclass();
+		$backup_path = "backup/";
+	
 		$result = $file->getfile($id);
 		$row = $file->fetch_object($result);
-		$filename = $row->file_path.$row->file_name;
-		
-		$pos =strpos($filename, '/');
-		$filename = substr($filename, $pos+1);
-		// unlink($filename);
-		error_log($filename);
-		copy($filename, "backup/".$filename);
-		$result = $file->deletefile($id);
+		$filename = $row->file_name;
+		$filepath =  $row->file_path;
+		// error_log("File path:".$filepath.",Name:".$filename);
+		$pos = strpos($filepath, '/');
+		$filepath = substr($filepath, $pos+1);
+		$destination_path = $backup_path.$filepath.$filename;
+		$source_path = $filepath.$filename;
+		// error_log("source_path:".$source_path.",destination_path:".$destination_path);
+		copy($source_path, $destination_path);
+		unlink($filepath.$filename);
+		$target_path = $backup_path.$filepath;
+		// error_log("Backup path :".$target_path);
+		$result = $file->movetotrash($id,$target_path);
 		if ($file->affected_rows()>0) {
 			echo "<script>alert('File has been deleted');</script>";
 			echo "<script>window.location.href='view-file.php'</script>";

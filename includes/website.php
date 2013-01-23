@@ -27,12 +27,25 @@ class Website
 		return $result_set;	
 	}
 
-	public function addpage($website_id,$page_name,$default_content)
+	public function addpage($website_id,$page_name,$default_content,$arrayflag)
 	{
-		$query ="INSERT INTO page (website_id, page_name, page_content) VALUES('$website_id','$page_name','$default_content')";
+		if ($arrayflag ==1 ) {
+			$query ="INSERT INTO page (website_id, page_name, page_content) VALUES";
+			$i=0;
+			foreach ($page_name as $key => $value) {
+				$page = trim($value);
+				$query .= "('$website_id','$page','$default_content')";
+				if ($i < count($page_name)-1 ) {
+					$query .= ",";
+				}
+				$i++;
+			}
+		}else{
+			$query ="INSERT INTO page (website_id, page_name, page_content) VALUES('$website_id','$page_name','$default_content')";
+		}
 		error_log($query);
 		$result_set = $this->database->query($query);
-		return $result_set;		
+		return $result_set;	
 	}
 
 	public function setseotags($website_id,$keywords,$sitetitle,$description)

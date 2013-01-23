@@ -29,7 +29,7 @@ class Fileclass
 
 	public function getuserfiles($user_id) 
 	{
-		$query ="SELECT id, file_path , file_name FROM file WHERE user_id='$user_id'";
+		$query ="SELECT id, file_path , file_name FROM file WHERE user_id='$user_id' AND trashflag=0";
 		$result_set = $this->database->query($query);
 		return $result_set;
 	}
@@ -40,13 +40,20 @@ class Fileclass
 		$result_set = $this->database->query($query);
 		return $result_set;
 	}
-	public function deletefile($id)
+	public function movetotrash($id,$target_path=null)
 	{
-		$query ="DELETE FROM file WHERE id='$id'";
+		$query = "UPDATE file SET file_path='$target_path' ,trashflag = '1' WHERE id= '$id'";
+	//	$query ="DELETE FROM file WHERE id='$id'";
 		$result_set = $this->database->query($query);
 		return $result_set;
 	}
 
+	public function gettrashfiles($user_id)
+	{
+		$query ="SELECT id, file_path , file_name FROM file WHERE user_id='$user_id' AND trashflag=1";
+		$result_set = $this->database->query($query);
+		return $result_set;
+	}
 	public function editfile($id,$target_path,$file_name)
 	{
 		$query ="UPDATE file SET file_path='$target_path',file_name='$file_name' WHERE id='$id'";

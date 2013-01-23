@@ -38,10 +38,9 @@ if ($_SESSION['username'] != null) {
 			// echo "$file $filename";
 ?>
 		<img src='<?php echo $filename; ?>' height='100' width='100'>
-		<!-- <button><a href="<?php echo 'editfile.php?action=edit&id=$id&userid=$user_id';?>"></a>Edit</button>
-		<button><a href="<?php echo 'editfile.php?action=delete&id=$id&userid=$user_id';?>"></a>Delete</button><br> -->
-		<?php echo "<a href='edit-file.php?action=edit&id=$id'> Edit</a>";?>
-		<?php echo "<a href='edit-file.php?action=delete&id=$id'> Delete</a>";?>
+		<?php echo "<a href='edit-file.php?action=replace&id=$id'> Replace</a>";?>
+		<?php echo " |<a href='edit-file.php?action=edit&id=$id'> Edit</a>";?>
+		<?php echo " |<a href='edit-file.php?action=delete&id=$id'> Delete</a>";?>
 <?php
 		}
 	} else {

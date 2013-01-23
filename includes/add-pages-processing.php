@@ -5,15 +5,39 @@ $website = new Website();
 // print_r($_POST);
 $default_content = 'Body content will display here';
 $website_id =1;
-foreach ($_POST['page'] as $key => $page_name) {
-	$result = $website->addpage($website_id,trim($page_name),$default_content);
-	if ($website->rowsaffected()>0) {
-		echo "<script>alert('".$page_name." created successfully')</script>";
-		echo "<script>window.location.href= '../add-pages.php'</script>";
+$arrayflag =0;
+if (is_array($_POST['page'])) {
+	$arrayflag=1;
+} 
+$page = $_POST['page'];
+$result = $website->addpage($website_id,$page,$default_content,$arrayflag);
+if ($website->rowsaffected()>0) {
+	if ($arrayflag == 1) {
+		echo "<script>alert('All pages are created successfully')</script>";
+	} else
+	{
+		echo "<script>alert('Page created successfully')</script>";
 	}
-	else {
-		echo "<script>alert('".$page_name." not created.some error occurred')</script>";	
-		echo "<script>window.location.href= '../add-pages.php'</script>";
-	}
+	echo "<script>window.location.href= '../add-pages.php'</script>";
+}else {
+if ($arrayflag == 1) {
+	echo "<script>alert('Pages not created,some error occurred')</script>";	
+} else {
+	echo "<script>alert('Page not created,some error occurred')</script>";	
 }
+echo "<script>window.location.href= '../add-pages.php'</script>";
+}
+
+// foreach ($_POST['page'] as $key => $page_name) {
+// 		$result = $website->addpage($website_id,trim($page_name),$default_content);
+// 		if ($website->rowsaffected()>0) {
+// 			echo "<script>alert('All pages are created successfully')</script>";
+// 			echo "<script>window.location.href= '../add-pages.php'</script>";
+// 		}
+// 		else {
+// 			echo "<script>alert('Pages not created,some error occurred')</script>";	
+// 			echo "<script>window.location.href= '../add-pages.php'</script>";
+// 		}
+// 	}
+
 ?>
