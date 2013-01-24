@@ -9,14 +9,14 @@ include_once('menu.php');
 <body>
 	<h2>Add Pages</h2>
 	<hr>
-	<form method='POST' action='add-pages.php'>
-		Number of pages :<input type= 'text' name='pagecount'><br>
-		<button type='Submit' name='ok'>Ok</button>
+	<form name= 'add-page-form'method='POST' action='add-pages.php' autocomplete='off'>
+		Number of pages :<input type= 'text' name='pagecount' value =<?php if(isset($_POST['pagecount'])) echo ''.$_POST['pagecount']; ?>><br>
+		<button type='Submit' name='ok' onclick = 'return validatepagecount()'>Ok</button>
 	</form>
 	<?php 
 		if (isset($_POST['ok'])) {
 	?>
-	<form name = 'add-pages-form' method= 'POST' action='includes/add-pages-processing.php' >
+	<form name = 'add-pages-form' method= 'POST' action='includes/add-pages-processing.php' autocomplete='off'>
 	<?php
 		$cnt=$_POST['pagecount'];
 		echo "Number of pages you want : ".$cnt."<br>";
@@ -33,9 +33,9 @@ include_once('menu.php');
 	<?php
 		}
 		else {
-			echo "Enter name of Page :<input type='text' name ='page[]'> ";	
+			echo "Enter name of Page :<input type='text' name ='page'> ";	
 	?>
-	<input type='submit' name='btnsubmit' value='Create' onclick= "return validatepagename()">
+	<input type='submit' name='btnsubmit' value='Create' onclick= "return validatesinglepagename()">
 	<?php 
 		}
 	?>

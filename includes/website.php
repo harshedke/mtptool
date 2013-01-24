@@ -56,6 +56,20 @@ class Website
 		return $result_set;
 	}
 
+	public function getseotags($website_id)
+	{
+		$query ="SELECT site_title ,keyword, meta_description FROM seo_settings WHERE website_id = '$website_id'";
+		error_log($query);
+		$result_set = $this->database->query($query);
+		return $result_set;	
+	}
+	public function updateseotags($website_id,$keywords,$sitetitle,$description)
+	{
+		$query ="UPDATE seo_settings set keyword = '$keywords',site_title = '$sitetitle', meta_description = '$description' WHERE website_id = '$website_id'";
+		error_log($query);
+		$result_set = $this->database->query($query);
+		return $result_set;
+	}
 	public function getwebsites($user_id)
 	{
 		error_log("User id:".$user_id);
@@ -81,6 +95,11 @@ class Website
 	public function fetch_array($result_set)
 	{
 		return $this->database->fetch_array($result_set);	
+	}
+	
+	public function fetch_assoc($result_set)
+	{
+		return $this->database->fetch_assoc($result_set);
 	}
 }
 ?>

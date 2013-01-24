@@ -83,5 +83,9 @@ class DBConnection
 	{
 		return mysql_fetch_object($result_set);
 	}
+	public function fetch_assoc($result_set)
+	{
+		return mysql_fetch_assoc($result_set);
+	}
 }
 ?>

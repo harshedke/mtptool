@@ -4,12 +4,152 @@
 		"selected_items":
 		[
 			[
+				"re",
+				"ret	return"
+			],
+			[
+				"po",
+				"posting"
+			],
+			[
+				"s",
+				"script	Tag"
+			],
+			[
+				"pos",
+				"posting"
+			],
+			[
+				"si",
+				"site_title"
+			],
+			[
+				"de",
+				"description"
+			],
+			[
+				"page",
+				"pagecount"
+			],
+			[
+				"met",
+				"metdescription"
+			],
+			[
+				"mysql_fet",
+				"mysql_fetch_assoc"
+			],
+			[
+				"meta",
+				"meta_description"
+			],
+			[
+				"ro",
+				"row"
+			],
+			[
+				"key",
+				"keyword"
+			],
+			[
+				"WEB",
+				"website_id"
+			],
+			[
+				"inc",
+				"include_once"
+			],
+			[
+				"user",
+				"user"
+			],
+			[
+				"we",
+				"website"
+			],
+			[
+				"r",
+				"row"
+			],
+			[
+				"fe",
+				"fetch_object"
+			],
+			[
+				"p",
+				"page_name"
+			],
+			[
+				"pag",
+				"page_array"
+			],
+			[
+				"f",
+				"for	for …"
+			],
+			[
+				"a",
+				"arrayflag"
+			],
+			[
+				"is_",
+				"is_array"
+			],
+			[
+				"get",
+				"getElementsByName"
+			],
+			[
+				"rep",
+				"Replace"
+			],
+			[
+				"err",
+				"error_log"
+			],
+			[
+				"h",
+				"h4	Tag"
+			],
+			[
+				"ba",
+				"backup_path"
+			],
+			[
 				"fil",
 				"filename"
 			],
 			[
-				"f",
+				"so",
+				"source_path"
+			],
+			[
+				"back",
+				"backup_path"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"fi",
 				"file_name"
+			],
+			[
+				"file_",
+				"file_path"
+			],
+			[
+				"co",
+				"copy"
+			],
+			[
+				"te",
+				"textStatus"
+			],
+			[
+				"w",
+				"website"
 			],
 			[
 				"tr",
@@ -32,40 +172,12 @@
 				"_SESSION"
 			],
 			[
-				"re",
-				"result_set"
-			],
-			[
-				"we",
-				"website"
-			],
-			[
 				"add",
 				"addwebsite"
 			],
 			[
-				"h",
-				"h2	Tag"
-			],
-			[
-				"pag",
-				"page_name"
-			],
-			[
-				"de",
-				"default_status"
-			],
-			[
-				"inc",
-				"incl1	include_once …"
-			],
-			[
 				"websit",
 				"website"
-			],
-			[
-				"user",
-				"user_id"
 			],
 			[
 				"fo",
@@ -92,18 +204,6 @@
 				"error_log"
 			],
 			[
-				"key",
-				"keywords"
-			],
-			[
-				"s",
-				"seo-form"
-			],
-			[
-				"r",
-				"result"
-			],
-			[
 				"web",
 				"website"
 			],
@@ -124,28 +224,12 @@
 				"Back"
 			],
 			[
-				"a",
-				"argument"
-			],
-			[
 				"al",
 				"alert"
 			],
 			[
-				"ba",
-				"background-color"
-			],
-			[
 				"bo",
 				"border-style"
-			],
-			[
-				"co",
-				"color"
-			],
-			[
-				"te",
-				"text-decoration"
 			],
 			[
 				"di",
@@ -200,10 +284,6 @@
 				"else"
 			],
 			[
-				"file",
-				"file"
-			],
-			[
 				"na",
 				"name"
 			],
@@ -218,10 +298,6 @@
 			[
 				"use",
 				"user_id"
-			],
-			[
-				"fi",
-				"file"
 			],
 			[
 				"u",
@@ -300,10 +376,6 @@
 				"alphanum"
 			],
 			[
-				"p",
-				"password"
-			],
-			[
 				"ge",
 				"getElementById"
 			],
@@ -355,7 +427,23 @@
 			"file": "js/jquery_function.js",
 			"settings":
 			{
-				"buffer_size": 2764,
+				"buffer_size": 3320,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "add-pages.php",
+			"settings":
+			{
+				"buffer_size": 1260,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "includes/add-pages-processing.php",
+			"settings":
+			{
+				"buffer_size": 848,
 				"line_ending": "Windows"
 			}
 		},
@@ -371,9 +459,21 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 361.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"spa",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"tra",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
 			[
 				"cu",
 				"Git: Custom Command"
@@ -603,7 +703,7 @@
 				"Git: Fetch"
 			]
 		],
-		"width": 416.0
+		"width": 400.0
 	},
 	"console":
 	{
@@ -620,15 +720,30 @@
 	},
 	"file_history":
 	[
-		"/C/wamp/www/MTP/edit-file.php",
-		"/C/wamp/www/MTP/includes/edit-file-processing.php",
-		"/C/wamp/www/MTP/js/validation.js",
-		"/C/wamp/www/MTP/includes/register-processing.php",
+		"/C/wamp/www/menupopup/1.php",
+		"/C/wamp/www/MTP/seo-settings.php",
+		"/C/wamp/www/MTP/js/jquery_function.js",
 		"/C/wamp/www/MTP/includes/website.php",
-		"/C/wamp/www/MTP/includes/website-processing.php",
 		"/C/wamp/www/MTP/includes/seo-tags-processing.php",
-		"/C/wamp/www/MTP/includes/login-processing.php",
+		"/C/wamp/www/Seo-settings/seo-settings.php",
+		"/C/wamp/www/Seo-settings/includes/seo-tags-processing.php",
+		"/C/wamp/www/Seo-settings/js/jquery_function.js",
+		"/C/wamp/www/Seo-settings/includes/website.php",
+		"/C/wamp/www/MTP/add-pages.php",
+		"/C/wamp/www/MTP/includes/get-seo-tags.php",
+		"/C/wamp/www/MTP/includes/dbconnect.php",
+		"/C/wamp/www/MTP/includes/user.php",
+		"/C/wamp/www/MTP/includes/website-processing.php",
+		"/C/wamp/www/MTP/create-website.php",
+		"/C/wamp/www/MTP/edit-file.php",
+		"/C/wamp/www/MTP/includes/file.php",
+		"/C/wamp/www/MTP/view-file.php",
 		"/C/wamp/www/MTP/includes/add-pages-processing.php",
+		"/C/wamp/www/MTP/js/validation.js",
+		"/C/wamp/www/MTP/menu.php",
+		"/C/wamp/www/MTP/includes/edit-file-processing.php",
+		"/C/wamp/www/MTP/includes/register-processing.php",
+		"/C/wamp/www/MTP/includes/login-processing.php",
 		"/C/wamp/www/popup/create-website.php",
 		"/C/wamp/www/popup/includes/website.php",
 		"/C/wamp/www/popup/includes/website-processing.php",
@@ -642,14 +757,9 @@
 		"/C/wamp/www/popup/includes/dbconnect.php",
 		"/C/wamp/www/popup/stylesheet/jquery-ui.css",
 		"/C/wamp/www/popup/stylesheet/style.css",
-		"/C/wamp/www/MTP/menu.php",
-		"/C/wamp/www/MTP/js/jquery_function.js",
-		"/C/wamp/www/MTP/create-website.php",
 		"/C/wamp/www/MTP/hello.php",
-		"/C/wamp/www/MTP/includes/file.php",
 		"/C/wamp/www/MTP/upload-file.php",
 		"/C/wamp/www/MTP/includes/upload-file-processing.php",
-		"/C/wamp/www/MTP/seo-settings.php",
 		"/C/xampp/htdocs/1.php",
 		"/C/wamp/www/MTP/test.php",
 		"/C/wamp/www/MTP/1.php",
@@ -659,13 +769,10 @@
 		"/C/wamp/www/index.php",
 		"/C/wamp/www/1.php",
 		"/C/wamp/www/hello.php",
-		"/C/wamp/www/MTP/add-pages.php",
-		"/C/wamp/www/MTP/view-file.php",
 		"/C/wamp/www/websachin/public/viewpages.php",
 		"/C/wamp/www/MTP/includes/add-pages.php",
 		"/C/wamp/www/MTP/includes/initialize.ph",
 		"/C/wamp/www/MTP/index.php",
-		"/C/wamp/www/MTP/includes/user.php",
 		"/C/wamp/www/MTP/stylesheet/stylesheet.css",
 		"/C/wamp/www/MTP/register.php",
 		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Package Control.sublime-settings",
@@ -689,7 +796,6 @@
 		"/D/New Folder/Finance/public/viewvoucher.php",
 		"/C/wamp/www/MTP/includes/edit-file.php",
 		"/D/New Folder/Finance/public/menu.php",
-		"/C/wamp/www/MTP/includes/dbconnect.php",
 		"/C/wamp/www/MTP/queries.txt",
 		"/C/wamp/www/MTP/includes/dbconfig.php",
 		"/C/wamp/www/MTP/footer.php",
@@ -740,6 +846,17 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"\n",
+			"\n						",
+			"\n							",
+			"							\n",
+			"\n							",
+			"							\n",
+			"alert",
+			"']",
+			"['",
+			"->\n",
+			"fCode",
 			"$_POST[",
 			"];",
 			"$_POST",
@@ -809,7 +926,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -817,15 +934,15 @@
 					"file": "js/jquery_function.js",
 					"settings":
 					{
-						"buffer_size": 2764,
+						"buffer_size": 3320,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								240,
-								240
+								0,
+								0
 							]
 						],
 						"settings":
@@ -835,13 +952,67 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1380.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "add-pages.php",
+					"settings":
+					{
+						"buffer_size": 1260,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "includes/add-pages-processing.php",
+					"settings":
+					{
+						"buffer_size": 848,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 240.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "create-website.php",
 					"settings":
 					{
@@ -852,8 +1023,8 @@
 						"selection":
 						[
 							[
-								931,
-								931
+								765,
+								765
 							]
 						],
 						"settings":
@@ -863,7 +1034,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 300.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -939,6 +1110,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 170.0,
+	"side_bar_width": 129.0,
 	"status_bar_visible": true
 }

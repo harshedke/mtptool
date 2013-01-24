@@ -27,17 +27,4 @@ if ($arrayflag == 1) {
 }
 echo "<script>window.location.href= '../add-pages.php'</script>";
 }
-
-// foreach ($_POST['page'] as $key => $page_name) {
-// 		$result = $website->addpage($website_id,trim($page_name),$default_content);
-// 		if ($website->rowsaffected()>0) {
-// 			echo "<script>alert('All pages are created successfully')</script>";
-// 			echo "<script>window.location.href= '../add-pages.php'</script>";
-// 		}
-// 		else {
-// 			echo "<script>alert('Pages not created,some error occurred')</script>";	
-// 			echo "<script>window.location.href= '../add-pages.php'</script>";
-// 		}
-// 	}
-
 ?>

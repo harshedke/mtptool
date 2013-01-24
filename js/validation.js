@@ -174,10 +174,18 @@ function validateseoform () {
 	}
 
 }
-
+function validatepagecount () {
+	
+	x=document.forms["add-page-form"]["pagecount"].value.trim();
+	if (x==null || x=="")
+	{
+		error="Enter how many pages you want to create.";
+		alert(error);
+		document.forms["add-page-form"]["pagecount"].focus();
+		return false;
+	}
+}
 function validatepagename () {
-	// x=document.forms["add-pages-form"][""].value.trim();
-
 	x = document.getElementsByName('page[]');
 	for ( var i = 0; i <= x.length; i++ ){
 			
@@ -187,17 +195,17 @@ function validatepagename () {
             return false;
         }
     }
-   /* alert('rusty');
-    x=document.forms["add-pages-form"]["page"].value.trim();
+}
+
+function validatesinglepagename () {
+	x=document.forms["add-pages-form"]["page"].value.trim();
 	if (x==null || x=="")
 	{
-		alert('rusty inside');
-		error="Enter page name..";
+		error="Enter name of page.";
 		alert(error);
 		document.forms["add-pages-form"]["page"].focus();
 		return false;
-	}
-	*/
+	}	
 }
 
 /*

@@ -2,7 +2,7 @@ $(function () {
 
     var form = $('#newwebsite'),
         allFields = $(':text', form);
-        
+
     $("#dialog-form").dialog({
         autoOpen: false,
         height: 225,
@@ -34,7 +34,7 @@ $(function () {
     });
 
     // Form validation
-    
+
     function updateTips(t) {
         var tips = $(".validateTips");
 
@@ -67,19 +67,19 @@ $(function () {
     function validateFields(form) {
         var bValid = true,
             name = $('[name="name"]', form),
-     
+
         bValid = bValid && checkLength(name, "website name", 3, 16);
-     
-        bValid = bValid && checkRegexp(name, /^[a-z]([0-9a-z_])+$/i, "Website name may consist of a-z, 0-9, underscores, begin with a letter.");
-     
+
+        bValid = bValid && checkRegexp(name, /^[a-z]([0-9a-z_\ ])+$/i, "Website name may consist of a-z, 0-9, underscores, begin with a letter.");
+
         return bValid;
     }
-    
+
     function addToUsers(form,that) {
         var websitename =$('[name="name"]', form);
         website_name = websitename.val();
         var host =window.location.hostname;
-        jQuery.post("includes/website-processing.php", 
+        jQuery.post("includes/website-processing.php",
                 {website_name:website_name},
                 function(data, textStatus){
                 if(data == 1){
@@ -90,7 +90,23 @@ $(function () {
                     $(that).dialog("close");
                     alert('Some error occurred,please try agian');
                 }
-        
+
              });
     }
+});
+$(document).ready(function () {
+$('#website_id').change(function () {
+    var id = $(this).val();
+    var site_title, keywords, description ;
+    jQuery.post("includes/seo-tags-processing.php",
+        {id:id},
+        function(data, textStatus){
+                    $('#sitetitle').val(data.site_title);
+                    $('#keywords').val(data.keyword);
+                    $('#description').val(data.meta_description);
+                    $('#update').show();
+                    $('#save').hide();
+        },'json');
+    });
+$('#update').hide();
 });
