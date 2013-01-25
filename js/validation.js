@@ -1,5 +1,5 @@
 function validateregister () {
-	
+
 	var alpha="^[a-zA-Z\ \]+$";
 	var alphanum = "[a-zA-Z0-9]+$";
 	var error;
@@ -18,7 +18,7 @@ function validateregister () {
 		document.forms["registration-form"]["name"].value='';
 		document.forms["registration-form"]["name"].focus();
 		alert(error);
-		return false;	
+		return false;
 	}
 
 	x=document.forms["registration-form"]["email"].value.trim();
@@ -52,7 +52,7 @@ function validateregister () {
 		document.forms["registration-form"]["username"].value='';
 		document.forms["registration-form"]["username"].focus();
 		alert(error);
-		return false;	
+		return false;
 	}
 
 	x=document.forms["registration-form"]["password"].value.trim();
@@ -116,7 +116,7 @@ function goto (link) {
 }
 
 function validatelogin () {
-	
+
 	x=document.forms["login-form"]["username"].value.trim();
 	if (x==null || x=="")
 	{
@@ -175,7 +175,7 @@ function validateseoform () {
 
 }
 function validatepagecount () {
-	
+
 	x=document.forms["add-page-form"]["pagecount"].value.trim();
 	if (x==null || x=="")
 	{
@@ -188,7 +188,7 @@ function validatepagecount () {
 function validatepagename () {
 	x = document.getElementsByName('page[]');
 	for ( var i = 0; i <= x.length; i++ ){
-			
+
         if ( x[i].value == "" || x[i].value == null ) {
             alert("Enter name of page "+(i+1));
             x[i].focus();
@@ -205,7 +205,7 @@ function validatesinglepagename () {
 		alert(error);
 		document.forms["add-pages-form"]["page"].focus();
 		return false;
-	}	
+	}
 }
 
 /*

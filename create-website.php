@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 if ($_SESSION['username'] != null) {
     include_once('header.php');
@@ -20,7 +20,7 @@ if ($_SESSION['username'] != null) {
     <table id="websites" class="ui-widget ui-widget-content">
         <thead>
             <tr class="ui-widget-header ">
-                <th>Name</th>
+                <th colspan='2'>Name</th>
             </tr>
         </thead>
         <tbody>
@@ -32,7 +32,7 @@ if ($_SESSION['username'] != null) {
 </div>
 <button id="create-website">Create new website</button>
 </body>
-<?php 
+<?php
 include_once ('footer.php'); }
 else {
     header('Location: ./index.php');

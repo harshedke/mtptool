@@ -7,5 +7,5 @@
     <script src="js/jquery-ui.js"></script>
     <script type="text/javascript" src='js/jquery_function.js'></script>
     <link rel="stylesheet" href="stylesheet/style.css" />
-	<title></title>
+	<!-- <title></title> -->
 </head>

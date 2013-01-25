@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jan 22, 2013 at 10:14 AM
+-- Generation Time: Jan 25, 2013 at 08:34 AM
 -- Server version: 5.0.51
 -- PHP Version: 5.2.6
 
@@ -48,6 +48,7 @@ CREATE TABLE `file` (
   `user_id` bigint(20) NOT NULL,
   `file_path` varchar(100) NOT NULL,
   `file_name` varchar(50) NOT NULL,
+  `trashflag` tinyint(1) NOT NULL default '0',
   PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -55,10 +56,15 @@ CREATE TABLE `file` (
 -- Dumping data for table `file`
 --
 
-INSERT INTO `file` (`id`, `user_id`, `file_path`, `file_name`) VALUES
-(1, 1, '../images/', '1.jpg'),
-(2, 2, '../images/', '2.png'),
-(3, 2, '../images/', '3.png');
+INSERT INTO `file` (`id`, `user_id`, `file_path`, `file_name`, `trashflag`) VALUES
+(1, 1, '../images/', '1.png', 0),
+(2, 1, 'backup/images/', '2.jpeg', 1),
+(3, 1, 'backup/videos/', '3.mp4', 1),
+(4, 2, '../images/', '4.jpg', 0),
+(5, 2, 'backup/videos/', '5.mp4', 1),
+(6, 1, 'backup/images/', '6.jpeg', 1),
+(7, 1, '../images/', '7.png', 0),
+(8, 1, '../images/', '8.jpeg', 0);
 
 -- --------------------------------------------------------
 
@@ -95,12 +101,15 @@ CREATE TABLE `page` (
   `submenu` varchar(5) NOT NULL default 'No',
   PRIMARY KEY  (`page_id`),
   UNIQUE KEY `page_id` (`page_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `page`
 --
 
+INSERT INTO `page` (`page_id`, `website_id`, `page_name`, `page_content`, `page_status`, `parent_id`, `menu`, `submenu`) VALUES
+(1, 1, 'Hello', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(2, 1, 'Home', 'Body content will display here', 'Active', 0, 'Yes', 'No');
 
 -- --------------------------------------------------------
 
@@ -115,16 +124,14 @@ CREATE TABLE `seo_settings` (
   `site_title` varchar(100) NOT NULL,
   `meta_description` text NOT NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `seo_settings`
 --
 
 INSERT INTO `seo_settings` (`id`, `website_id`, `keyword`, `site_title`, `meta_description`) VALUES
-(1, 1, 'Alto,Ferrari', 'My Website', 'nthing'),
-(2, 1, 'Sachin', 'test Website ', 'sachin'),
-(3, 1, 'website 2', 'website 2', 'Website 2');
+(1, 1, 'giudhixghkeywords', 'test', 'dkjgndtest data');
 
 -- --------------------------------------------------------
 
@@ -180,6 +187,7 @@ CREATE TABLE `userinfo` (
   `name` varchar(100) NOT NULL,
   `username` varchar(100) NOT NULL,
   `password` varchar(100) NOT NULL,
+  `website_id` varchar(100) default NULL,
   `phone` varchar(100) NOT NULL,
   `email` varchar(256) NOT NULL,
   `addressline1` varchar(500) NOT NULL,
@@ -200,9 +208,9 @@ CREATE TABLE `userinfo` (
 -- Dumping data for table `userinfo`
 --
 
-INSERT INTO `userinfo` (`id`, `name`, `username`, `password`, `phone`, `email`, `addressline1`, `addressline2`, `country`, `state`, `city`, `pincode`, `timezone`, `status`, `oauth_uid`, `provider`) VALUES
-(1, 'Harsh Edke', 'harshe', '49db7687173513257476390f4dcadab9', '', 'harsh.edke@gmail.com', '', '', '', '', '', '', '', 'Active', '', ''),
-(2, 'Sachin Thonge', 'sachin', '15285722f9def45c091725aee9c387cb', '', 'sachin@webiction.com', '', '', '', '', '', '', '', 'Active', '', '');
+INSERT INTO `userinfo` (`id`, `name`, `username`, `password`, `website_id`, `phone`, `email`, `addressline1`, `addressline2`, `country`, `state`, `city`, `pincode`, `timezone`, `status`, `oauth_uid`, `provider`) VALUES
+(1, 'Harsh Edke', 'harshe', '49db7687173513257476390f4dcadab9', NULL, '', 'harsh.edke@gmail.com', '', '', '', '', '', '', '', 'Active', '', ''),
+(2, 'Sachin Thonge', 'sachin', '15285722f9def45c091725aee9c387cb', NULL, '', 'sachin@webiction.com', '', '', '', '', '', '', '', 'Active', '', '');
 
 -- --------------------------------------------------------
 
@@ -214,14 +222,16 @@ CREATE TABLE `website` (
   `website_id` bigint(20) NOT NULL auto_increment,
   `user_id` bigint(20) NOT NULL,
   `website_name` varchar(100) NOT NULL,
+  `main_page` bigint(20) default NULL,
   PRIMARY KEY  (`website_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `website`
 --
 
-INSERT INTO `website` (`website_id`, `user_id`, `website_name`) VALUES
-(1, 1, 'Website1'),
-(2, 2, 'Sachinthonge'),
-(3, 2, 'Website2');
+INSERT INTO `website` (`website_id`, `user_id`, `website_name`, `main_page`) VALUES
+(1, 1, 'First Website', 1),
+(2, 1, 'Test', NULL),
+(3, 2, 'Sachin', NULL),
+(4, 1, 'Sachin', NULL);

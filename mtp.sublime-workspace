@@ -4,8 +4,52 @@
 		"selected_items":
 		[
 			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"li",
+				"li	Tag"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"w",
+				"website_id"
+			],
+			[
+				"incl",
+				"incl	include …"
+			],
+			[
+				"inc",
+				"incl1	include_once …"
+			],
+			[
 				"re",
-				"ret	return"
+				"result"
+			],
+			[
+				"web",
+				"website_id"
+			],
+			[
+				"ma",
+				"main_page"
+			],
+			[
+				"is_n",
+				"is_null"
+			],
+			[
+				"mai",
+				"main_page"
 			],
 			[
 				"po",
@@ -54,10 +98,6 @@
 			[
 				"WEB",
 				"website_id"
-			],
-			[
-				"inc",
-				"include_once"
 			],
 			[
 				"user",
@@ -112,10 +152,6 @@
 				"h4	Tag"
 			],
 			[
-				"ba",
-				"backup_path"
-			],
-			[
 				"fil",
 				"filename"
 			],
@@ -146,10 +182,6 @@
 			[
 				"te",
 				"textStatus"
-			],
-			[
-				"w",
-				"website"
 			],
 			[
 				"tr",
@@ -202,10 +234,6 @@
 			[
 				"er",
 				"error_log"
-			],
-			[
-				"web",
-				"website"
 			],
 			[
 				"website",
@@ -300,14 +328,6 @@
 				"user_id"
 			],
 			[
-				"u",
-				"user_id"
-			],
-			[
-				"incl",
-				"include_once"
-			],
-			[
 				"Use",
 				"username"
 			],
@@ -384,10 +404,6 @@
 				"MatchEmailPattern"
 			],
 			[
-				"li",
-				"link	Tag"
-			],
-			[
 				"D",
 				"DBConnection"
 			],
@@ -423,38 +439,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "js/jquery_function.js",
-			"settings":
-			{
-				"buffer_size": 3320,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "add-pages.php",
-			"settings":
-			{
-				"buffer_size": 1260,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "includes/add-pages-processing.php",
-			"settings":
-			{
-				"buffer_size": 848,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "create-website.php",
-			"settings":
-			{
-				"buffer_size": 1055,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -467,20 +451,24 @@
 				"Trailing Spaces: Delete Trailing Spaces"
 			],
 			[
+				"cu",
+				"Git: Custom Command"
+			],
+			[
+				"co",
+				"Git: Commit"
+			],
+			[
+				"ad",
+				"Git: Add..."
+			],
+			[
 				"tra",
 				"Trailing Spaces: Delete Trailing Spaces"
 			],
 			[
 				"in",
 				"Package Control: Install Package"
-			],
-			[
-				"cu",
-				"Git: Custom Command"
-			],
-			[
-				"ad",
-				"Git: Add..."
 			],
 			[
 				"a",
@@ -720,25 +708,30 @@
 	},
 	"file_history":
 	[
+		"/C/wamp/www/MTP/websitepreview.php",
+		"/C/wamp/www/MTP/stylesheet/stylesheet.css",
+		"/C/wamp/www/MTP/create-website.php",
+		"/C/wamp/www/MTP/includes/website-processing.php",
+		"/C/wamp/www/MTP/includes/add-pages-processing.php",
+		"/C/wamp/www/MTP/add-pages.php",
+		"/C/wamp/www/MTP/footer.php",
+		"/C/wamp/www/MTP/js/jquery_function.js",
+		"/C/wamp/www/MTP/header.php",
+		"/C/wamp/www/MTP/includes/website.php",
+		"/C/wamp/www/MTP/view-page.php",
 		"/C/wamp/www/menupopup/1.php",
 		"/C/wamp/www/MTP/seo-settings.php",
-		"/C/wamp/www/MTP/js/jquery_function.js",
-		"/C/wamp/www/MTP/includes/website.php",
 		"/C/wamp/www/MTP/includes/seo-tags-processing.php",
 		"/C/wamp/www/Seo-settings/seo-settings.php",
 		"/C/wamp/www/Seo-settings/includes/seo-tags-processing.php",
 		"/C/wamp/www/Seo-settings/js/jquery_function.js",
 		"/C/wamp/www/Seo-settings/includes/website.php",
-		"/C/wamp/www/MTP/add-pages.php",
 		"/C/wamp/www/MTP/includes/get-seo-tags.php",
 		"/C/wamp/www/MTP/includes/dbconnect.php",
 		"/C/wamp/www/MTP/includes/user.php",
-		"/C/wamp/www/MTP/includes/website-processing.php",
-		"/C/wamp/www/MTP/create-website.php",
 		"/C/wamp/www/MTP/edit-file.php",
 		"/C/wamp/www/MTP/includes/file.php",
 		"/C/wamp/www/MTP/view-file.php",
-		"/C/wamp/www/MTP/includes/add-pages-processing.php",
 		"/C/wamp/www/MTP/js/validation.js",
 		"/C/wamp/www/MTP/menu.php",
 		"/C/wamp/www/MTP/includes/edit-file-processing.php",
@@ -765,7 +758,6 @@
 		"/C/wamp/www/MTP/1.php",
 		"/D/New Folder/Finance/public/javascript/jquery_lib.js",
 		"/C/wamp/www/MTP/stylesheet/style.css",
-		"/C/wamp/www/MTP/header.php",
 		"/C/wamp/www/index.php",
 		"/C/wamp/www/1.php",
 		"/C/wamp/www/hello.php",
@@ -773,7 +765,6 @@
 		"/C/wamp/www/MTP/includes/add-pages.php",
 		"/C/wamp/www/MTP/includes/initialize.ph",
 		"/C/wamp/www/MTP/index.php",
-		"/C/wamp/www/MTP/stylesheet/stylesheet.css",
 		"/C/wamp/www/MTP/register.php",
 		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Package Control.sublime-settings",
 		"/C/wamp/www/twitteroauth-master/html.inc",
@@ -798,7 +789,6 @@
 		"/D/New Folder/Finance/public/menu.php",
 		"/C/wamp/www/MTP/queries.txt",
 		"/C/wamp/www/MTP/includes/dbconfig.php",
-		"/C/wamp/www/MTP/footer.php",
 		"/C/wamp/www/MTP/includes/dblibrary.php",
 		"/D/New Folder/Finance/public/javascript/validate.js",
 		"/C/wamp/www/MTP/login.php",
@@ -926,119 +916,8 @@
 	"groups":
 	[
 		{
-			"selected": 3,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "js/jquery_function.js",
-					"settings":
-					{
-						"buffer_size": 3320,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1380.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "add-pages.php",
-					"settings":
-					{
-						"buffer_size": 1260,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "includes/add-pages-processing.php",
-					"settings":
-					{
-						"buffer_size": 848,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 240.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "create-website.php",
-					"settings":
-					{
-						"buffer_size": 1055,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								765,
-								765
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 300.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],

@@ -110,3 +110,21 @@ $('#website_id').change(function () {
     });
 $('#update').hide();
 });
+$(document).ready(function () {
+        $('#ok').click(function () {
+        if($('#pagecount').val() == null || $('#pagecount').val() == ''){
+            alert('Enter how many pages you want to create.jQuery');
+        } else {
+            var pagecount = $('#pagecount').val();
+            alert('pagecount :'+pagecount);
+            jQuery('#pages').append("Number of pages you want :"+pagecount);
+            for (var i = 1; i <= pagecount; i++) {
+                var input = jQuery("<label>Enter name of Page"+ i+"</label>:<input type='text' name ='page[]'>");
+                jQuery('#pages').append(input);
+            }
+            var btncreate = jQuery("<input type='Submit' name='btnsubmit' onclick= 'return validatepagename()'>");
+            jQuery('#pages').append(btncreate);
+            $('#pagecountdiv').hide();
+        }
+    });
+});

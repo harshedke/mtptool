@@ -3,7 +3,7 @@
 * This is Website class
 */
 include_once('dbconnect.php');
-class Website 
+class Website
 {
 	var $database = null;
 	function __construct()
@@ -16,15 +16,23 @@ class Website
 		$query ="INSERT INTO website (user_id, website_name) VALUES('$user_id','$name')";
 		error_log($query);
 		$result_set = $this->database->query($query);
-		return $result_set;	
+		return $result_set;
 	}
 
 	public function getuserwebsites($user_id)
 	{
-		$query = "SELECT website_name FROM website WHERE user_id='$user_id'";
+		$query = "SELECT website_id, website_name, main_page FROM website WHERE user_id='$user_id'";
 		error_log($query);
 		$result_set = $this->database->query($query);
-		return $result_set;	
+		return $result_set;
+	}
+
+	public function getmenupages($website_id)
+	{
+		$query = "SELECT page_id, page_name FROM page WHERE website_id='$website_id' AND menu='Yes' AND page_status='Active'";
+		error_log($query);
+		$result_set = $this->database->query($query);
+		return $result_set;
 	}
 
 	public function addpage($website_id,$page_name,$default_content,$arrayflag)
@@ -40,12 +48,10 @@ class Website
 				}
 				$i++;
 			}
-		}else{
-			$query ="INSERT INTO page (website_id, page_name, page_content) VALUES('$website_id','$page_name','$default_content')";
 		}
 		error_log($query);
 		$result_set = $this->database->query($query);
-		return $result_set;	
+		return $result_set;
 	}
 
 	public function setseotags($website_id,$keywords,$sitetitle,$description)
@@ -61,7 +67,7 @@ class Website
 		$query ="SELECT site_title ,keyword, meta_description FROM seo_settings WHERE website_id = '$website_id'";
 		error_log($query);
 		$result_set = $this->database->query($query);
-		return $result_set;	
+		return $result_set;
 	}
 	public function updateseotags($website_id,$keywords,$sitetitle,$description)
 	{
@@ -76,8 +82,29 @@ class Website
 		$query ="SELECT website_id , website_name FROM website WHERE user_id = '$user_id'";
 		error_log($query);
 		$result_set = $this->database->query($query);
-		return $result_set;	
+		return $result_set;
 	}
+
+	function fetchpage($websiteid,$pageid)
+	{
+		$query = "SELECT page_id,website_id,page_name,page_content,page_status,parent_id,menu,submenu FROM page WHERE website_id = '$websiteid' ";
+		if($pageid>0){
+		$query.= " AND page_id=$pageid";
+	    }
+	    //echo "query=".$query;
+		$result_set = $this->database->query($query);
+		return $result_set;
+
+	}
+	function fetchewebsiteinfo($websiteid)
+	{
+		$query ="SELECT a.website_id, a.website_name, a.user_id, b.keyword,b.site_title, b.meta_description FROM website a LEFT OUTER JOIN seo_settings b ON a.website_id = b.website_id
+WHERE a.website_id = '$websiteid' ";
+		 //echo "query=".$query;
+		 $result_set = $this->database->query($query);
+		 return $result_set;
+	}
+
 	public function rowsaffected()
 	{
 		return $this->database->affected_rows();
@@ -94,9 +121,9 @@ class Website
 	}
 	public function fetch_array($result_set)
 	{
-		return $this->database->fetch_array($result_set);	
+		return $this->database->fetch_array($result_set);
 	}
-	
+
 	public function fetch_assoc($result_set)
 	{
 		return $this->database->fetch_assoc($result_set);
