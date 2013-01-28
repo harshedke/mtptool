@@ -3,6 +3,29 @@ $(function () {
     var form = $('#newwebsite'),
         allFields = $(':text', form);
 
+    $("#dialog-add-menu").dialog({
+        autoOpen:false,
+        height: 225,
+        width: 350,
+        modal: true,
+        draggable: false,
+        resizable: false,
+        buttons: {
+
+            "Test Create": function () {
+                allFields.removeClass("ui-state-error");
+                // if (validateFields(form)) {
+                // }
+            },
+            Cancel: function () {
+                $(this).dialog("close");
+            }
+        },
+        close: function () {
+            allFields.val("").removeClass("ui-state-error");
+        }
+    });
+
     $("#dialog-form").dialog({
         autoOpen: false,
         height: 225,
@@ -82,10 +105,11 @@ $(function () {
         jQuery.post("includes/website-processing.php",
                 {website_name:website_name},
                 function(data, textStatus){
-                if(data == 1){
-
+                if(data != 0){
+                    alert(data);
                     $(that).dialog("close");
-                    window.location.href ='http://'+host+'/MTP/create-website.php';
+                    window.location.href ='http://'+host+'/MTP/add-pages.php?website_id='+data;
+                    // window.location.href ='http://'+host+'/MTP/create-website.php';
                 }else{
                     $(that).dialog("close");
                     alert('Some error occurred,please try agian');

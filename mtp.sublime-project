@@ -3,6 +3,9 @@
 	[
 		{
 			"path": "/C/wamp/www/MTP"
+		},
+		{
+			"path": "/C/wamp/www/admin"
 		}
 	]
 }

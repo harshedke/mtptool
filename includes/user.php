@@ -31,10 +31,6 @@ class User
 		return $result_set;		
 	}
 
-	public function getuserwebsites($username)
-	{
-		
-	}
 	public function rowsaffected()
 	{
 		return $this->database->affected_rows();

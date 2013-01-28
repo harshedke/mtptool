@@ -1,7 +1,6 @@
 <?php include_once("header.php");
 session_start();
-if ($_SESSION['username'] !='' ) {
-	error_log("string".$_SESSION['username']);
+if (isset($_SESSION['username'])) {
 	 header("Location: ./upload-file.php");
 }else{
 ?>

@@ -1,11 +1,22 @@
 <?php
 session_start();
 if ($_SESSION['username'] != null) {
-
 include_once("header.php");
 include_once('menu.php');
+if (!isset($_GET['website_id'])) {
+	header("Location: create-website.php");
+} else {
 ?>
 <body>
+	<div id ="dialog-add-menu" title ="Test Form">
+    <form id = "Test">
+        <fieldset>
+            <label for="Test">Test Name</label>
+            <input type ="text" name = "testname" id = "testname" class="text ui-widget-content ui-corner-all" />
+        </fieldset>
+    </form>
+	</div>
+
 	<h2>Add Pages</h2>
 	<hr>
 	<form name= 'add-page-form'autocomplete='off' method='POST' action='includes/add-pages-processing.php'>
@@ -19,6 +30,7 @@ include_once('menu.php');
 	</form>
 </body>
 <?php include_once("footer.php");
+	}
 } else {
 	header('Location: ./index.php');
 }

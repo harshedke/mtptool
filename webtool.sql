@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jan 25, 2013 at 08:34 AM
+-- Generation Time: Jan 28, 2013 at 01:14 PM
 -- Server version: 5.0.51
 -- PHP Version: 5.2.6
 
@@ -18,6 +18,27 @@ SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 --
 -- Database: `webtool`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin_login`
+--
+
+CREATE TABLE `admin_login` (
+  `admin_pk` bigint(20) NOT NULL auto_increment,
+  `user_name` varchar(500) NOT NULL,
+  `password` varchar(500) NOT NULL,
+  `admin_status` varchar(500) NOT NULL,
+  PRIMARY KEY  (`admin_pk`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `admin_login`
+--
+
+INSERT INTO `admin_login` (`admin_pk`, `user_name`, `password`, `admin_status`) VALUES
+(1, 'admin', 'admin', 'active');
 
 -- --------------------------------------------------------
 
@@ -101,7 +122,7 @@ CREATE TABLE `page` (
   `submenu` varchar(5) NOT NULL default 'No',
   PRIMARY KEY  (`page_id`),
   UNIQUE KEY `page_id` (`page_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 
 --
 -- Dumping data for table `page`
@@ -109,7 +130,15 @@ CREATE TABLE `page` (
 
 INSERT INTO `page` (`page_id`, `website_id`, `page_name`, `page_content`, `page_status`, `parent_id`, `menu`, `submenu`) VALUES
 (1, 1, 'Hello', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
-(2, 1, 'Home', 'Body content will display here', 'Active', 0, 'Yes', 'No');
+(2, 1, 'Home', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(3, 1, 'Sitemap', 'Body content will display here', 'Active', 0, 'No', 'No'),
+(4, 2, 'Sitemap', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(5, 2, 'Careers', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(6, 4, 'Introduction', 'Body content will display here', 'Active', 0, 'No', 'No'),
+(7, 4, 'Assignment', 'Body content will display here', 'Active', 0, 'No', 'No'),
+(8, 4, 'Results', 'Body content will display here', 'Active', 0, 'No', 'No'),
+(9, 0, 'Demo', 'Body content will display here', 'Active', 0, 'No', 'No'),
+(10, 0, 'Demo', 'Body content will display here', 'Active', 0, 'No', 'No');
 
 -- --------------------------------------------------------
 
@@ -202,7 +231,7 @@ CREATE TABLE `userinfo` (
   `provider` varchar(100) NOT NULL,
   PRIMARY KEY  (`id`),
   UNIQUE KEY `email_id` (`email`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `userinfo`
@@ -210,7 +239,8 @@ CREATE TABLE `userinfo` (
 
 INSERT INTO `userinfo` (`id`, `name`, `username`, `password`, `website_id`, `phone`, `email`, `addressline1`, `addressline2`, `country`, `state`, `city`, `pincode`, `timezone`, `status`, `oauth_uid`, `provider`) VALUES
 (1, 'Harsh Edke', 'harshe', '49db7687173513257476390f4dcadab9', NULL, '', 'harsh.edke@gmail.com', '', '', '', '', '', '', '', 'Active', '', ''),
-(2, 'Sachin Thonge', 'sachin', '15285722f9def45c091725aee9c387cb', NULL, '', 'sachin@webiction.com', '', '', '', '', '', '', '', 'Active', '', '');
+(2, 'Sachin Thonge', 'sachin', '15285722f9def45c091725aee9c387cb', NULL, '', 'sachin@webiction.com', '', '', '', '', '', '', '', 'Active', '', ''),
+(3, 'Afreen Kazi', 'afreen', 'aa82265fa31092d327992a21705b1083', NULL, '', 'afreen@webiction.com', '', '', '', '', '', '', '', 'Inactive', '', '');
 
 -- --------------------------------------------------------
 
@@ -224,14 +254,12 @@ CREATE TABLE `website` (
   `website_name` varchar(100) NOT NULL,
   `main_page` bigint(20) default NULL,
   PRIMARY KEY  (`website_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `website`
 --
 
 INSERT INTO `website` (`website_id`, `user_id`, `website_name`, `main_page`) VALUES
-(1, 1, 'First Website', 1),
-(2, 1, 'Test', NULL),
-(3, 2, 'Sachin', NULL),
-(4, 1, 'Sachin', NULL);
+(1, 1, 'Demo', NULL),
+(2, 1, 'TEst', NULL);

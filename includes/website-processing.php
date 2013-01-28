@@ -11,10 +11,11 @@ if (isset($_POST['website_name'])) {
 function addwebsite($user_id,$website_name)
 {
 	$website = new Website();
-	 error_log("addwebsite".$user_id.",".$website_name);
 	$result = $website->createwebsite($user_id,$website_name);
 	if ($website->rowsaffected()>0) {
-		echo '1';
+		$result1 = $website->getwebsiteid($user_id,$website_name);
+		$row = $website->fetch_object($result1);
+		echo ''.$row->website_id;
 	}
 	else {
 		echo '0';
@@ -28,7 +29,6 @@ function getuserwebsites()
 	$result = $user->getuserid($_SESSION['username']);
 	$row = $user->fetch_object($result);
 	$user_id = $row->id;
-	error_log($user_id);
 	$result = $website->getuserwebsites($user_id);
 	if ($website->num_rows($result)>0) {
         while ($row = $website->fetch_array($result)) {
@@ -36,7 +36,7 @@ function getuserwebsites()
         	error_log("main page ".$main_page);
         	if (is_null($main_page)) {
         		echo "<tr><td><a href='#' target='_blank'>".$row['website_name']."</a></td>";
-        		// echo "<script>alert('Please set your website home page first.')</script>";
+        		 // echo "<script>alert('Please set your website home page first.')</script>";
         	} else {
             	echo "<tr>
             	<td><a href=websitepreview.php?website_id=".$row['website_id']."&pageurlid=".$main_page." target='_blank'>".$row['website_name']."</a></td>";

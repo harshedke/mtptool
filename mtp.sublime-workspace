@@ -4,6 +4,78 @@
 		"selected_items":
 		[
 			[
+				"re",
+				"res"
+			],
+			[
+				"local",
+				"localhost"
+			],
+			[
+				"we",
+				"website_id"
+			],
+			[
+				"web",
+				"website_name"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"website_",
+				"website_id"
+			],
+			[
+				"dia",
+				"dialog"
+			],
+			[
+				"fo",
+				"form	Tag"
+			],
+			[
+				"_",
+				"_GET"
+			],
+			[
+				"pa",
+				"pagecount"
+			],
+			[
+				"a",
+				"append"
+			],
+			[
+				"page",
+				"pages"
+			],
+			[
+				"cre",
+				"createElement"
+			],
+			[
+				"ap",
+				"appendTo"
+			],
+			[
+				"j",
+				"jQuery"
+			],
+			[
+				"i",
+				"i"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"td",
+				"td"
+			],
+			[
 				"mar",
 				"margin-top"
 			],
@@ -30,14 +102,6 @@
 			[
 				"inc",
 				"incl1	include_once …"
-			],
-			[
-				"re",
-				"result"
-			],
-			[
-				"web",
-				"website_id"
 			],
 			[
 				"ma",
@@ -72,10 +136,6 @@
 				"description"
 			],
 			[
-				"page",
-				"pagecount"
-			],
-			[
 				"met",
 				"metdescription"
 			],
@@ -100,14 +160,6 @@
 				"website_id"
 			],
 			[
-				"user",
-				"user"
-			],
-			[
-				"we",
-				"website"
-			],
-			[
 				"r",
 				"row"
 			],
@@ -126,10 +178,6 @@
 			[
 				"f",
 				"for	for …"
-			],
-			[
-				"a",
-				"arrayflag"
 			],
 			[
 				"is_",
@@ -210,14 +258,6 @@
 			[
 				"websit",
 				"website"
-			],
-			[
-				"fo",
-				"form"
-			],
-			[
-				"i",
-				"input	Tag"
 			],
 			[
 				"c",
@@ -316,10 +356,6 @@
 				"name"
 			],
 			[
-				"_",
-				"_FILES"
-			],
-			[
 				"IMG",
 				"img	Tag"
 			],
@@ -416,10 +452,6 @@
 				"confirmpassword"
 			],
 			[
-				"for",
-				"foreach	foreach …"
-			],
-			[
 				"empl",
 				"emptable"
 			],
@@ -439,6 +471,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "/C/wamp/www/admin/Pages/main.php",
+			"settings":
+			{
+				"buffer_size": 7166,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -451,8 +491,36 @@
 				"Trailing Spaces: Delete Trailing Spaces"
 			],
 			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
 				"cu",
 				"Git: Custom Command"
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"gi",
+				"Git: Gui"
+			],
+			[
+				"spac",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"space",
+				"Trailing Spaces: Delete Trailing Spaces"
 			],
 			[
 				"co",
@@ -479,16 +547,8 @@
 				"Git: Status"
 			],
 			[
-				"gi",
-				"Git: Status"
-			],
-			[
 				"sta",
 				"Git: Status"
-			],
-			[
-				"add",
-				"Git: Add..."
 			],
 			[
 				"git",
@@ -545,10 +605,6 @@
 			[
 				"Package Control: li",
 				"Package Control: List Packages"
-			],
-			[
-				"inst",
-				"Package Control: Install Package"
 			],
 			[
 				"stash",
@@ -708,17 +764,27 @@
 	},
 	"file_history":
 	[
-		"/C/wamp/www/MTP/websitepreview.php",
-		"/C/wamp/www/MTP/stylesheet/stylesheet.css",
-		"/C/wamp/www/MTP/create-website.php",
+		"/C/wamp/www/admin/login/login.php",
+		"/C/wamp/www/admin/utils/conn.php",
 		"/C/wamp/www/MTP/includes/website-processing.php",
-		"/C/wamp/www/MTP/includes/add-pages-processing.php",
 		"/C/wamp/www/MTP/add-pages.php",
-		"/C/wamp/www/MTP/footer.php",
+		"/C/wamp/www/MTP/includes/add-pages-processing.php",
 		"/C/wamp/www/MTP/js/jquery_function.js",
-		"/C/wamp/www/MTP/header.php",
+		"/C/Documents and Settings/All Users/Documents/Shared Docs/test/test1.php",
 		"/C/wamp/www/MTP/includes/website.php",
+		"/C/wamp/www/MTP/create-website.php",
 		"/C/wamp/www/MTP/view-page.php",
+		"/D/MTP Back/25-01-2013/MTP/MTP/add-pages.php",
+		"/C/wamp/www/MTP/includes/upload-file-processing.php",
+		"/C/wamp/www/MTP/includes/user.php",
+		"/C/Documents and Settings/Admin/Desktop/PPCache/drivers/CacheFile.php",
+		"/C/Documents and Settings/Admin/Desktop/PPCache/drivers/CacheAPC.php",
+		"/C/wamp/www/MTP/index.php",
+		"/C/wamp/www/MTP/websitepreview.php",
+		"/C/wamp/www/MTP/js/validation.js",
+		"/C/wamp/www/MTP/stylesheet/stylesheet.css",
+		"/C/wamp/www/MTP/footer.php",
+		"/C/wamp/www/MTP/header.php",
 		"/C/wamp/www/menupopup/1.php",
 		"/C/wamp/www/MTP/seo-settings.php",
 		"/C/wamp/www/MTP/includes/seo-tags-processing.php",
@@ -728,11 +794,9 @@
 		"/C/wamp/www/Seo-settings/includes/website.php",
 		"/C/wamp/www/MTP/includes/get-seo-tags.php",
 		"/C/wamp/www/MTP/includes/dbconnect.php",
-		"/C/wamp/www/MTP/includes/user.php",
 		"/C/wamp/www/MTP/edit-file.php",
 		"/C/wamp/www/MTP/includes/file.php",
 		"/C/wamp/www/MTP/view-file.php",
-		"/C/wamp/www/MTP/js/validation.js",
 		"/C/wamp/www/MTP/menu.php",
 		"/C/wamp/www/MTP/includes/edit-file-processing.php",
 		"/C/wamp/www/MTP/includes/register-processing.php",
@@ -752,7 +816,6 @@
 		"/C/wamp/www/popup/stylesheet/style.css",
 		"/C/wamp/www/MTP/hello.php",
 		"/C/wamp/www/MTP/upload-file.php",
-		"/C/wamp/www/MTP/includes/upload-file-processing.php",
 		"/C/xampp/htdocs/1.php",
 		"/C/wamp/www/MTP/test.php",
 		"/C/wamp/www/MTP/1.php",
@@ -764,7 +827,6 @@
 		"/C/wamp/www/websachin/public/viewpages.php",
 		"/C/wamp/www/MTP/includes/add-pages.php",
 		"/C/wamp/www/MTP/includes/initialize.ph",
-		"/C/wamp/www/MTP/index.php",
 		"/C/wamp/www/MTP/register.php",
 		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Package Control.sublime-settings",
 		"/C/wamp/www/twitteroauth-master/html.inc",
@@ -822,7 +884,7 @@
 	],
 	"find":
 	{
-		"height": 35.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
@@ -836,6 +898,13 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"<?",
+			"fetch",
+			"row",
+			"'",
+			"		error_log($query);",
+			"websiteid",
+			"counter",
 			"\n",
 			"\n						",
 			"\n							",
@@ -918,6 +987,34 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/C/wamp/www/admin/Pages/main.php",
+					"settings":
+					{
+						"buffer_size": 7166,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2153,
+								2153
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 216.0,
+						"translation.y": 993.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -967,12 +1064,12 @@
 		"selected_items":
 		[
 			[
-				"w",
-				"includes/website.php"
+				"",
+				"add-pages.php"
 			],
 			[
-				"",
-				"includes/login-processing.php"
+				"w",
+				"includes/website.php"
 			]
 		],
 		"width": 0.0
