@@ -5,7 +5,35 @@
 		[
 			[
 				"re",
-				"res"
+				"result"
+			],
+			[
+				"my",
+				"mysql_fetch_object"
+			],
+			[
+				"incl",
+				"incl1	include_once …"
+			],
+			[
+				"stat",
+				"status"
+			],
+			[
+				"sta",
+				"status"
+			],
+			[
+				"a",
+				"array"
+			],
+			[
+				"t",
+				"table"
+			],
+			[
+				"php",
+				"php"
 			],
 			[
 				"local",
@@ -42,10 +70,6 @@
 			[
 				"pa",
 				"pagecount"
-			],
-			[
-				"a",
-				"append"
 			],
 			[
 				"page",
@@ -94,10 +118,6 @@
 			[
 				"w",
 				"website_id"
-			],
-			[
-				"incl",
-				"incl	include …"
 			],
 			[
 				"inc",
@@ -278,10 +298,6 @@
 			[
 				"website",
 				"website_name"
-			],
-			[
-				"t",
-				"td	Tag"
 			],
 			[
 				"op",
@@ -472,10 +488,10 @@
 	"buffers":
 	[
 		{
-			"file": "/C/wamp/www/admin/Pages/main.php",
+			"file": "add-pages.php",
 			"settings":
 			{
-				"buffer_size": 7166,
+				"buffer_size": 1006,
 				"line_ending": "Windows"
 			}
 		}
@@ -483,9 +499,29 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 219.0,
 		"selected_items":
 		[
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"cu",
+				"Git: Custom Command"
+			],
+			[
+				"cus",
+				"Git: Custom Command"
+			],
+			[
+				"sta",
+				"Git: Status"
+			],
+			[
+				"cut",
+				"Git: Custom Command"
+			],
 			[
 				"spa",
 				"Trailing Spaces: Delete Trailing Spaces"
@@ -501,14 +537,6 @@
 			[
 				"inst",
 				"Package Control: Install Package"
-			],
-			[
-				"cu",
-				"Git: Custom Command"
-			],
-			[
-				"add",
-				"Git: Add..."
 			],
 			[
 				"gi",
@@ -547,10 +575,6 @@
 				"Git: Status"
 			],
 			[
-				"sta",
-				"Git: Status"
-			],
-			[
 				"git",
 				"Git: Gui"
 			],
@@ -563,15 +587,7 @@
 				"Git: Push"
 			],
 			[
-				"cus",
-				"Git: Custom Command"
-			],
-			[
 				"cust",
-				"Git: Custom Command"
-			],
-			[
-				"cut",
 				"Git: Custom Command"
 			],
 			[
@@ -764,8 +780,12 @@
 	},
 	"file_history":
 	[
-		"/C/wamp/www/admin/login/login.php",
+		"/C/wamp/www/admin/Pages/status.php",
+		"/C/wamp/www/admin/Pages/main.php",
+		"/C/wamp/www/MTP/queries.txt",
 		"/C/wamp/www/admin/utils/conn.php",
+		"/C/wamp/www/admin/Pages/bkpmain.php",
+		"/C/wamp/www/admin/login/login.php",
 		"/C/wamp/www/MTP/includes/website-processing.php",
 		"/C/wamp/www/MTP/add-pages.php",
 		"/C/wamp/www/MTP/includes/add-pages-processing.php",
@@ -849,7 +869,6 @@
 		"/D/New Folder/Finance/public/viewvoucher.php",
 		"/C/wamp/www/MTP/includes/edit-file.php",
 		"/D/New Folder/Finance/public/menu.php",
-		"/C/wamp/www/MTP/queries.txt",
 		"/C/wamp/www/MTP/includes/dbconfig.php",
 		"/C/wamp/www/MTP/includes/dblibrary.php",
 		"/D/New Folder/Finance/public/javascript/validate.js",
@@ -898,6 +917,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"..",
 			"<?",
 			"fetch",
 			"row",
@@ -985,32 +1005,31 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/C/wamp/www/admin/Pages/main.php",
+					"file": "add-pages.php",
 					"settings":
 					{
-						"buffer_size": 7166,
+						"buffer_size": 1006,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2153,
-								2153
+								527,
+								527
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
-						"translation.x": 216.0,
-						"translation.y": 993.0,
+						"translation.x": 0.0,
+						"translation.y": 190.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

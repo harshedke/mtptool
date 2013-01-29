@@ -15,7 +15,7 @@ if ($_SESSION['username'] != null) {
 			<td>
 				<select id='website_id' name='website_id'>
 					<?php
-						$website = new Website();
+						$website = new Website();\
 						$result = $website->getwebsites($_SESSION['user_id']);
 						if ($website->num_rows($result)<1) {
 								echo "<option value=' '>None</option>";

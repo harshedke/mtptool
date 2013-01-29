@@ -8,25 +8,18 @@ if (!isset($_GET['website_id'])) {
 } else {
 ?>
 <body>
-	<div id ="dialog-add-menu" title ="Test Form">
-    <form id = "Test">
-        <fieldset>
-            <label for="Test">Test Name</label>
-            <input type ="text" name = "testname" id = "testname" class="text ui-widget-content ui-corner-all" />
-        </fieldset>
-    </form>
-	</div>
-
+	<div id ="dialog-add-menu" title ="Select Menu Pages"></div>
 	<h2>Add Pages</h2>
 	<hr>
-	<form name= 'add-page-form'autocomplete='off' method='POST' action='includes/add-pages-processing.php'>
+	<form name= 'add-page-form' autocomplete='off'>
 		<div id='pagecountdiv'>
-			<input type='hidden' name='website_id' value ='<?php echo "".$_GET['website_id'];?>'>
+			<input type='hidden' id= 'website_id' name='website_id' value ='<?php echo "".$_GET['website_id'];?>'>
 
 			Number of pages :<input type= 'text' id ='pagecount'  name='pagecount'>
 			<input type='button' id='ok' value='Ok' />
 		</div>
 		<div id='pages'></div>
+		<input type='button' id='create' value='Create' onclick= 'return validatepagename()'/>
 	</form>
 </body>
 <?php include_once("footer.php");
