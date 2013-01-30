@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 include_once('website.php');
 include_once('user.php');
 $website = new Website();

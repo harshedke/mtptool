@@ -2,7 +2,6 @@
 include_once('website.php');
 
 if (isset($_POST['id'])) {
-	error_log("In seo-tag-processings");
 	$website = new Website();
 	$id = $_POST['id'];
 	$result = $website->getseotags($id);
@@ -16,7 +15,6 @@ if (isset($_POST['btnsubmit'])) {
 	$description = trim($_POST['description']);
 	$error = '';
 	if (empty($website_id)) {
-		// $error .= "Please select website.";
 		$error .= "Please select website.<br>";
 	}
 
@@ -35,7 +33,6 @@ if (isset($_POST['btnsubmit'])) {
 		echo "Go back and fix following errors <br>".$error;
 	} else {
 		$website = new Website();
-		//$website_id =1;
 		$result = $website->setseotags($website_id,$keywords,$sitetitle,$description);
 		if ($website->rowsaffected()>0) {
 			echo "<script>alert('SEO settings has been updated.')</script>";
@@ -55,14 +52,11 @@ if (isset($_POST['btnupdate'])){
 	$keywords = trim($_POST['keywords']);
 	$sitetitle = trim($_POST['sitetitle']);
 	$description = trim($_POST['description']);
-	// echo "btnupdate";
 	$website = new Website();
-	//$website_id =1;
 	$result = $website->updateseotags($website_id,$keywords,$sitetitle,$description);
 	if ($website->rowsaffected()>0) {
 		echo "<script>alert('SEO settings has been updated.')</script>";
 		echo "<script>window.location.href='../seo-settings.php'</script>";
-
 	}
 	else
 	{

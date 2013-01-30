@@ -69,7 +69,6 @@ class Website extends DBLibrary
 			}
 			$i++;
 		}
-		error_log($query);
 		$result_set = $this->database->query($query);
 		return $result_set;
 	}
@@ -95,7 +94,6 @@ class Website extends DBLibrary
 	}
 	public function getwebsites($user_id)
 	{
-		error_log("User id:".$user_id);
 		$query ="SELECT website_id , website_name FROM website WHERE user_id = '$user_id'";
 		$result_set = $this->database->query($query);
 		return $result_set;

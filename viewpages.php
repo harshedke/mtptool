@@ -1,7 +1,6 @@
 <?php session_start();
- include_once('header.php');
- include_once('includes/website.php');
-//include_once('adminmenu.php');\
+include_once('header.php');
+include_once('includes/website.php');
 
 $websiteid=$_GET['website_id']; //this id will come from the $_GET variable
 $website = new Website();

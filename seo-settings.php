@@ -4,6 +4,7 @@ if ($_SESSION['username'] != null) {
 	include_once('header.php');
 	include_once('menu.php');
 	include_once('includes/website.php');
+	include_once('includes/user.php');
 ?>
 <body>
 	<h2>SEO Settings</h2>
@@ -15,8 +16,12 @@ if ($_SESSION['username'] != null) {
 			<td>
 				<select id='website_id' name='website_id'>
 					<?php
-						$website = new Website();\
-						$result = $website->getwebsites($_SESSION['user_id']);
+						$website = new Website();
+						$user = new User();
+						$result = $user->getuserid($_SESSION['username']);
+						$row = $user->fetch_object($result);
+						$user_id = $row->id;
+						$result = $website->getwebsites($user_id);
 						if ($website->num_rows($result)<1) {
 								echo "<option value=' '>None</option>";
 						} else {

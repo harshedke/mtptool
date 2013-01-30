@@ -85,7 +85,6 @@ $(function () {
                 if(data != 0){
                     $(that).dialog("close");
                     window.location.href ='http://'+host+'/MTP/add-pages.php?website_id='+data;
-                    // window.location.href ='http://'+host+'/MTP/create-website.php';
                 }else{
                     $(that).dialog("close");
                     alert('Some error occurred,please try agian');
@@ -101,11 +100,16 @@ $('#website_id').change(function () {
     jQuery.post("includes/seo-tags-processing.php",
         {id:id},
         function(data, textStatus){
-                    $('#sitetitle').val(data.site_title);
-                    $('#keywords').val(data.keyword);
-                    $('#description').val(data.meta_description);
-                    $('#update').show();
-                    $('#save').hide();
+            $('#sitetitle').val(data.site_title);
+            $('#keywords').val(data.keyword);
+            $('#description').val(data.meta_description);
+            if ($('#sitetitle').val() =='' && $('#keywords').val() == '' && $('#description').val() == '') {
+                $('#update').hide();
+                $('#save').show();
+            } else {
+               $('#update').show();
+               $('#save').hide();
+            }
         },'json');
     });
 $('#update').hide();
@@ -122,9 +126,6 @@ $(document).ready(function () {
                 var input = jQuery("<label>Enter name of Page"+ i+"</label>:<input type='text' name ='page[]'>");
                 jQuery('#pages').append(input);
             }
-            // var btncreate = jQuery("<input type='Submit' name='btnsubmit' onclick= 'return validatepagename()'>");
-            // var btncreate = jQuery("<input type='button' id='create' value='Create' />");
-            // jQuery('#pages').append(btncreate);
             $('#pagecountdiv').hide();
             $('#create').show();
         }
@@ -135,7 +136,6 @@ $(document).ready(function () {
         var i=0;
         var page = $('input[name="page[]"]');
         $.each(page, function(key, object) {
-             // alert(object.value);
              array[i++]= object.value;
         });
         $.post(
