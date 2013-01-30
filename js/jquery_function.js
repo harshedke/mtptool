@@ -158,7 +158,7 @@ $(document).ready(function () {
 
     $("#dialog-add-menu").dialog({
         autoOpen:false,
-        height: 225,
+        height: 400,
         width: 350,
         modal: true,
         draggable: false,
@@ -169,7 +169,7 @@ $(document).ready(function () {
                 allFields.removeClass("ui-state-error");
                     var that =this;
                 if (validateFields(form,that)) {
-                      addToUsers(form,that);
+                      addToMenu(form,that);
                  }
             },
             Cancel: function () {
@@ -194,15 +194,11 @@ $(document).ready(function () {
 
     function validateFields (form,that) {
         var count = 0;
-        alert('b4');
-        // var boxes = $('input[type="checkbox"]',form);
         $(that).find('input[type="checkbox"]').each(function(){
-            alert(""+$(this).val()+" is "+$(this).is(':checked'));
             if ($(this).is(':checked')) {
                 count++;
             }
         });
-        alert(count);
         if (count < 1) {
             updateTips('Select at least on page.');
             return false;
@@ -210,5 +206,28 @@ $(document).ready(function () {
         else {
             return true;
         }
+    }
+
+    function addToMenu (form,that) {
+        var array = new Array();
+        $(that).find('input[type="checkbox"]').each(function(){
+            array[$(this).val().toString()]= $(this).is(':checked');
+        });
+        var website_id =$('[name="website_id"]');
+        website_id = website_id.val();
+        var host =window.location.hostname;
+        jQuery.post("includes/add-menu-processing.php",
+            {pages :array ,website_id:website_id},
+            function(data, textStatus){
+            if(data == 1){
+                $(that).dialog("close");
+                alert('Menu list updated');
+                window.location.href ='http://'+host+'/MTP/create-website.php';
+            }else{
+                $(that).dialog("close");
+                alert('Some error occurred,please try again.');
+                window.location.href ='http://'+host+'/MTP/create-website.php';
+            }
+        });
     }
 });

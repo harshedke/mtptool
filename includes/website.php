@@ -3,7 +3,8 @@
 * This is Website class
 */
 include_once('dbconnect.php');
-class Website
+include_once('dblibrary.php');
+class Website extends DBLibrary
 {
 	var $database = null;
 	function __construct()
@@ -39,9 +40,20 @@ class Website
 		return $result_set;
 	}
 
+	public function setmenupages($website_id,$pagearray)
+	{
+		$query="UPDATE page SET menu='No' WHERE website_id='$website_id'";
+		$result_set = $this->database->query($query);
+
+		for ($i=0; $i < count($pagearray) ; $i++) {
+			$query="UPDATE page SET menu='Yes' WHERE website_id='$website_id' AND page_id='".$pagearray[$i]."'";
+			$result_set = $this->database->query($query);
+		}
+		return $result_set;
+	}
 	public function getpages($website_id)
 	{
-		$query = "SELECT page_id, page_name FROM page WHERE website_id='$website_id' AND page_status='Active'";
+		$query = "SELECT page_id, page_name,menu FROM page WHERE website_id='$website_id' AND page_status='Active'";
 		$result_set = $this->database->query($query);
 		return $result_set;
 	}
@@ -111,25 +123,6 @@ WHERE a.website_id = '$websiteid' ";
 	public function rowsaffected()
 	{
 		return $this->database->affected_rows();
-	}
-
-	public function num_rows($result_set)
-	{
-		return $this->database->num_rows($result_set);
-	}
-
-	public function fetch_object($result_set)
-	{
-		return $this->database->fetch_object($result_set);
-	}
-	public function fetch_array($result_set)
-	{
-		return $this->database->fetch_array($result_set);
-	}
-
-	public function fetch_assoc($result_set)
-	{
-		return $this->database->fetch_assoc($result_set);
 	}
 }
 ?>

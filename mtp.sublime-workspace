@@ -4,16 +4,140 @@
 		"selected_items":
 		[
 			[
+				"me",
+				"menu_flag"
+			],
+			[
+				"er",
+				"error"
+			],
+			[
+				"fo",
+				"for	for (…) {…}"
+			],
+			[
+				"we",
+				"website_id"
+			],
+			[
+				"array_p",
+				"array_push"
+			],
+			[
+				"is_N",
+				"is_null"
+			],
+			[
+				"PAGE",
+				"page_id"
+			],
+			[
+				"WE",
+				"website_id"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"We",
+				"website_id"
+			],
+			[
+				"add",
+				"addToMenu"
+			],
+			[
+				"web",
+				"website_id"
+			],
+			[
+				"create",
+				"create-website"
+			],
+			[
+				"website",
+				"website_id"
+			],
+			[
+				"dia",
+				"dialog-add-menu"
+			],
+			[
+				"lo",
+				"loadurl"
+			],
+			[
+				"check",
+				"checkbox"
+			],
+			[
 				"re",
-				"result"
+				"return"
+			],
+			[
+				"update",
+				"updateTips"
+			],
+			[
+				"pa",
+				"pagename"
+			],
+			[
+				"page",
+				"page_id"
+			],
+			[
+				"incl",
+				"includes"
+			],
+			[
+				"INCLU",
+				"include_once"
+			],
+			[
+				"dialog-",
+				"dialog-add-menu"
+			],
+			[
+				"tes",
+				"test"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"test",
+				"textStatus"
+			],
+			[
+				"creat",
+				"create"
+			],
+			[
+				"cre",
+				"create"
+			],
+			[
+				"butt",
+				"button"
+			],
+			[
+				"cli",
+				"click"
+			],
+			[
+				"btn",
+				"btncreate"
+			],
+			[
+				"ec",
+				"echo	echo \"…\""
 			],
 			[
 				"my",
 				"mysql_fetch_object"
-			],
-			[
-				"incl",
-				"incl1	include_once …"
 			],
 			[
 				"stat",
@@ -40,14 +164,6 @@
 				"localhost"
 			],
 			[
-				"we",
-				"website_id"
-			],
-			[
-				"web",
-				"website_name"
-			],
-			[
 				"user",
 				"user_id"
 			],
@@ -56,28 +172,8 @@
 				"website_id"
 			],
 			[
-				"dia",
-				"dialog"
-			],
-			[
-				"fo",
-				"form	Tag"
-			],
-			[
 				"_",
 				"_GET"
-			],
-			[
-				"pa",
-				"pagecount"
-			],
-			[
-				"page",
-				"pages"
-			],
-			[
-				"cre",
-				"createElement"
 			],
 			[
 				"ap",
@@ -90,10 +186,6 @@
 			[
 				"i",
 				"i"
-			],
-			[
-				"for",
-				"for	for (…) {…}"
 			],
 			[
 				"td",
@@ -264,16 +356,8 @@
 				"include_once"
 			],
 			[
-				"creat",
-				"create-website"
-			],
-			[
 				"Se",
 				"_SESSION"
-			],
-			[
-				"add",
-				"addwebsite"
 			],
 			[
 				"websit",
@@ -290,14 +374,6 @@
 			[
 				"sett",
 				"settings"
-			],
-			[
-				"er",
-				"error_log"
-			],
-			[
-				"website",
-				"website_name"
 			],
 			[
 				"op",
@@ -438,50 +514,6 @@
 			[
 				"n",
 				"name"
-			],
-			[
-				"ctype_al",
-				"ctype_alpha"
-			],
-			[
-				"alphan",
-				"alphanum"
-			],
-			[
-				"ge",
-				"getElementById"
-			],
-			[
-				"m",
-				"MatchEmailPattern"
-			],
-			[
-				"D",
-				"DBConnection"
-			],
-			[
-				"da",
-				"database"
-			],
-			[
-				"con",
-				"confirmpassword"
-			],
-			[
-				"empl",
-				"emptable"
-			],
-			[
-				"q",
-				"query"
-			],
-			[
-				"emp",
-				"employee"
-			],
-			[
-				"Code",
-				"CodeIgniter"
 			]
 		]
 	},
@@ -491,7 +523,47 @@
 			"file": "add-pages.php",
 			"settings":
 			{
-				"buffer_size": 1006,
+				"buffer_size": 825,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "includes/add-menu-processing.php",
+			"settings":
+			{
+				"buffer_size": 629,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "loadcontents.php",
+			"settings":
+			{
+				"buffer_size": 735,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "includes/website.php",
+			"settings":
+			{
+				"buffer_size": 4209,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/jquery_function.js",
+			"settings":
+			{
+				"buffer_size": 5280,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": " function addToMenu (form,that) {\n        var array = new Array();\n        $(that).find('input[type=\"checkbox\"]').each(function(){\n            array[$(this).val().toString()]= $(this).is(':checked');\n        });\n        var website_id =$('[name=\"website_id\"]');\n        website_id = website_id.val();\n        var host =window.location.hostname;\n        jQuery.post(\"includes/add-menu-processing.php\",\n                {pages :array ,website_id:website_id},\n                function(data, textStatus){\n                if(data == 1){\n                    $(that).dialog(\"close\");\n                    alert('Menu list updated');\n                    window.location.href ='http://'+host+'/MTP/create-website.php';\n                }else{\n                    $(that).dialog(\"close\");\n                    alert('Menu list not updated');\n                    window.location.href ='http://'+host+'/MTP/create-website.php';\n                }\n            });",
+			"settings":
+			{
+				"buffer_size": 945,
 				"line_ending": "Windows"
 			}
 		}
@@ -503,16 +575,20 @@
 		"selected_items":
 		[
 			[
-				"add",
-				"Git: Add..."
+				"cus",
+				"Git: Custom Command"
 			],
 			[
 				"cu",
 				"Git: Custom Command"
 			],
 			[
-				"cus",
-				"Git: Custom Command"
+				"add",
+				"Git: Add..."
+			],
+			[
+				"SPA",
+				"Trailing Spaces: Delete Trailing Spaces"
 			],
 			[
 				"sta",
@@ -780,19 +856,26 @@
 	},
 	"file_history":
 	[
+		"/C/wamp/www/MTP/js/jquery_function.js",
+		"/C/wamp/www/MTP/includes/website.php",
+		"/C/wamp/www/MTP/loadcontents.php",
+		"/C/wamp/www/MTP/includes/website-processing.php",
+		"/C/wamp/www/MTP/includes/add-pages-processing.php",
+		"/C/wamp/www/MTP/create-website.php",
+		"/C/wamp/www/MTP/seo-settings.php",
+		"/C/wamp/www/MTP/includes/seo-tags-processing.php",
+		"/C/wamp/www/MTP/js/test.php",
 		"/C/wamp/www/admin/Pages/status.php",
+		"/C/wamp/www/MTP/js/validation.js",
+		"/C/wamp/www/MTP/bkpadd-pages.php",
+		"/C/wamp/www/MTP/test.php",
+		"/C/wamp/www/MTP/add-pages.php",
 		"/C/wamp/www/admin/Pages/main.php",
 		"/C/wamp/www/MTP/queries.txt",
 		"/C/wamp/www/admin/utils/conn.php",
 		"/C/wamp/www/admin/Pages/bkpmain.php",
 		"/C/wamp/www/admin/login/login.php",
-		"/C/wamp/www/MTP/includes/website-processing.php",
-		"/C/wamp/www/MTP/add-pages.php",
-		"/C/wamp/www/MTP/includes/add-pages-processing.php",
-		"/C/wamp/www/MTP/js/jquery_function.js",
 		"/C/Documents and Settings/All Users/Documents/Shared Docs/test/test1.php",
-		"/C/wamp/www/MTP/includes/website.php",
-		"/C/wamp/www/MTP/create-website.php",
 		"/C/wamp/www/MTP/view-page.php",
 		"/D/MTP Back/25-01-2013/MTP/MTP/add-pages.php",
 		"/C/wamp/www/MTP/includes/upload-file-processing.php",
@@ -801,13 +884,10 @@
 		"/C/Documents and Settings/Admin/Desktop/PPCache/drivers/CacheAPC.php",
 		"/C/wamp/www/MTP/index.php",
 		"/C/wamp/www/MTP/websitepreview.php",
-		"/C/wamp/www/MTP/js/validation.js",
 		"/C/wamp/www/MTP/stylesheet/stylesheet.css",
 		"/C/wamp/www/MTP/footer.php",
 		"/C/wamp/www/MTP/header.php",
 		"/C/wamp/www/menupopup/1.php",
-		"/C/wamp/www/MTP/seo-settings.php",
-		"/C/wamp/www/MTP/includes/seo-tags-processing.php",
 		"/C/wamp/www/Seo-settings/seo-settings.php",
 		"/C/wamp/www/Seo-settings/includes/seo-tags-processing.php",
 		"/C/wamp/www/Seo-settings/js/jquery_function.js",
@@ -837,7 +917,6 @@
 		"/C/wamp/www/MTP/hello.php",
 		"/C/wamp/www/MTP/upload-file.php",
 		"/C/xampp/htdocs/1.php",
-		"/C/wamp/www/MTP/test.php",
 		"/C/wamp/www/MTP/1.php",
 		"/D/New Folder/Finance/public/javascript/jquery_lib.js",
 		"/C/wamp/www/MTP/stylesheet/style.css",
@@ -917,6 +996,9 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"seo",
+			"echo \"",
+			"\"",
 			"..",
 			"<?",
 			"fetch",
@@ -1005,7 +1087,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -1013,23 +1095,160 @@
 					"file": "add-pages.php",
 					"settings":
 					{
-						"buffer_size": 1006,
+						"buffer_size": 825,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								527,
-								527
+								264,
+								264
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 190.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "includes/add-menu-processing.php",
+					"settings":
+					{
+						"buffer_size": 629,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								330,
+								330
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "loadcontents.php",
+					"settings":
+					{
+						"buffer_size": 735,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								392,
+								392
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 36.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "includes/website.php",
+					"settings":
+					{
+						"buffer_size": 4209,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1382,
+								1382
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 720.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "js/jquery_function.js",
+					"settings":
+					{
+						"buffer_size": 5280,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								277,
+								277
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"settings":
+					{
+						"buffer_size": 945,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								945,
+								945
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1105,6 +1324,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 129.0,
+	"side_bar_width": 128.0,
 	"status_bar_visible": true
 }

@@ -33,7 +33,7 @@ function getuserwebsites()
 	if ($website->num_rows($result)>0) {
         while ($row = $website->fetch_array($result)) {
         	$main_page= $row['main_page'];
-        	error_log("main page ".$main_page);
+        	// error_log("main page ".$main_page);
         	if (is_null($main_page)) {
         		echo "<tr><td><a href='#' target='_blank'>".$row['website_name']."</a></td>";
         		 // echo "<script>alert('Please set your website home page first.')</script>";
@@ -41,7 +41,7 @@ function getuserwebsites()
             	echo "<tr>
             	<td><a href=websitepreview.php?website_id=".$row['website_id']."&pageurlid=".$main_page." target='_blank'>".$row['website_name']."</a></td>";
             }
-            echo "<td><a href=add-pages.php?website_id=".$row['website_id'].">Add Pages</a></td></tr>";
+            echo "<td><a href=add-pages.php?website_id=".$row['website_id'].">Add Pages</a></td><td><a href=viewpages.php?website_id=".$row['website_id'].">View pages</td></tr>";
         }
     }
     else{

@@ -1,3 +1,24 @@
+/************************for pagination****************/
+  .pg-normal {
+color: blue;
+font-weight: normal;
+text-decoration: none;
+
+padding:3px 5px 3px 5px;
+border:2px solid gray;
+cursor: pointer;
+}
+.pg-selected {
+
+color: green;
+font-weight: bold;
+text-decoration: underline;
+cursor: pointer;
+padding:3px 5px 3px 5px;
+border:2px solid green;
+}
+
+/***********************************************************/
 #validation {
 	color: red;
 }

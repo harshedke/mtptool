@@ -12,8 +12,6 @@ if ($_SESSION['username'] != null) {
     <fieldset>
         <label for="name">Website Name</label>
         <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" />
-        <!-- <label for="name">Check Box</label>
-        <input type="checkbox" name="checkname[]" value="My Name" class="text ui-widget-content ui-corner-all" /> -->
     </fieldset>
     </form>
 </div>
@@ -22,7 +20,7 @@ if ($_SESSION['username'] != null) {
     <table id="websites" class="ui-widget ui-widget-content">
         <thead>
             <tr class="ui-widget-header ">
-                <th colspan='2'>Name</th>
+                <th colspan='3'>Name</th>
             </tr>
         </thead>
         <tbody>
