@@ -231,3 +231,84 @@ $(document).ready(function () {
         });
     }
 });
+
+$(document).ready(function(){
+    var form = $('#dialog-home-page'),
+        allFields = $(':radio', form);
+
+    $("#dialog-home-page").dialog({
+        autoOpen:true,
+        height: 400,
+        width: 350,
+        modal: true,
+        draggable: false,
+        resizable: false,
+        buttons: {
+
+            "Next": function () {
+                allFields.removeClass("ui-state-error");
+                    var that =this;
+                if (validateFields(form,that)) {
+                      addToMainPage(form,that);
+                 }
+            },
+            Cancel: function () {
+                $(this).dialog("close");
+                var host =window.location.hostname;
+                window.location.href ='http://'+host+'/MTP/create-website.php';
+            }
+        },
+        close: function () {
+            allFields.val("").removeClass("ui-state-error");
+        }
+    });
+
+    function updateTips(t) {
+        var tips = $(".validateTips");
+
+        tips.text(t).addClass("ui-state-highlight");
+        setTimeout(function () {
+            tips.removeClass("ui-state-highlight", 1500);
+        }, 500);
+    }
+
+    function validateFields(form,that) {
+        var count = 0;
+        $(that).find('input[type="radio"]').each(function(){
+            if ($(this).is(':checked')) {
+                count=1;
+            }
+        });
+        if (count == 0) {
+            updateTips("Select website's main page.");
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+    function addToMainPage (form,that) {
+        var page=0;
+        $(that).find('input[type="radio"]').each(function(){
+            if ($(this).is(':checked')) {
+                page = $(this).val();
+            }
+        });
+        var website_id =$('[name="website_id"]');
+        website_id = website_id.val();
+        var host =window.location.hostname;
+        jQuery.post("includes/add-main-page.php",
+            { page:page, website_id:website_id },
+            function(data,textStatus) {
+                if(data == 1){
+                $(that).dialog("close");
+                alert('Main page of your website is now saved');
+                window.location.href ='http://'+host+'/MTP/create-website.php';
+            }else{
+                $(that).dialog("close");
+                alert('Some error occurred,please try again.');
+                window.location.href ='http://'+host+'/MTP/create-website.php';
+            }
+        });
+    }
+});

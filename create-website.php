@@ -1,6 +1,8 @@
 <?php
 session_start();
-if ($_SESSION['username'] != null) {
+// if (!isset($_SESSION['username'])) {
+//      header('Location: index.php');
+//  } 
     include_once('header.php');
     include_once('menu.php');
     include_once('includes/website-processing.php');
@@ -33,8 +35,6 @@ if ($_SESSION['username'] != null) {
 <button id="create-website">Create new website</button>
 </body>
 <?php
-include_once ('footer.php'); }
-else {
-    header('Location: ./index.php');
-}
+include_once ('footer.php');
+
 ?>

@@ -51,6 +51,14 @@ class Website extends DBLibrary
 		}
 		return $result_set;
 	}
+
+	public function setmainpage($page_id,$website_id)
+	{
+		$query = "UPDATE website SET main_page='$page_id' WHERE website_id='$website_id'";
+		$result_set = $this->database->query($query);
+		return $result_set;
+	}
+
 	public function getpages($website_id)
 	{
 		$query = "SELECT page_id, page_name,menu FROM page WHERE website_id='$website_id' AND page_status='Active'";
