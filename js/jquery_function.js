@@ -1,3 +1,5 @@
+var host =window.location.hostname;
+var divid;
 $(function () {
 
     var form = $('#newwebsite'),
@@ -17,7 +19,7 @@ $(function () {
                 // console.log(validateFields(form));
                 if (validateFields(form)) {
                     var that =this;
-                    addToUsers(form,that);
+                    addToWebsite(form,that);
                 }
             },
             Cancel: function () {
@@ -64,8 +66,8 @@ $(function () {
         return isValid;
     }
 
-    function validateFields(form) {
-        var bValid = true,
+    function validateFields(form)
+{        var bValid = true,
             name = $('[name="name"]', form),
 
         bValid = bValid && checkLength(name, "website name", 3, 16);
@@ -75,10 +77,9 @@ $(function () {
         return bValid;
     }
 
-    function addToUsers(form,that) {
+    function addToWebsite(form,that) {
         var websitename =$('[name="name"]', form);
         website_name = websitename.val();
-        var host =window.location.hostname;
         jQuery.post("includes/website-processing.php",
                 {website_name:website_name},
                 function(data, textStatus){
@@ -117,18 +118,45 @@ $('#update').hide();
 $(document).ready(function () {
     $('#create').hide();
     $('#ok').click(function () {
-        if($('#pagecount').val() == null || $('#pagecount').val() == ''){
+        if($('#pagecount').val().trim() == null || $('#pagecount').val().trim() == ''){
             alert('Enter how many pages you want to create.');
         } else {
-            var pagecount = $('#pagecount').val();
-            jQuery('#pages').append("Number of pages you want :"+pagecount);
-            for (var i = 1; i <= pagecount; i++) {
-                var input = jQuery("<label>Enter name of Page"+ i+"</label>:<input type='text' name ='page[]'>");
-                jQuery('#pages').append(input);
+            if (isNaN($('#pagecount').val())) {
+                alert('Only Numbers allowd');
+            } else {
+                var pagecount = $('#pagecount').val();
+                jQuery('#pages').append("Number of pages you want :"+pagecount);
+                for (var i = 1; i <= pagecount; i++) {
+                    var input = jQuery("<label>Enter name of Page"+ i+"</label>:<input type='text' name ='page[]'>");
+                    jQuery('#pages').append(input);
+                }
+                $('#pagecountdiv').hide();
+                $('#create').show();
             }
-            $('#pagecountdiv').hide();
+        }
+    });
+
+    $('#addpages').click(function () {
+        divid = $('#pages div').size();
+        if (divid >=0) {
+            $(this).val('Add another page');
             $('#create').show();
         }
+        var subdiv = $("<div id='subdiv"+divid+"' />");
+        var input = $("<label>Page Name :</label><input type='text' name ='page[]'>");
+        var removebutton = $("<input type='button' class='remove' value='X'>");
+        subdiv.append(input);
+        subdiv.append(removebutton);
+        $('#pages').append(subdiv);
+        removebutton.click(function () {
+            $(this).parent().remove();
+            divid = $('#pages div').size();
+            divid--;
+            if (divid < 0) {
+            $('#addpages').val('Add page');
+            $('#create').hide();
+        }
+        });
     });
     $('#create').click(function () {
         var website_id = $('#website_id').val();
@@ -174,7 +202,6 @@ $(document).ready(function () {
             },
             Cancel: function () {
                 $(this).dialog("close");
-                var host =window.location.hostname;
                 window.location.href ='http://'+host+'/MTP/create-website.php';
             }
         },
@@ -215,7 +242,6 @@ $(document).ready(function () {
         });
         var website_id =$('[name="website_id"]');
         website_id = website_id.val();
-        var host =window.location.hostname;
         jQuery.post("includes/add-menu-processing.php",
             {pages :array ,website_id:website_id},
             function(data, textStatus){
@@ -254,7 +280,6 @@ $(document).ready(function(){
             },
             Cancel: function () {
                 $(this).dialog("close");
-                var host =window.location.hostname;
                 window.location.href ='http://'+host+'/MTP/create-website.php';
             }
         },
@@ -296,7 +321,6 @@ $(document).ready(function(){
         });
         var website_id =$('[name="website_id"]');
         website_id = website_id.val();
-        var host =window.location.hostname;
         jQuery.post("includes/add-main-page.php",
             { page:page, website_id:website_id },
             function(data,textStatus) {
@@ -312,3 +336,34 @@ $(document).ready(function(){
         });
     }
 });
+
+$(document).ready(function () {
+    var form = $('#dialog-change-main-page'),
+        allFields = $(':text', form);
+
+    $("#dialog-change-main-page").dialog({
+        autoOpen:true,
+        height: 200,
+        width: 350,
+        modal: true,
+        draggable: false,
+        resizable: false,
+        buttons: {
+
+            "Set": function () {
+                allFields.removeClass("ui-state-error");
+                    var that =this;
+                if (validateFields(form,that)) {
+                      addToMainPage(form,that);
+                 }
+            },
+            Cancel: function () {
+                $(this).dialog("close");
+                window.location.href ='http://'+host+'/MTP/create-website.php';
+            }
+        },
+        close: function () {
+            allFields.val("").removeClass("ui-state-error");
+        }
+    });
+})

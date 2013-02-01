@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"use",
+				"user_id"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
 				"Pag",
 				"page_id"
 			],
@@ -58,14 +66,6 @@
 			[
 				"di",
 				"dialog"
-			],
-			[
-				"user",
-				"user_id"
-			],
-			[
-				"use",
-				"user_id"
 			],
 			[
 				"header",
@@ -520,10 +520,10 @@
 	"buffers":
 	[
 		{
-			"file": "home-page.php",
+			"file": "set-home-page.php",
 			"settings":
 			{
-				"buffer_size": 1143,
+				"buffer_size": 1162,
 				"line_ending": "Windows",
 				"name": "<?php?>"
 			}
@@ -532,24 +532,31 @@
 			"file": "js/jquery_function.js",
 			"settings":
 			{
-				"buffer_size": 9944,
+				"buffer_size": 9917,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "includes/add-main-page.php",
+			"file": "includes/website-processing.php",
 			"settings":
 			{
-				"buffer_size": 541,
-				"line_ending": "Windows",
-				"name": "<?php"
+				"buffer_size": 1930,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "includes/website.php",
+			"file": "create-website.php",
 			"settings":
 			{
-				"buffer_size": 4227,
+				"buffer_size": 1066,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "includes/add-menu-processing.php",
+			"settings":
+			{
+				"buffer_size": 822,
 				"line_ending": "Windows"
 			}
 		}
@@ -561,20 +568,20 @@
 		"selected_items":
 		[
 			[
-				"spa",
-				"Trailing Spaces: Delete Trailing Spaces"
-			],
-			[
-				"sap",
-				"Git: Stash Apply"
-			],
-			[
 				"cu",
 				"Git: Custom Command"
 			],
 			[
 				"add",
 				"Git: Add..."
+			],
+			[
+				"spa",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"sap",
+				"Git: Stash Apply"
 			],
 			[
 				"cus",
@@ -829,7 +836,7 @@
 				"Git: Fetch"
 			]
 		],
-		"width": 400.0
+		"width": 416.0
 	},
 	"console":
 	{
@@ -846,15 +853,17 @@
 	},
 	"file_history":
 	[
+		"/C/wamp/www/MTP/includes/add-main-page.php",
+		"/C/wamp/www/MTP/includes/website.php",
+		"/C/wamp/www/MTP/includes/website-processing.php",
+		"/C/wamp/www/MTP/create-website.php",
 		"/C/wamp/www/MTP/stylesheet/jquery-ui.css",
 		"/C/wamp/www/MTP/my.php",
 		"/C/wamp/www/MTP/add-pages.php",
 		"/C/wamp/www/MTP/websitepreview.php",
 		"/C/wamp/www/MTP/includes/add-menu-processing.php",
 		"/C/wamp/www/MTP/includes/seo-tags-processing.php",
-		"/C/wamp/www/MTP/includes/website-processing.php",
 		"/C/wamp/www/MTP/seo-settings.php",
-		"/C/wamp/www/MTP/includes/website.php",
 		"/C/wamp/www/MTP/includes/login-processing.php",
 		"/C/wamp/www/MTP/js/jquery_function.js",
 		"/C/wamp/www/MTP/viewpages.php",
@@ -864,7 +873,6 @@
 		"/C/wamp/www/MTP/includes/dblibrary.php",
 		"/C/wamp/www/MTP/includes/user.php",
 		"/C/wamp/www/MTP/includes/file.php",
-		"/C/wamp/www/MTP/create-website.php",
 		"/C/wamp/www/MTP/loadcontents.php",
 		"/C/wamp/www/MTP/includes/add-pages-processing.php",
 		"/C/wamp/www/MTP/js/test.php",
@@ -1084,23 +1092,23 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "home-page.php",
+					"file": "set-home-page.php",
 					"settings":
 					{
-						"buffer_size": 1143,
+						"buffer_size": 1162,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								179,
-								179
+								320,
+								320
 							]
 						],
 						"settings":
@@ -1109,7 +1117,7 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 18.0,
-						"translation.y": 180.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1119,15 +1127,15 @@
 					"file": "js/jquery_function.js",
 					"settings":
 					{
-						"buffer_size": 9944,
+						"buffer_size": 9917,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9312,
-								9312
+								9277,
+								9277
 							]
 						],
 						"settings":
@@ -1136,32 +1144,60 @@
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 72.0,
-						"translation.y": 5809.0,
+						"translation.x": 0.0,
+						"translation.y": 5389.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "includes/add-main-page.php",
+					"file": "includes/website-processing.php",
 					"settings":
 					{
-						"buffer_size": 541,
+						"buffer_size": 1930,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								304,
-								311
+								1245,
+								1245
 							]
 						],
 						"settings":
 						{
-							"auto_name": "<?php",
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 540.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "create-website.php",
+					"settings":
+					{
+						"buffer_size": 1066,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								108,
+								26
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1170,19 +1206,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "includes/website.php",
+					"buffer": 4,
+					"file": "includes/add-menu-processing.php",
 					"settings":
 					{
-						"buffer_size": 4227,
+						"buffer_size": 822,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1695,
-								1765
+								815,
+								815
 							]
 						],
 						"settings":
@@ -1190,8 +1226,8 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 25.0,
-						"translation.y": 709.0,
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1271,6 +1307,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 128.0,
+	"side_bar_width": 197.0,
 	"status_bar_visible": true
 }

@@ -12,13 +12,15 @@ if (!isset($_GET['website_id'])) {
 	<h2>Add Pages</h2>
 	<hr>
 	<form name= 'add-page-form' autocomplete='off'>
-		<div id='pagecountdiv'>
+<!-- 		<div id='pagecountdiv'>
 			<input type='hidden' id= 'website_id' name='website_id' value ='<?php echo "".$_GET['website_id'];?>'>
 
 			Number of pages :<input type= 'text' id ='pagecount'  name='pagecount'>
 			<input type='button' id='ok' value='Ok' />
-		</div>
+		</div> -->
 		<div id='pages'></div>
+		<input type='hidden' id= 'website_id' name='website_id' value ='<?php //echo "".$_GET['website_id'];?>'>
+		<input type='button' id='addpages' value='Add page'>
 		<input type='button' id='create' value='Create' onclick= 'return validatepagename()'/>
 	</form>
 </body>

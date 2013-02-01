@@ -46,7 +46,8 @@ session_start();
 	            	echo "<tr>
 	            	<td><a href=websitepreview.php?website_id=".$row['website_id']."&pageurlid=".$main_page." target='_blank'>".$row['website_name']."</a></td>";
 	            }
-	            echo "<td><a href=add-pages.php?website_id=".$row['website_id'].">Add Pages</a></td><td><a href=viewpages.php?website_id=".$row['website_id'].">View pages</td></tr>";
+	            echo "<td><a href=add-pages.php?website_id=".$row['website_id'].">Add Pages</a></td><td><a href=viewpages.php?website_id=".$row['website_id'].">View pages</td>";
+	            // echo "<td><a href=change-main-page.php?website_id=".$row['website_id'].">Change main page</a></td></tr>";
 	        }
 	    }
 	    else{

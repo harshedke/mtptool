@@ -33,12 +33,7 @@ class Website extends DBLibrary
 		return $result_set;
 	}
 
-	public function getmenupages($website_id)
-	{
-		$query = "SELECT page_id, page_name FROM page WHERE website_id='$website_id' AND menu='Yes' AND page_status='Active'";
-		$result_set = $this->database->query($query);
-		return $result_set;
-	}
+
 
 	public function setmenupages($website_id,$pagearray)
 	{
@@ -52,6 +47,20 @@ class Website extends DBLibrary
 		return $result_set;
 	}
 
+	public function getmenupages($website_id)
+	{
+		$query = "SELECT page_id, page_name FROM page WHERE website_id='$website_id' AND menu='Yes' AND page_status='Active'";
+		$result_set = $this->database->query($query);
+		return $result_set;
+	}
+
+	public function getsubmenupages($website_id,$page_id)
+	{
+		$query = "SELECT page_id, page_name FROM page WHERE website_id='$website_id' AND submenu='Yes' AND page_status='Active' AND parent_id='$page_id'";
+		$result_set = $this->database->query($query);
+		return $result_set;
+	}
+
 	public function setmainpage($page_id,$website_id)
 	{
 		$query = "UPDATE website SET main_page='$page_id' WHERE website_id='$website_id'";
@@ -61,10 +70,11 @@ class Website extends DBLibrary
 
 	public function getpages($website_id)
 	{
-		$query = "SELECT page_id, page_name,menu FROM page WHERE website_id='$website_id' AND page_status='Active'";
+		$query = "SELECT page_id,page_name,menu FROM page WHERE website_id='$website_id' AND page_status='Active'";
 		$result_set = $this->database->query($query);
 		return $result_set;
 	}
+
 	public function addpage($website_id,$page_name,$default_content)
 	{
 		$query ="INSERT INTO page (website_id, page_name, page_content) VALUES";
