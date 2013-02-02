@@ -26,13 +26,13 @@ if (isset($_POST['btnsubmit']))
 		$user =  new User();
 		$encryptpassword = md5($password);
 		$result =$user->login($username,$encryptpassword);
-		if($user->num_rows($result)>0) 
+		if($user->num_rows($result)>0)
 		{
 			$row = $user->fetch_object($result);
 			if ($row->status!='inactive') {
 				$_SESSION['username'] = $username;
  				echo "<script>alert('Login Successful')</script>";
-				echo "<script>window.location.href='../upload-file.php'</script>";
+				echo "<script>window.location.href='../create-website.php'</script>";
 			} else {
 				echo "<script>alert('Please verify your account.')</script>";
 				echo "<script>window.location.href='../instructions.php'</script>";

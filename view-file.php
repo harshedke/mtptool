@@ -1,15 +1,15 @@
 <?php
 /*
-* View 
+* View
 */
 session_start();
 if ($_SESSION['username'] != null) {
-	
+
 	include_once("header.php");
 	include_once('menu.php');
 	include_once('includes/file.php');
 	include_once('includes/user.php');
-	
+
 	// echo "In View ";
 	$username = $_SESSION['username'];
 	// echo "Username ".$username."<br>";
@@ -28,8 +28,8 @@ if ($_SESSION['username'] != null) {
 	// echo "User ID :".$user_id."<br>";
 	$result = $file->getuserfiles($user_id);
 	if ($file->num_rows($result)>0) {
-			
-		
+
+
 		while ($row = $user->fetch_object($result)) {
 			$id = $row->id;
 			$file = $row->file_path.$row->file_name;

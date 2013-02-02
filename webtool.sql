@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jan 30, 2013 at 01:28 PM
+-- Generation Time: Feb 02, 2013 at 12:48 PM
 -- Server version: 5.0.51
 -- PHP Version: 5.2.6
 
@@ -122,7 +122,7 @@ CREATE TABLE `page` (
   `submenu` varchar(5) NOT NULL default 'No',
   PRIMARY KEY  (`page_id`),
   UNIQUE KEY `page_id` (`page_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=19 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=61 ;
 
 --
 -- Dumping data for table `page`
@@ -133,8 +133,8 @@ INSERT INTO `page` (`page_id`, `website_id`, `page_name`, `page_content`, `page_
 (2, 9, 'Contact', 'Body content will display here', 'Active', 0, 'No', 'No'),
 (3, 9, 'Sitemap', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
 (4, 1, 'Home', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
-(5, 1, 'Sitemap', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
-(6, 1, 'Contact Us', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(5, 1, 'Sitemap', 'Body content will display here', 'Active', 46, 'No', 'Yes'),
+(6, 1, 'Contact Us', 'Body content will display here', 'Active', 46, 'No', 'Yes'),
 (7, 3, 'Home', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
 (8, 3, 'About me', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
 (9, 3, 'Contact me', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
@@ -142,11 +142,42 @@ INSERT INTO `page` (`page_id`, `website_id`, `page_name`, `page_content`, `page_
 (11, 1, 'Sports', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
 (12, 1, 'Our World', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
 (13, 1, 'India', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
-(14, 10, 'Home', 'Body content will display here', 'Active', 0, 'No', 'No'),
+(14, 10, 'Home', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
 (15, 10, 'Carrers', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
 (16, 10, 'About Us', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
 (17, 10, 'Contact Us', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
-(18, 10, 'ahgbg', 'Body content will display here', 'Active', 0, 'Yes', 'No');
+(18, 10, 'ahgbg', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(24, 14, 'My', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(25, 14, 'Your', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(26, 15, 'Test 1', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(27, 15, 'Test 2', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(28, 16, 'Hello', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(29, 16, 'Hi', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(36, 18, 'test', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(37, 18, 'test', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(38, 4, 'MTP Home', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(39, 4, 'MTP Sitemap', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(40, 4, 'MTP Contact Us', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(41, 4, 'MTP About Us', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(42, 4, 'MTP Careers', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(43, 1, 'Cricket', 'Body content will display here', 'Active', 11, 'No', 'Yes'),
+(44, 1, 'Hockey', 'Body content will display here', 'Active', 11, 'No', 'Yes'),
+(45, 1, 'Tennis', 'Body content will display here', 'Active', 11, 'No', 'Yes'),
+(46, 1, 'Badminton', 'Body content will display here', 'Active', 11, 'No', 'Yes'),
+(47, 19, 'Home', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(48, 19, 'Sitemap', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(49, 2, 'Hello', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(50, 2, 'Hi', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(51, 2, 'Hi', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(52, 2, 'My', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(53, 2, 'ddd', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(54, 1, 'Goa', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(55, 1, 'Mumbai', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(56, 0, 'Hello', 'Body content will display here', 'Active', 0, 'No', 'No'),
+(57, 0, 'Hi', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(58, 0, 'Gtyu', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(59, 0, 'TEst', 'Body content will display here', 'Active', 0, 'Yes', 'No'),
+(60, 0, 'test', 'Body content will display here', 'Active', 0, 'No', 'No');
 
 -- --------------------------------------------------------
 
@@ -161,7 +192,7 @@ CREATE TABLE `seo_settings` (
   `site_title` varchar(100) NOT NULL,
   `meta_description` text NOT NULL,
   PRIMARY KEY  (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `seo_settings`
@@ -170,7 +201,8 @@ CREATE TABLE `seo_settings` (
 INSERT INTO `seo_settings` (`id`, `website_id`, `keyword`, `site_title`, `meta_description`) VALUES
 (1, 1, 'giudhixgh123keywords', 'Demo Site', 'dkjgndtest data'),
 (2, 3, 'Sachin,sachin,thonge', 'Sachin Site', 'This is site owned by Sachin.'),
-(3, 9, 'Test Site', 'Afreen', 'Test Site');
+(3, 9, 'Test Site', 'Afreen', 'Test Site'),
+(4, 2, 'Test', 'Test Site', 'test');
 
 -- --------------------------------------------------------
 
@@ -264,7 +296,7 @@ CREATE TABLE `website` (
   `website_name` varchar(100) NOT NULL,
   `main_page` bigint(20) default NULL,
   PRIMARY KEY  (`website_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=20 ;
 
 --
 -- Dumping data for table `website`
@@ -272,8 +304,13 @@ CREATE TABLE `website` (
 
 INSERT INTO `website` (`website_id`, `user_id`, `website_name`, `main_page`) VALUES
 (1, 1, 'Demo', 4),
-(2, 2, 'Test', NULL),
-(3, 1, 'Sachin', NULL),
-(4, 2, 'mtptestapp', NULL),
-(9, 1, 'Afreen', NULL),
-(10, 1, 'Webiction', NULL);
+(2, 2, 'Test', 52),
+(3, 1, 'Sachin', 7),
+(4, 2, 'mtptestapp', 38),
+(9, 1, 'Afreen', 1),
+(10, 1, 'Webiction', 15),
+(14, 1, 'Hello', 24),
+(15, 1, 'Test', 26),
+(16, 1, 'My Wbsite', 28),
+(18, 1, 'ETc', 37),
+(19, 1, 'Shekhar', 47);

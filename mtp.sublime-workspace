@@ -4,6 +4,58 @@
 		"selected_items":
 		[
 			[
+				"pa",
+				"pages"
+			],
+			[
+				"di",
+				"divid"
+			],
+			[
+				"div",
+				"divid"
+			],
+			[
+				"re",
+				"removebutton"
+			],
+			[
+				"hede",
+				"header"
+			],
+			[
+				"we",
+				"website_id"
+			],
+			[
+				"page",
+				"page_id"
+			],
+			[
+				"resu",
+				"result1"
+			],
+			[
+				"fe",
+				"fetch_array"
+			],
+			[
+				"webs",
+				"website_id"
+			],
+			[
+				"pag",
+				"Page"
+			],
+			[
+				"inclu",
+				"includes"
+			],
+			[
+				"te",
+				"text"
+			],
+			[
 				"use",
 				"user_id"
 			],
@@ -26,10 +78,6 @@
 			[
 				"website",
 				"website"
-			],
-			[
-				"we",
-				"website_id"
 			],
 			[
 				"for",
@@ -58,14 +106,6 @@
 			[
 				"websi",
 				"website"
-			],
-			[
-				"pa",
-				"page_name"
-			],
-			[
-				"di",
-				"dialog"
 			],
 			[
 				"header",
@@ -144,16 +184,8 @@
 				"checkbox"
 			],
 			[
-				"re",
-				"return"
-			],
-			[
 				"update",
 				"updateTips"
-			],
-			[
-				"page",
-				"page_id"
 			],
 			[
 				"incl",
@@ -320,16 +352,8 @@
 				"row"
 			],
 			[
-				"fe",
-				"fetch_object"
-			],
-			[
 				"p",
 				"page_name"
-			],
-			[
-				"pag",
-				"page_array"
 			],
 			[
 				"f",
@@ -382,10 +406,6 @@
 			[
 				"co",
 				"copy"
-			],
-			[
-				"te",
-				"textStatus"
 			],
 			[
 				"tr",
@@ -494,72 +514,11 @@
 			[
 				"echo",
 				"echo	echo \"…\""
-			],
-			[
-				"us",
-				"user_id"
-			],
-			[
-				"qu",
-				"query"
-			],
-			[
-				"dat",
-				"database"
-			],
-			[
-				"sess",
-				"session_start"
-			],
-			[
-				"USER",
-				"Username"
 			]
 		]
 	},
 	"buffers":
 	[
-		{
-			"file": "set-home-page.php",
-			"settings":
-			{
-				"buffer_size": 1162,
-				"line_ending": "Windows",
-				"name": "<?php?>"
-			}
-		},
-		{
-			"file": "js/jquery_function.js",
-			"settings":
-			{
-				"buffer_size": 9917,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "includes/website-processing.php",
-			"settings":
-			{
-				"buffer_size": 1930,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "create-website.php",
-			"settings":
-			{
-				"buffer_size": 1066,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "includes/add-menu-processing.php",
-			"settings":
-			{
-				"buffer_size": 822,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -574,6 +533,10 @@
 			[
 				"add",
 				"Git: Add..."
+			],
+			[
+				"st",
+				"Git: Status"
 			],
 			[
 				"spa",
@@ -642,10 +605,6 @@
 			[
 				"a",
 				"Git: Add..."
-			],
-			[
-				"st",
-				"Git: Status"
 			],
 			[
 				"git",
@@ -836,7 +795,7 @@
 				"Git: Fetch"
 			]
 		],
-		"width": 416.0
+		"width": 400.0
 	},
 	"console":
 	{
@@ -853,19 +812,26 @@
 	},
 	"file_history":
 	[
-		"/C/wamp/www/MTP/includes/add-main-page.php",
+		"/C/wamp/www/MTP/add-pages.php",
 		"/C/wamp/www/MTP/includes/website.php",
+		"/C/wamp/www/MTP/js/jquery_function.js",
+		"/C/wamp/www/MTP/view-sitemap.php",
+		"/C/wamp/www/MTP/loadcontents.php",
+		"/C/wamp/www/MTP/js/jquery-ui.js",
 		"/C/wamp/www/MTP/includes/website-processing.php",
 		"/C/wamp/www/MTP/create-website.php",
+		"/C/wamp/www/MTP/sitemap.php",
+		"/C/wamp/www/MTP/change-main-page.php",
+		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/wamp/www/MTP/set-home-page.php",
+		"/C/wamp/www/MTP/includes/add-menu-processing.php",
+		"/C/wamp/www/MTP/includes/add-main-page.php",
 		"/C/wamp/www/MTP/stylesheet/jquery-ui.css",
 		"/C/wamp/www/MTP/my.php",
-		"/C/wamp/www/MTP/add-pages.php",
 		"/C/wamp/www/MTP/websitepreview.php",
-		"/C/wamp/www/MTP/includes/add-menu-processing.php",
 		"/C/wamp/www/MTP/includes/seo-tags-processing.php",
 		"/C/wamp/www/MTP/seo-settings.php",
 		"/C/wamp/www/MTP/includes/login-processing.php",
-		"/C/wamp/www/MTP/js/jquery_function.js",
 		"/C/wamp/www/MTP/viewpages.php",
 		"/C/wamp/www/MTP/includes/dbconfig.php",
 		"/C/wamp/www/MTP/header.php",
@@ -873,7 +839,6 @@
 		"/C/wamp/www/MTP/includes/dblibrary.php",
 		"/C/wamp/www/MTP/includes/user.php",
 		"/C/wamp/www/MTP/includes/file.php",
-		"/C/wamp/www/MTP/loadcontents.php",
 		"/C/wamp/www/MTP/includes/add-pages-processing.php",
 		"/C/wamp/www/MTP/js/test.php",
 		"/C/wamp/www/admin/Pages/status.php",
@@ -946,7 +911,6 @@
 		"/C/WINDOWS/system32/drivers/etc/hosts",
 		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/Git/Git.sublime-settings",
 		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Git.sublime-settings",
-		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/C/Documents and Settings/Admin/.ssh/id_rsa.pub",
 		"/C/wamp/www/tinymce_3.5.8/tinymce/examples/index.html",
 		"/D/New Folder/Finance/public/viewvoucher.php",
@@ -975,12 +939,7 @@
 		"/C/wamp/www/code_igniter/application/views/index.html",
 		"/C/wamp/www/code_igniter/application/models/index.html",
 		"/c/Documents and Settings/Admin/My Documents/GitHub/.git/COMMIT_EDITMSG",
-		"/C/Documents and Settings/Admin/.ssh/sshkey.txt.pub",
-		"/C/Documents and Settings/Admin/My Documents/GitHub/datafiles/Hit tis file once",
-		"/C/Documents and Settings/Admin/My Documents/GitHub/datafiles/Test.sublime-workspace",
-		"/C/Documents and Settings/Admin/My Documents/GitHub/datafiles/Test.sublime-project",
-		"/C/Documents and Settings/Admin/My Documents/GitHub/datafiles/COMMIT_EDITMSG.COMMIT_EDITMSG",
-		"/C/Documents and Settings/Admin/My Documents/GitHub/datafiles/data.txt"
+		"/C/Documents and Settings/Admin/.ssh/sshkey.txt.pub"
 	],
 	"find":
 	{
@@ -998,6 +957,8 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"addToUsers",
+			"var host =window.location.hostname;",
 			"Home",
 			"error_log",
 			"viewpage",
@@ -1092,146 +1053,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "set-home-page.php",
-					"settings":
-					{
-						"buffer_size": 1162,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								320,
-								320
-							]
-						],
-						"settings":
-						{
-							"auto_name": "<?php?>",
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 18.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "js/jquery_function.js",
-					"settings":
-					{
-						"buffer_size": 9917,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								9277,
-								9277
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 5389.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "includes/website-processing.php",
-					"settings":
-					{
-						"buffer_size": 1930,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1245,
-								1245
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 540.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "create-website.php",
-					"settings":
-					{
-						"buffer_size": 1066,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								108,
-								26
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "includes/add-menu-processing.php",
-					"settings":
-					{
-						"buffer_size": 822,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								815,
-								815
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -1307,6 +1130,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 197.0,
+	"side_bar_width": 121.0,
 	"status_bar_visible": true
 }

@@ -1,8 +1,8 @@
 <?php
 session_start();
-// if (!isset($_SESSION['username'])) {
-//      header('Location: index.php');
-//  }
+if (!isset($_SESSION['username'])) {
+     header('Location: index.php');
+ }
     include_once('header.php');
     include_once('menu.php');
     include_once('includes/website-processing.php');
@@ -13,7 +13,7 @@ session_start();
     <form id="newwebsite">
     <fieldset>
         <label for="name">Website Name</label>
-        <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all" />
+        <input type="text" name="name" id="name" title='Enter name of website here.'class="text ui-widget-content ui-corner-all" />
     </fieldset>
     </form>
 </div>

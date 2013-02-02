@@ -1,5 +1,8 @@
 <?php
 session_start();
+if (!isset($_SESSION['username'])) {
+	header("Location: index.php");
+}
 include_once ('header.php');
 include_once ('includes/website.php');
 

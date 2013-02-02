@@ -1,5 +1,8 @@
 var host =window.location.hostname;
 var divid;
+$(function() {
+$( document ).tooltip();
+});
 $(function () {
 
     var form = $('#newwebsite'),
@@ -16,7 +19,6 @@ $(function () {
 
             "Create Website": function () {
                 allFields.removeClass("ui-state-error");
-                // console.log(validateFields(form));
                 if (validateFields(form)) {
                     var that =this;
                     addToWebsite(form,that);
@@ -136,28 +138,6 @@ $(document).ready(function () {
         }
     });
 
-    $('#addpages').click(function () {
-        divid = $('#pages div').size();
-        if (divid >=0) {
-            $(this).val('Add another page');
-            $('#create').show();
-        }
-        var subdiv = $("<div id='subdiv"+divid+"' />");
-        var input = $("<label>Page Name :</label><input type='text' name ='page[]'>");
-        var removebutton = $("<input type='button' class='remove' value='X'>");
-        subdiv.append(input);
-        subdiv.append(removebutton);
-        $('#pages').append(subdiv);
-        removebutton.click(function () {
-            $(this).parent().remove();
-            divid = $('#pages div').size();
-            divid--;
-            if (divid < 0) {
-            $('#addpages').val('Add page');
-            $('#create').hide();
-        }
-        });
-    });
     $('#create').click(function () {
         var website_id = $('#website_id').val();
         var array = new Array();
@@ -181,6 +161,28 @@ $(document).ready(function () {
          );
     });
 
+    $('#addpages').click(function () {
+        divid = $('#pages div').size();
+        if (divid >=0) {
+            $(this).val('Add another page');
+            $('#create').show();
+        }
+        var subdiv = $("<div id='subdiv"+divid+"' />");
+        var input = $("<label>Page Name :</label><input type='text' name ='page[]'>");
+        var removebutton = $("<input type='button' class='remove' value='X'>");
+        subdiv.append(input);
+        subdiv.append(removebutton);
+        $('#pages').append(subdiv);
+        removebutton.click(function () {
+            $(this).parent().remove();
+            divid = $('#pages div').size();
+            divid--;
+            if (divid < 0) {
+            $('#addpages').val('Add page');
+            $('#create').hide();
+        }
+        });
+    });
     var form = $('#add-menu-form'),
         allFields = $(':checkbox', form);
 

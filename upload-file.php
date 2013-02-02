@@ -1,8 +1,11 @@
-<?php 
+<?php
+session_start();
 include_once("header.php");
 include_once('menu.php');
-session_start();
-if ($_SESSION['username']!= '') {
+
+if (!isset($_SESSION['username'])) {
+	header("Location: index.php");
+}
 ?>
 
 <body>
@@ -10,8 +13,8 @@ if ($_SESSION['username']!= '') {
 	<hr>
 	<form name ='upload-file-form' method='POST' action='includes/upload-file-processing.php' enctype="multipart/form-data">
 	Select Image/Video Files <input type = 'file' name= 'file'> <br />
-	<input type = 'submit' name ='btnupload' value ='Upload file' onClick="return validatefileupload()"> 
-	<input type ='reset' name ='Clear'>  
+	<input type = 'submit' name ='btnupload' value ='Upload file' onClick="return validatefileupload()">
+	<input type ='reset' name ='Clear'>
 	</form>
 
 	<!-- <a href="view-file.php">View Files</a> -->
@@ -19,9 +22,6 @@ if ($_SESSION['username']!= '') {
 </body>
 
 
-<?php 
+<?php
 include_once("footer.php");
-} else {
-	header('Location: ./index.php');
-}
 ?>

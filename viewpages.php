@@ -1,7 +1,10 @@
-<?php session_start();
+<?php
+session_start();
+if (!isset($_SESSION['username'])) {
+	header("Location: index.php");
+}
 include_once('header.php');
 include_once('includes/website.php');
-
 $websiteid=$_GET['website_id']; //this id will come from the $_GET variable
 $website = new Website();
 $res= $website->fetchpage($websiteid,$pageid=0);
@@ -29,9 +32,9 @@ if($res>0){
 ?>
 <body>
 	<script type="text/javascript"><!--
-        var pager = new Pager('pages',<?php echo PAGERECORD;?>); 
-        pager.init(); 
-        pager.showPageNav('pager', 'pageNavPosition'); 
+        var pager = new Pager('pages',<?php echo PAGERECORD;?>);
+        pager.init();
+        pager.showPageNav('pager', 'pageNavPosition');
         pager.showPage(1);
     //--></script>
 

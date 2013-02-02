@@ -1,8 +1,12 @@
 <?php
+session_start();
+if (!isset($_SESSION['username'])) {
+    header("Location: index.php");
+}
 include_once("header.php");
 include_once('includes/website.php');
 // include_once('../includes/library.php');
-session_start();
+
 if (isset($_GET['website_id'])) {
     $_SESSION['website_id']=$_GET['website_id'];
 }
