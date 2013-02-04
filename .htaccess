@@ -1,0 +1,18 @@
+ErrorDocument 404 /MTP/filenotfound.html
+
+Options -Indexes
+ErrorDocument 403 /MTP/forbidden.html
+#Redirect /MTP http://localhost/xampp
+
+#AuthName "Resticted Area"
+#AuthType Basic
+#AuthUserFile D://.htpasswd
+#Require valid-user
+
+Options +FollowSymLinks
+RewriteEngine On
+#RewriteCond %{SCRIPT_FILENAME} !-d
+#RewriteCond %{SCRIPT_FILENAME} !-f
+#RewriteRule ^addpages/(\d+)*$ MTP/add-pages.php?website_id=1
+
+RewriteRule ^websites$ MTP/create-website.php [L]

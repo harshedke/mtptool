@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"we",
+				"websitepreview"
+			],
+			[
+				"sess",
+				"session_start"
+			],
+			[
+				"web",
+				"website"
+			],
+			[
+				"si",
+				"sitetitle"
+			],
+			[
+				"is",
+				"isset"
+			],
+			[
+				"bt",
+				"btnupdate"
+			],
+			[
 				"pa",
 				"pages"
 			],
@@ -22,10 +46,6 @@
 			[
 				"hede",
 				"header"
-			],
-			[
-				"we",
-				"website_id"
 			],
 			[
 				"page",
@@ -162,10 +182,6 @@
 			[
 				"add",
 				"addToMenu"
-			],
-			[
-				"web",
-				"website_id"
 			],
 			[
 				"create",
@@ -314,10 +330,6 @@
 			[
 				"pos",
 				"posting"
-			],
-			[
-				"si",
-				"site_title"
 			],
 			[
 				"de",
@@ -502,18 +514,6 @@
 			[
 				"na",
 				"name"
-			],
-			[
-				"IMG",
-				"img	Tag"
-			],
-			[
-				"Use",
-				"username"
-			],
-			[
-				"echo",
-				"echo	echo \"…\""
 			]
 		]
 	},
@@ -535,12 +535,12 @@
 				"Git: Add..."
 			],
 			[
-				"st",
-				"Git: Status"
-			],
-			[
 				"spa",
 				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"st",
+				"Git: Status"
 			],
 			[
 				"sap",
@@ -812,14 +812,29 @@
 	},
 	"file_history":
 	[
-		"/C/wamp/www/MTP/add-pages.php",
-		"/C/wamp/www/MTP/includes/website.php",
-		"/C/wamp/www/MTP/js/jquery_function.js",
-		"/C/wamp/www/MTP/view-sitemap.php",
+		"/C/wamp/www/MTP/index.php",
 		"/C/wamp/www/MTP/loadcontents.php",
-		"/C/wamp/www/MTP/js/jquery-ui.js",
-		"/C/wamp/www/MTP/includes/website-processing.php",
+		"/C/wamp/www/MTP/1index.php",
+		"/C/wamp/www/MTP/.htaccess",
+		"/C/wamp/www/.htaccess",
+		"/C/wamp/www/urlencodetest.php",
+		"/C/wamp/www/MTP/add-pages.php",
 		"/C/wamp/www/MTP/create-website.php",
+		"/C/wamp/www/MTP/seo-settings.php",
+		"/C/wamp/www/MTP/includes/seo-tags-processing.php",
+		"/C/wamp/www/MTP/websitepreview.php",
+		"/C/wamp/www/MTP/view-page.php",
+		"/C/wamp/www/MTP/view-file.php",
+		"/C/wamp/www/MTP/js/jquery_function.js",
+		"/C/wamp/www/MTP/viewpages.php",
+		"/C/wamp/www/MTP/includes/website-processing.php",
+		"/C/wamp/www/MTP/menu.php",
+		"/C/wamp/www/MTP/register.php",
+		"/C/wamp/www/MTP/includes/login-processing.php",
+		"/C/wamp/www/MTP/upload-file.php",
+		"/C/wamp/www/MTP/includes/website.php",
+		"/C/wamp/www/MTP/view-sitemap.php",
+		"/C/wamp/www/MTP/js/jquery-ui.js",
 		"/C/wamp/www/MTP/sitemap.php",
 		"/C/wamp/www/MTP/change-main-page.php",
 		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
@@ -828,11 +843,6 @@
 		"/C/wamp/www/MTP/includes/add-main-page.php",
 		"/C/wamp/www/MTP/stylesheet/jquery-ui.css",
 		"/C/wamp/www/MTP/my.php",
-		"/C/wamp/www/MTP/websitepreview.php",
-		"/C/wamp/www/MTP/includes/seo-tags-processing.php",
-		"/C/wamp/www/MTP/seo-settings.php",
-		"/C/wamp/www/MTP/includes/login-processing.php",
-		"/C/wamp/www/MTP/viewpages.php",
 		"/C/wamp/www/MTP/includes/dbconfig.php",
 		"/C/wamp/www/MTP/header.php",
 		"/C/wamp/www/MTP/stylesheet/stylesheet.css",
@@ -851,12 +861,10 @@
 		"/C/wamp/www/admin/Pages/bkpmain.php",
 		"/C/wamp/www/admin/login/login.php",
 		"/C/Documents and Settings/All Users/Documents/Shared Docs/test/test1.php",
-		"/C/wamp/www/MTP/view-page.php",
 		"/D/MTP Back/25-01-2013/MTP/MTP/add-pages.php",
 		"/C/wamp/www/MTP/includes/upload-file-processing.php",
 		"/C/Documents and Settings/Admin/Desktop/PPCache/drivers/CacheFile.php",
 		"/C/Documents and Settings/Admin/Desktop/PPCache/drivers/CacheAPC.php",
-		"/C/wamp/www/MTP/index.php",
 		"/C/wamp/www/MTP/footer.php",
 		"/C/wamp/www/menupopup/1.php",
 		"/C/wamp/www/Seo-settings/seo-settings.php",
@@ -866,8 +874,6 @@
 		"/C/wamp/www/MTP/includes/get-seo-tags.php",
 		"/C/wamp/www/MTP/includes/dbconnect.php",
 		"/C/wamp/www/MTP/edit-file.php",
-		"/C/wamp/www/MTP/view-file.php",
-		"/C/wamp/www/MTP/menu.php",
 		"/C/wamp/www/MTP/includes/edit-file-processing.php",
 		"/C/wamp/www/MTP/includes/register-processing.php",
 		"/C/wamp/www/popup/create-website.php",
@@ -884,7 +890,6 @@
 		"/C/wamp/www/popup/stylesheet/jquery-ui.css",
 		"/C/wamp/www/popup/stylesheet/style.css",
 		"/C/wamp/www/MTP/hello.php",
-		"/C/wamp/www/MTP/upload-file.php",
 		"/C/xampp/htdocs/1.php",
 		"/C/wamp/www/MTP/1.php",
 		"/D/New Folder/Finance/public/javascript/jquery_lib.js",
@@ -895,7 +900,6 @@
 		"/C/wamp/www/websachin/public/viewpages.php",
 		"/C/wamp/www/MTP/includes/add-pages.php",
 		"/C/wamp/www/MTP/includes/initialize.ph",
-		"/C/wamp/www/MTP/register.php",
 		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Package Control.sublime-settings",
 		"/C/wamp/www/twitteroauth-master/html.inc",
 		"/C/wamp/www/twitteroauth-master/index.php",
@@ -935,11 +939,7 @@
 		"/C/wamp/www/code_igniter/application/views/welcome_message.php",
 		"/C/wamp/www/Codeignitar/ci/application/config/database.php",
 		"/C/wamp/www/Codeignitar/ci/application/config/config.php",
-		"/C/wamp/www/code_igniter/application/views/about.php",
-		"/C/wamp/www/code_igniter/application/views/index.html",
-		"/C/wamp/www/code_igniter/application/models/index.html",
-		"/c/Documents and Settings/Admin/My Documents/GitHub/.git/COMMIT_EDITMSG",
-		"/C/Documents and Settings/Admin/.ssh/sshkey.txt.pub"
+		"/C/wamp/www/code_igniter/application/views/about.php"
 	],
 	"find":
 	{
@@ -957,6 +957,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"Go to",
 			"addToUsers",
 			"var host =window.location.hostname;",
 			"Home",
