@@ -1,5 +1,5 @@
 <?php
-include_once("dbConfig.php");
+include_once("dbconfig.php");
 
 ///File that allows access to Database
 class DBConnection

@@ -3,518 +3,6 @@
 	{
 		"selected_items":
 		[
-			[
-				"we",
-				"websitepreview"
-			],
-			[
-				"sess",
-				"session_start"
-			],
-			[
-				"web",
-				"website"
-			],
-			[
-				"si",
-				"sitetitle"
-			],
-			[
-				"is",
-				"isset"
-			],
-			[
-				"bt",
-				"btnupdate"
-			],
-			[
-				"pa",
-				"pages"
-			],
-			[
-				"di",
-				"divid"
-			],
-			[
-				"div",
-				"divid"
-			],
-			[
-				"re",
-				"removebutton"
-			],
-			[
-				"hede",
-				"header"
-			],
-			[
-				"page",
-				"page_id"
-			],
-			[
-				"resu",
-				"result1"
-			],
-			[
-				"fe",
-				"fetch_array"
-			],
-			[
-				"webs",
-				"website_id"
-			],
-			[
-				"pag",
-				"Page"
-			],
-			[
-				"inclu",
-				"includes"
-			],
-			[
-				"te",
-				"text"
-			],
-			[
-				"use",
-				"user_id"
-			],
-			[
-				"user",
-				"username"
-			],
-			[
-				"Pag",
-				"page_id"
-			],
-			[
-				"w",
-				"webiste"
-			],
-			[
-				"main",
-				"main_page"
-			],
-			[
-				"website",
-				"website"
-			],
-			[
-				"for",
-				"foreach	foreach …"
-			],
-			[
-				"text",
-				"textStatus"
-			],
-			[
-				"va",
-				"value"
-			],
-			[
-				"chec",
-				"checked"
-			],
-			[
-				"a",
-				"alert"
-			],
-			[
-				"fu",
-				"fun	Function"
-			],
-			[
-				"websi",
-				"website"
-			],
-			[
-				"header",
-				"header"
-			],
-			[
-				"php",
-				"php"
-			],
-			[
-				"inc",
-				"include_once"
-			],
-			[
-				"view",
-				"viewpage"
-			],
-			[
-				"er",
-				"error_log"
-			],
-			[
-				"addTo",
-				"addToMenu"
-			],
-			[
-				"me",
-				"menu_flag"
-			],
-			[
-				"fo",
-				"for	for (…) {…}"
-			],
-			[
-				"array_p",
-				"array_push"
-			],
-			[
-				"is_N",
-				"is_null"
-			],
-			[
-				"PAGE",
-				"page_id"
-			],
-			[
-				"WE",
-				"website_id"
-			],
-			[
-				"We",
-				"website_id"
-			],
-			[
-				"add",
-				"addToMenu"
-			],
-			[
-				"create",
-				"create-website"
-			],
-			[
-				"dia",
-				"dialog-add-menu"
-			],
-			[
-				"lo",
-				"loadurl"
-			],
-			[
-				"check",
-				"checkbox"
-			],
-			[
-				"update",
-				"updateTips"
-			],
-			[
-				"incl",
-				"includes"
-			],
-			[
-				"INCLU",
-				"include_once"
-			],
-			[
-				"dialog-",
-				"dialog-add-menu"
-			],
-			[
-				"tes",
-				"test"
-			],
-			[
-				"test",
-				"textStatus"
-			],
-			[
-				"creat",
-				"create"
-			],
-			[
-				"cre",
-				"create"
-			],
-			[
-				"butt",
-				"button"
-			],
-			[
-				"cli",
-				"click"
-			],
-			[
-				"btn",
-				"btncreate"
-			],
-			[
-				"ec",
-				"echo	echo \"…\""
-			],
-			[
-				"my",
-				"mysql_fetch_object"
-			],
-			[
-				"stat",
-				"status"
-			],
-			[
-				"sta",
-				"status"
-			],
-			[
-				"t",
-				"table"
-			],
-			[
-				"local",
-				"localhost"
-			],
-			[
-				"website_",
-				"website_id"
-			],
-			[
-				"_",
-				"_GET"
-			],
-			[
-				"ap",
-				"appendTo"
-			],
-			[
-				"j",
-				"jQuery"
-			],
-			[
-				"i",
-				"i"
-			],
-			[
-				"td",
-				"td"
-			],
-			[
-				"mar",
-				"margin-top"
-			],
-			[
-				"ba",
-				"background-color"
-			],
-			[
-				"li",
-				"li	Tag"
-			],
-			[
-				"u",
-				"ul	Tag"
-			],
-			[
-				"ma",
-				"main_page"
-			],
-			[
-				"is_n",
-				"is_null"
-			],
-			[
-				"mai",
-				"main_page"
-			],
-			[
-				"po",
-				"posting"
-			],
-			[
-				"s",
-				"script	Tag"
-			],
-			[
-				"pos",
-				"posting"
-			],
-			[
-				"de",
-				"description"
-			],
-			[
-				"met",
-				"metdescription"
-			],
-			[
-				"mysql_fet",
-				"mysql_fetch_assoc"
-			],
-			[
-				"meta",
-				"meta_description"
-			],
-			[
-				"ro",
-				"row"
-			],
-			[
-				"key",
-				"keyword"
-			],
-			[
-				"WEB",
-				"website_id"
-			],
-			[
-				"r",
-				"row"
-			],
-			[
-				"p",
-				"page_name"
-			],
-			[
-				"f",
-				"for	for …"
-			],
-			[
-				"is_",
-				"is_array"
-			],
-			[
-				"get",
-				"getElementsByName"
-			],
-			[
-				"rep",
-				"Replace"
-			],
-			[
-				"err",
-				"error_log"
-			],
-			[
-				"h",
-				"h4	Tag"
-			],
-			[
-				"fil",
-				"filename"
-			],
-			[
-				"so",
-				"source_path"
-			],
-			[
-				"back",
-				"backup_path"
-			],
-			[
-				"file",
-				"filename"
-			],
-			[
-				"fi",
-				"file_name"
-			],
-			[
-				"file_",
-				"file_path"
-			],
-			[
-				"co",
-				"copy"
-			],
-			[
-				"tr",
-				"trim"
-			],
-			[
-				"include",
-				"include_once"
-			],
-			[
-				"Se",
-				"_SESSION"
-			],
-			[
-				"websit",
-				"website"
-			],
-			[
-				"c",
-				"cnt"
-			],
-			[
-				"in",
-				"input"
-			],
-			[
-				"sett",
-				"settings"
-			],
-			[
-				"op",
-				"option	Tag"
-			],
-			[
-				"B",
-				"Back"
-			],
-			[
-				"al",
-				"alert"
-			],
-			[
-				"bo",
-				"border-style"
-			],
-			[
-				"unse",
-				"unset"
-			],
-			[
-				"session_",
-				"session_destroy"
-			],
-			[
-				"prin",
-				"print_r"
-			],
-			[
-				"pri",
-				"print_r"
-			],
-			[
-				"e",
-				"extension"
-			],
-			[
-				"pr",
-				"previousimage"
-			],
-			[
-				"cu",
-				"currentimage"
-			],
-			[
-				"pre",
-				"previousvideo"
-			],
-			[
-				"im",
-				"image"
-			],
-			[
-				"v",
-				"video"
-			],
-			[
-				"arra",
-				"array"
-			],
-			[
-				"els",
-				"else"
-			],
-			[
-				"na",
-				"name"
-			]
 		]
 	},
 	"buffers":
@@ -523,7 +11,7 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 361.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
@@ -531,275 +19,63 @@
 				"Git: Custom Command"
 			],
 			[
-				"add",
-				"Git: Add..."
-			],
-			[
-				"spa",
-				"Trailing Spaces: Delete Trailing Spaces"
-			],
-			[
-				"st",
-				"Git: Status"
-			],
-			[
-				"sap",
-				"Git: Stash Apply"
-			],
-			[
 				"cus",
 				"Git: Custom Command"
 			],
 			[
-				"SPA",
-				"Trailing Spaces: Delete Trailing Spaces"
-			],
-			[
-				"sta",
-				"Git: Status"
-			],
-			[
-				"cut",
-				"Git: Custom Command"
-			],
-			[
-				"ins",
-				"Package Control: Install Package"
-			],
-			[
-				"remo",
-				"Package Control: Remove Package"
-			],
-			[
-				"inst",
-				"Package Control: Install Package"
-			],
-			[
-				"gi",
-				"Git: Gui"
-			],
-			[
-				"spac",
-				"Trailing Spaces: Delete Trailing Spaces"
-			],
-			[
-				"space",
-				"Trailing Spaces: Delete Trailing Spaces"
+				"pus",
+				"Git: Push"
 			],
 			[
 				"co",
 				"Git: Commit"
 			],
 			[
-				"ad",
+				"add",
 				"Git: Add..."
-			],
-			[
-				"tra",
-				"Trailing Spaces: Delete Trailing Spaces"
-			],
-			[
-				"in",
-				"Package Control: Install Package"
-			],
-			[
-				"a",
-				"Git: Add..."
-			],
-			[
-				"git",
-				"Git: Gui"
-			],
-			[
-				"",
-				"Git: Diff Staged"
 			],
 			[
 				"push",
 				"Git: Push"
 			],
 			[
-				"cust",
-				"Git: Custom Command"
-			],
-			[
-				"com",
+				"comm",
 				"Git: Commit"
-			],
-			[
-				"gcu",
-				"Git: Custom Command"
-			],
-			[
-				"stat",
-				"Git: Status"
-			],
-			[
-				"Package Control: ",
-				"Package Control: List Packages"
-			],
-			[
-				"git ad",
-				"Git: Add..."
-			],
-			[
-				"cuto",
-				"Git: Custom Command"
-			],
-			[
-				"Package Control: in",
-				"Package Control: Install Package"
-			],
-			[
-				"Package Control: li",
-				"Package Control: List Packages"
-			],
-			[
-				"stash",
-				"Git: Stash Apply"
 			],
 			[
 				"c",
 				"Git: Custom Command"
 			],
 			[
-				"git lo",
-				"Git: Log All"
+				"a",
+				"Git: Add..."
 			],
 			[
-				"gitcus",
+				"cust",
 				"Git: Custom Command"
 			],
 			[
-				"git com",
-				"Git: Custom Command"
+				"ad",
+				"Git: Add..."
 			],
 			[
-				"bra",
-				"Git: Change Branch"
-			],
-			[
-				"sho",
-				"Git: Show Tags"
-			],
-			[
-				"git ",
-				"Git: Status"
-			],
-			[
-				"fe",
-				"Git: Fetch"
-			],
-			[
-				"git pus",
-				"Git: Push"
-			],
-			[
-				"git:co",
-				"Git: Commit"
-			],
-			[
-				"GIT",
-				"Git: Push"
-			],
-			[
-				"cha",
-				"Git: Change Branch"
-			],
-			[
-				"git pu",
-				"Git: Push"
-			],
-			[
-				"git l",
-				"Git: Log All"
-			],
-			[
-				"pu",
-				"Git: Push Current Branch"
-			],
-			[
-				"git:st",
-				"Git: Status"
-			],
-			[
-				"git am",
-				"Git: Amend Commit"
-			],
-			[
-				"gitc",
-				"Git: Commit"
-			],
-			[
-				"new",
-				"Git: New Branch"
-			],
-			[
-				"branc",
-				"Git: Pull Current Branch"
-			],
-			[
-				"git: push ",
-				"Git: Push Current Branch"
-			],
-			[
-				"git add",
-				"Git: Reset (hard) HEAD"
-			],
-			[
-				"gire",
-				"Git: Reset (hard) HEAD"
-			],
-			[
-				"git mo",
-				"Git: Open Modified Files"
+				"gi",
+				"Git: Init"
 			],
 			[
 				"insta",
 				"Package Control: Install Package"
 			],
 			[
-				"git p",
-				"Git: Push"
-			],
-			[
-				"git push",
-				"Git: Push"
-			],
-			[
-				"ch",
-				"Git: Change Branch"
-			],
-			[
-				"git p ",
-				"Git: Push"
-			],
-			[
-				"p",
-				"Git: Push"
-			],
-			[
-				"tag",
-				"Git: New Tag"
-			],
-			[
-				"gitk",
-				"Git: Gitk"
-			],
-			[
-				"de",
-				"Git: Delete Branch"
-			],
-			[
-				"git c",
-				"Git: Fetch"
+				"Package Control: ina",
+				"Package Control: Install Package"
 			]
 		],
-		"width": 400.0
+		"width": 449.0
 	},
 	"console":
 	{
-		"height": 147.0
+		"height": 139.0
 	},
 	"distraction_free":
 	{
@@ -812,138 +88,14 @@
 	},
 	"file_history":
 	[
-		"/C/wamp/www/MTP/index.php",
-		"/C/wamp/www/MTP/loadcontents.php",
-		"/C/wamp/www/MTP/1index.php",
-		"/C/wamp/www/MTP/.htaccess",
-		"/C/wamp/www/.htaccess",
-		"/C/wamp/www/urlencodetest.php",
-		"/C/wamp/www/MTP/add-pages.php",
-		"/C/wamp/www/MTP/create-website.php",
-		"/C/wamp/www/MTP/seo-settings.php",
-		"/C/wamp/www/MTP/includes/seo-tags-processing.php",
-		"/C/wamp/www/MTP/websitepreview.php",
-		"/C/wamp/www/MTP/view-page.php",
-		"/C/wamp/www/MTP/view-file.php",
-		"/C/wamp/www/MTP/js/jquery_function.js",
-		"/C/wamp/www/MTP/viewpages.php",
-		"/C/wamp/www/MTP/includes/website-processing.php",
-		"/C/wamp/www/MTP/menu.php",
-		"/C/wamp/www/MTP/register.php",
-		"/C/wamp/www/MTP/includes/login-processing.php",
-		"/C/wamp/www/MTP/upload-file.php",
-		"/C/wamp/www/MTP/includes/website.php",
-		"/C/wamp/www/MTP/view-sitemap.php",
-		"/C/wamp/www/MTP/js/jquery-ui.js",
-		"/C/wamp/www/MTP/sitemap.php",
-		"/C/wamp/www/MTP/change-main-page.php",
-		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/C/wamp/www/MTP/set-home-page.php",
-		"/C/wamp/www/MTP/includes/add-menu-processing.php",
-		"/C/wamp/www/MTP/includes/add-main-page.php",
-		"/C/wamp/www/MTP/stylesheet/jquery-ui.css",
-		"/C/wamp/www/MTP/my.php",
-		"/C/wamp/www/MTP/includes/dbconfig.php",
-		"/C/wamp/www/MTP/header.php",
-		"/C/wamp/www/MTP/stylesheet/stylesheet.css",
-		"/C/wamp/www/MTP/includes/dblibrary.php",
-		"/C/wamp/www/MTP/includes/user.php",
-		"/C/wamp/www/MTP/includes/file.php",
-		"/C/wamp/www/MTP/includes/add-pages-processing.php",
-		"/C/wamp/www/MTP/js/test.php",
-		"/C/wamp/www/admin/Pages/status.php",
-		"/C/wamp/www/MTP/js/validation.js",
-		"/C/wamp/www/MTP/bkpadd-pages.php",
-		"/C/wamp/www/MTP/test.php",
-		"/C/wamp/www/admin/Pages/main.php",
-		"/C/wamp/www/MTP/queries.txt",
-		"/C/wamp/www/admin/utils/conn.php",
-		"/C/wamp/www/admin/Pages/bkpmain.php",
-		"/C/wamp/www/admin/login/login.php",
-		"/C/Documents and Settings/All Users/Documents/Shared Docs/test/test1.php",
-		"/D/MTP Back/25-01-2013/MTP/MTP/add-pages.php",
-		"/C/wamp/www/MTP/includes/upload-file-processing.php",
-		"/C/Documents and Settings/Admin/Desktop/PPCache/drivers/CacheFile.php",
-		"/C/Documents and Settings/Admin/Desktop/PPCache/drivers/CacheAPC.php",
-		"/C/wamp/www/MTP/footer.php",
-		"/C/wamp/www/menupopup/1.php",
-		"/C/wamp/www/Seo-settings/seo-settings.php",
-		"/C/wamp/www/Seo-settings/includes/seo-tags-processing.php",
-		"/C/wamp/www/Seo-settings/js/jquery_function.js",
-		"/C/wamp/www/Seo-settings/includes/website.php",
-		"/C/wamp/www/MTP/includes/get-seo-tags.php",
-		"/C/wamp/www/MTP/includes/dbconnect.php",
-		"/C/wamp/www/MTP/edit-file.php",
-		"/C/wamp/www/MTP/includes/edit-file-processing.php",
-		"/C/wamp/www/MTP/includes/register-processing.php",
-		"/C/wamp/www/popup/create-website.php",
-		"/C/wamp/www/popup/includes/website.php",
-		"/C/wamp/www/popup/includes/website-processing.php",
-		"/C/wamp/www/popup/js/jquery-1.8.2.js",
-		"/C/wamp/www/popup/js/jquery-ui.js",
-		"/C/wamp/www/popup/js/jquery_function.js",
-		"/C/wamp/www/popup/header.php",
-		"/C/wamp/www/popup/footer.php",
-		"/C/wamp/www/popup/menu.php",
-		"/C/wamp/www/popup/includes/dbconfig.php",
-		"/C/wamp/www/popup/includes/dbconnect.php",
-		"/C/wamp/www/popup/stylesheet/jquery-ui.css",
-		"/C/wamp/www/popup/stylesheet/style.css",
-		"/C/wamp/www/MTP/hello.php",
-		"/C/xampp/htdocs/1.php",
-		"/C/wamp/www/MTP/1.php",
-		"/D/New Folder/Finance/public/javascript/jquery_lib.js",
-		"/C/wamp/www/MTP/stylesheet/style.css",
-		"/C/wamp/www/index.php",
-		"/C/wamp/www/1.php",
-		"/C/wamp/www/hello.php",
-		"/C/wamp/www/websachin/public/viewpages.php",
-		"/C/wamp/www/MTP/includes/add-pages.php",
-		"/C/wamp/www/MTP/includes/initialize.ph",
-		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Package Control.sublime-settings",
-		"/C/wamp/www/twitteroauth-master/html.inc",
-		"/C/wamp/www/twitteroauth-master/index.php",
-		"/C/wamp/www/MTP/logout.php",
-		"/C/wamp/www/twitteroauth-master/logout.php",
-		"/C/wamp/www/MTP/instructions.php",
-		"/C/wamp/www/websachin/Facebook2/config/functions.php",
-		"/C/wamp/www/websachin/Facebook2/facebook/facebook.php",
-		"/C/wamp/www/websachin/Facebook2/config/fbconfig.php",
-		"/C/wamp/www/websachin/Facebook2/home.php",
-		"/C/wamp/www/MTP/COMMIT_EDITMSG.COMMIT_EDITMSG",
-		"/C/wamp/www/MTP/twitter.test",
-		"/C/WINDOWS/system32/drivers/etc/hosts",
-		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/Git/Git.sublime-settings",
-		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Git.sublime-settings",
-		"/C/Documents and Settings/Admin/.ssh/id_rsa.pub",
-		"/C/wamp/www/tinymce_3.5.8/tinymce/examples/index.html",
-		"/D/New Folder/Finance/public/viewvoucher.php",
-		"/C/wamp/www/MTP/includes/edit-file.php",
-		"/D/New Folder/Finance/public/menu.php",
-		"/D/New Folder/Finance/public/javascript/validate.js",
-		"/C/wamp/www/MTP/login.php",
-		"/C/wamp/www/code_igniter/application/models/Employee_model.php",
-		"/C/wamp/www/code_igniter/application/controllers/mysite.php",
-		"/C/wamp/www/code_igniter/application/views/employee.php",
-		"/C/wamp/www/code_igniter/application/config/database.php",
-		"/C/wamp/www/code_igniter/application/models/connection.php",
-		"/C/wamp/www/code_igniter/application/index.html",
-		"/C/wamp/www/code_igniter/application/config/config.php",
-		"/C/wamp/www/code_igniter/application/config/constants.php",
-		"/E/Codeignetar/ci/application/views/about.php",
-		"/C/wamp/www/testfile.php",
-		"/C/wamp/www/code_igniter/application/controllers/index.html",
-		"/C/wamp/www/code_igniter/application/controllers/welcome.php",
-		"/C/wamp/www/Codeignitar/ci/index.php",
-		"/E/Codeignetar/ci/application/controllers/mysite.php",
-		"/C/wamp/www/code_igniter/application/views/welcome_message.php",
-		"/C/wamp/www/Codeignitar/ci/application/config/database.php",
-		"/C/wamp/www/Codeignitar/ci/application/config/config.php",
-		"/C/wamp/www/code_igniter/application/views/about.php"
+		"/home/harsh/PhpWork/MTP/phpinfo.php",
+		"/home/harsh/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/harsh/PhpWork/MTP/<?php.php",
+		"/var/www/<?php?>"
 	],
 	"find":
 	{
-		"height": 37.0
+		"height": 0.0
 	},
 	"find_in_files":
 	{
@@ -954,89 +106,9 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": true,
+		"case_sensitive": false,
 		"find_history":
 		[
-			"Go to",
-			"addToUsers",
-			"var host =window.location.hostname;",
-			"Home",
-			"error_log",
-			"viewpage",
-			"seo",
-			"echo \"",
-			"\"",
-			"..",
-			"<?",
-			"fetch",
-			"row",
-			"'",
-			"		error_log($query);",
-			"websiteid",
-			"counter",
-			"\n",
-			"\n						",
-			"\n							",
-			"							\n",
-			"\n							",
-			"							\n",
-			"alert",
-			"']",
-			"['",
-			"->\n",
-			"fCode",
-			"$_POST[",
-			"];",
-			"$_POST",
-			".value;",
-			"].value",
-			"file",
-			"processing",
-			"',",
-			"	",
-			"] => ",
-			"[",
-			".\";",
-			"$error .=\"\";",
-			"$error .=;",
-			"Enter",
-			"seo-form",
-			"website",
-			"</button>",
-			"<button>",
-			"$file",
-			"file",
-			"</button>",
-			"<button>",
-			"\"",
-			"upload-file-form",
-			"login",
-			"uploaded",
-			"file",
-			"FILE",
-			"file",
-			"FILE",
-			"file",
-			"name",
-			"		\n",
-			"// document.getElementById(\"validation\").innerHTML=error;",
-			"-Id",
-			"Id",
-			"email",
-			"Email",
-			"email",
-			"Email",
-			"email",
-			"Email",
-			"email",
-			"is",
-			"echo",
-			"mysql>",
-			"<",
-			"empid",
-			"mpid",
-			"empid",
-			"\\"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1045,11 +117,11 @@
 		"replace_history":
 		[
 		],
-		"reverse": true,
+		"reverse": false,
 		"show_context": true,
 		"use_buffer2": true,
-		"whole_word": true,
-		"wrap": false
+		"whole_word": false,
+		"wrap": true
 	},
 	"groups":
 	[
@@ -1065,7 +137,7 @@
 	},
 	"input":
 	{
-		"height": 31.0
+		"height": 33.0
 	},
 	"layout":
 	{
@@ -1092,7 +164,7 @@
 	"menu_visible": true,
 	"output.git":
 	{
-		"height": 181.0
+		"height": 112.0
 	},
 	"replace":
 	{
@@ -1104,33 +176,21 @@
 		"height": 0.0,
 		"selected_items":
 		[
-			[
-				"",
-				"add-pages.php"
-			],
-			[
-				"w",
-				"includes/website.php"
-			]
 		],
 		"width": 0.0
 	},
 	"select_project":
 	{
-		"height": 500.0,
+		"height": 0.0,
 		"selected_items":
 		[
-			[
-				"",
-				"/C/xampp/htdocs/MTP/mtp.sublime-project"
-			]
 		],
-		"width": 380.0
+		"width": 0.0
 	},
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 121.0,
+	"side_bar_width": 150.0,
 	"status_bar_visible": true
 }
