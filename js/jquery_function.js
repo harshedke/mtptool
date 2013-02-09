@@ -119,46 +119,55 @@ $('#update').hide();
 });
 $(document).ready(function () {
     $('#create').hide();
-    $('#ok').click(function () {
-        if($('#pagecount').val().trim() == null || $('#pagecount').val().trim() == ''){
-            alert('Enter how many pages you want to create.');
-        } else {
-            if (isNaN($('#pagecount').val())) {
-                alert('Only Numbers allowd');
-            } else {
-                var pagecount = $('#pagecount').val();
-                jQuery('#pages').append("Number of pages you want :"+pagecount);
-                for (var i = 1; i <= pagecount; i++) {
-                    var input = jQuery("<label>Enter name of Page"+ i+"</label>:<input type='text' name ='page[]'>");
-                    jQuery('#pages').append(input);
-                }
-                $('#pagecountdiv').hide();
-                $('#create').show();
-            }
-        }
-    });
+    // $('#ok').click(function () {
+    //     if($('#pagecount').val().trim() == null || $('#pagecount').val().trim() == ''){
+    //         alert('Enter how many pages you want to create.');
+    //     } else {
+    //         if (isNaN($('#pagecount').val())) {
+    //             alert('Only Numbers allowd');
+    //         } else {
+    //             var pagecount = $('#pagecount').val();
+    //             jQuery('#pages').append("Number of pages you want :"+pagecount);
+    //             for (var i = 1; i <= pagecount; i++) {
+    //                 var input = jQuery("<label>Enter name of Page"+ i+"</label>:<input type='text' name ='page[]'>");
+    //                 jQuery('#pages').append(input);
+    //             }
+    //             $('#pagecountdiv').hide();
+    //             $('#create').show();
+    //         }
+    //     }
+    // });
 
     $('#create').click(function () {
         var website_id = $('#website_id').val();
         var array = new Array();
-        var i=0;
+        var i=0,j=0;
         var page = $('input[name="page[]"]');
         $.each(page, function(key, object) {
-             array[i++]= object.value;
+            if (object.value.trim() == '') {
+                alert("Enter name of page "+(key+1));
+                j++;    
+                return false;
+            };
         });
-        $.post(
-             "includes/add-pages-processing.php",
-             { page: JSON.stringify(array), website_id:website_id},
-             function(data) {
-                if (data == 1) {
-                    var loadurl = './loadcontents.php';
-                    $('#dialog-add-menu').load(loadurl,{website_id:website_id});
-                    $("#dialog-add-menu").dialog("open");
-                } else {
-                    alert('pages not created');
-                }
-             }
-         );
+        if (j==0) {
+            $.each(page, function(key, object) {
+                 array[i++]= object.value.trim();
+            });
+            $.post(
+                 "includes/add-pages-processing.php",
+                 { page: JSON.stringify(array), website_id:website_id},
+                 function(data) {
+                    if (data == 1) {
+                        var loadurl = './loadcontents.php';
+                        $('#dialog-add-menu').load(loadurl,{website_id:website_id});
+                        $("#dialog-add-menu").dialog("open");
+                    } else {
+                        alert('pages not created');
+                    }
+                 }
+             );
+        };
     });
 
     $('#addpages').click(function () {

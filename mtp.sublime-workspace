@@ -3,23 +3,98 @@
 	{
 		"selected_items":
 		[
+			[
+				"re",
+				"return"
+			],
+			[
+				"t",
+				"true"
+			],
+			[
+				"Val",
+				"value"
+			],
+			[
+				"echo",
+				"echo"
+			],
+			[
+				"DB",
+				"DB_SERVER"
+			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": ".htaccess",
+			"settings":
+			{
+				"buffer_size": 876,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "add-pages.php",
+			"settings":
+			{
+				"buffer_size": 975,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/jquery_function.js",
+			"settings":
+			{
+				"buffer_size": 11948,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/home/harsh/.cache/.fr-p6Yo1u/add-pages-09-02/add-pages.php",
+			"settings":
+			{
+				"buffer_size": 691,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/validation.js",
+			"settings":
+			{
+				"buffer_size": 5846,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 392.0,
+		"height": 285.0,
 		"selected_items":
 		[
 			[
-				"cu",
-				"Git: Custom Command"
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"push",
+				"Git: Push"
 			],
 			[
 				"cus",
+				"Git: Custom Command"
+			],
+			[
+				"cu",
 				"Git: Custom Command"
 			],
 			[
@@ -27,19 +102,19 @@
 				"Git: Push"
 			],
 			[
-				"co",
+				"comm",
 				"Git: Commit"
+			],
+			[
+				"sta",
+				"Git: Status"
 			],
 			[
 				"add",
 				"Git: Add..."
 			],
 			[
-				"push",
-				"Git: Push"
-			],
-			[
-				"comm",
+				"co",
 				"Git: Commit"
 			],
 			[
@@ -71,7 +146,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 449.0
+		"width": 467.0
 	},
 	"console":
 	{
@@ -88,8 +163,15 @@
 	},
 	"file_history":
 	[
-		"/home/harsh/PhpWork/MTP/phpinfo.php",
+		"/home/harsh/PhpWork/MTP/add-pages.php",
 		"/home/harsh/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/harsh/PhpWork/MTP/z",
+		"/home/harsh/PhpWork/MTP/.htaccess",
+		"/home/harsh/PhpWork/MTP/edit-file.php",
+		"/home/harsh/PhpWork/MTP/includes/dbconfig.php",
+		"/home/harsh/PhpWork/MTP/z1.htaccess",
+		"/home/harsh/PhpWork/MTP/includes/dbconnect.php",
+		"/home/harsh/PhpWork/MTP/phpinfo.php",
 		"/home/harsh/PhpWork/MTP/<?php.php",
 		"/var/www/<?php?>"
 	],
@@ -109,6 +191,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"#",
+			"'"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -126,8 +210,169 @@
 	"groups":
 	[
 		{
+			"selected": 4,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": ".htaccess",
+					"settings":
+					{
+						"buffer_size": 876,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								535,
+								535
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "add-pages.php",
+					"settings":
+					{
+						"buffer_size": 975,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								866,
+								866
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 112.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/jquery_function.js",
+					"settings":
+					{
+						"buffer_size": 11948,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5556,
+								5556
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1759.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/home/harsh/.cache/.fr-p6Yo1u/add-pages-09-02/add-pages.php",
+					"settings":
+					{
+						"buffer_size": 691,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "js/validation.js",
+					"settings":
+					{
+						"buffer_size": 5846,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5289,
+								5289
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2897.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -181,11 +426,11 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"show_minimap": true,
 	"show_open_files": true,

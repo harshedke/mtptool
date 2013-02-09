@@ -187,14 +187,17 @@ function validatepagecount () {
 }
 function validatepagename () {
 	x = document.getElementsByName('page[]');
-	for ( var i = 0; i <= x.length; i++ ){
-
+	var cnt = 0;
+	alert("In JavaScript Start");
+	for ( var i = 0; i < x.length; i++ ){
         if ( x[i].value == "" || x[i].value == null ) {
             alert("Enter name of page "+(i+1));
             x[i].focus();
+            cnt=1;
             return false;
         }
     }
+    alert("In JavaScript End");
 }
 
 function validatesinglepagename () {

@@ -1,18 +1,35 @@
-ErrorDocument 404 /MTP/filenotfound.html
-
 Options -Indexes
+ErrorDocument 404 /MTP/filenotfound.html
 ErrorDocument 403 /MTP/forbidden.html
 #Redirect /MTP http://localhost/xampp
 
 #AuthName "Resticted Area"
 #AuthType Basic
-#AuthUserFile D://.htpasswd
+#AuthBasicProvider file
+#AuthUserFile /home/harsh/.htpasswd
+#AuthDBMUserFile /home/harsh/PhpWork/.htpasswd
 #Require valid-user
+
+#<Files "/MTP/create-website.php">
+  #Require valid-user
+#</Files>
 
 Options +FollowSymLinks
 RewriteEngine On
-#RewriteCond %{SCRIPT_FILENAME} !-d
-#RewriteCond %{SCRIPT_FILENAME} !-f
-#RewriteRule ^addpages/(\d+)*$ MTP/add-pages.php?website_id=1
+RewriteBase /MTP/
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteRule ^addpages/([0-9]+)$ add-pages.php?website_id=1
 
-RewriteRule ^websites$ MTP/create-website.php [L]
+#RewriteRule ^websites$ create-website.php [L]
+
+
+
+#RewriteBase /MTP/
+#
+#RewriteCond %{REQUEST_FILENAME} !-d 
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^addpages/([0-9]+)$ add-pages.php?website_id=$1&rew [L]
+
+#RewriteCond %{QUERY_STRING} ^website_id=([0-9]+)$
+#RewriteRule ^addpages.php$ addpages/%1? [R,L]
