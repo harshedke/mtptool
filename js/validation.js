@@ -111,8 +111,8 @@ function validatefileupload () {
 }
 
 function goto (link) {
-	// alert(argument);
-	self.location = link;
+	// alert(link);
+	self.location = "http://localhost/MTP/"+link;
 }
 
 function validatelogin () {

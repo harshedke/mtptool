@@ -31,15 +31,16 @@
 			"file": ".htaccess",
 			"settings":
 			{
-				"buffer_size": 876,
+				"buffer_size": 877,
 				"line_ending": "Unix"
 			}
 		},
 		{
+			"file": "includes/website-processing.php",
 			"settings":
 			{
-				"buffer_size": 0,
-				"line_ending": "Unix"
+				"buffer_size": 2286,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -51,26 +52,18 @@
 			}
 		},
 		{
+			"file": "create-website.php",
+			"settings":
+			{
+				"buffer_size": 1091,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "js/jquery_function.js",
 			"settings":
 			{
-				"buffer_size": 11948,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/home/harsh/.cache/.fr-p6Yo1u/add-pages-09-02/add-pages.php",
-			"settings":
-			{
-				"buffer_size": 691,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "js/validation.js",
-			"settings":
-			{
-				"buffer_size": 5846,
+				"buffer_size": 11900,
 				"line_ending": "Windows"
 			}
 		}
@@ -78,9 +71,25 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 285.0,
+		"height": 392.0,
 		"selected_items":
 		[
+			[
+				"sa",
+				"File: Save All"
+			],
+			[
+				"pus",
+				"Git: Push"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
 			[
 				"Package Control: ",
 				"Package Control: Install Package"
@@ -98,20 +107,8 @@
 				"Git: Custom Command"
 			],
 			[
-				"pus",
-				"Git: Push"
-			],
-			[
-				"comm",
-				"Git: Commit"
-			],
-			[
 				"sta",
 				"Git: Status"
-			],
-			[
-				"add",
-				"Git: Add..."
 			],
 			[
 				"co",
@@ -146,7 +143,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 467.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -163,10 +160,14 @@
 	},
 	"file_history":
 	[
+		"/home/harsh/PhpWork/MTP/header.php",
+		"/home/harsh/PhpWork/MTP/js/validation.js",
+		"/home/harsh/PhpWork/MTP/.htaccess",
 		"/home/harsh/PhpWork/MTP/add-pages.php",
+		"/home/harsh/PhpWork/MTP/js/jquery_function.js",
+		"/home/harsh/.cache/.fr-p6Yo1u/add-pages-09-02/add-pages.php",
 		"/home/harsh/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
 		"/home/harsh/PhpWork/MTP/z",
-		"/home/harsh/PhpWork/MTP/.htaccess",
 		"/home/harsh/PhpWork/MTP/edit-file.php",
 		"/home/harsh/PhpWork/MTP/includes/dbconfig.php",
 		"/home/harsh/PhpWork/MTP/z1.htaccess",
@@ -177,7 +178,7 @@
 	],
 	"find":
 	{
-		"height": 0.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -191,6 +192,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\"http://localhost/MTP/",
+			"webiction.",
+			"http://webiction.localhost/",
 			"#",
 			"'"
 		],
@@ -210,7 +214,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -218,15 +222,15 @@
 					"file": ".htaccess",
 					"settings":
 					{
-						"buffer_size": 876,
+						"buffer_size": 877,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								535,
-								535
+								562,
+								562
 							]
 						],
 						"settings":
@@ -241,25 +245,27 @@
 				},
 				{
 					"buffer": 1,
+					"file": "includes/website-processing.php",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 2286,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1937,
+								1937
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": 64.0,
+						"translation.y": 408.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -276,61 +282,6 @@
 						"selection":
 						[
 							[
-								866,
-								866
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 112.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "js/jquery_function.js",
-					"settings":
-					{
-						"buffer_size": 11948,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5556,
-								5556
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1759.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/home/harsh/.cache/.fr-p6Yo1u/add-pages-09-02/add-pages.php",
-					"settings":
-					{
-						"buffer_size": 691,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
 								0,
 								0
 							]
@@ -347,28 +298,101 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "js/validation.js",
+					"buffer": 3,
+					"file": "create-website.php",
 					"settings":
 					{
-						"buffer_size": 5846,
+						"buffer_size": 1091,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5289,
-								5289
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "js/jquery_function.js",
+					"settings":
+					{
+						"buffer_size": 11900,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2334,
+								2334
+							],
+							[
+								2974,
+								2974
+							],
+							[
+								5063,
+								5063
+							],
+							[
+								5286,
+								5286
+							],
+							[
+								7061,
+								7061
+							],
+							[
+								8175,
+								8175
+							],
+							[
+								8457,
+								8457
+							],
+							[
+								8646,
+								8646
+							],
+							[
+								9383,
+								9383
+							],
+							[
+								10804,
+								10804
+							],
+							[
+								10993,
+								10993
+							],
+							[
+								11744,
+								11744
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2897.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -429,6 +453,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"",
+				"/home/harsh/PhpWork/Test/Test.sublime-project"
+			]
 		],
 		"width": 380.0
 	},

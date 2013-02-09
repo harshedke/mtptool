@@ -1,5 +1,6 @@
 var host =window.location.hostname;
 var divid;
+var url ="http://localhost/MTP/";
 $(function() {
 $( document ).tooltip();
 });
@@ -82,7 +83,7 @@ $(function () {
     function addToWebsite(form,that) {
         var websitename =$('[name="name"]', form);
         website_name = websitename.val();
-        jQuery.post("includes/website-processing.php",
+        jQuery.post( "../includes/website-processing.php",
                 {website_name:website_name},
                 function(data, textStatus){
                 if(data != 0){
@@ -100,7 +101,7 @@ $(document).ready(function () {
 $('#website_id').change(function () {
     var id = $(this).val();
     var site_title, keywords, description ;
-    jQuery.post("includes/seo-tags-processing.php",
+    jQuery.post( "../includes/seo-tags-processing.php",
         {id:id},
         function(data, textStatus){
             $('#sitetitle').val(data.site_title);
@@ -155,11 +156,11 @@ $(document).ready(function () {
                  array[i++]= object.value.trim();
             });
             $.post(
-                 "includes/add-pages-processing.php",
+                  "../includes/add-pages-processing.php",
                  { page: JSON.stringify(array), website_id:website_id},
                  function(data) {
                     if (data == 1) {
-                        var loadurl = './loadcontents.php';
+                        var loadurl =  "../loadcontents.php";
                         $('#dialog-add-menu').load(loadurl,{website_id:website_id});
                         $("#dialog-add-menu").dialog("open");
                     } else {
@@ -213,7 +214,7 @@ $(document).ready(function () {
             },
             Cancel: function () {
                 $(this).dialog("close");
-                window.location.href ='http://'+host+'/MTP/create-website.php';
+                window.location.href = "../create-website.php";
             }
         },
         close: function () {
@@ -253,17 +254,17 @@ $(document).ready(function () {
         });
         var website_id =$('[name="website_id"]');
         website_id = website_id.val();
-        jQuery.post("includes/add-menu-processing.php",
+        jQuery.post( "../includes/add-menu-processing.php",
             {pages :array ,website_id:website_id},
             function(data, textStatus){
             if(data == 1){
                 $(that).dialog("close");
                 alert('Menu list updated');
-                window.location.href ='http://'+host+'/MTP/create-website.php';
+                window.location.href = "../create-website.php";
             }else{
                 $(that).dialog("close");
                 alert('Some error occurred,please try again.');
-                window.location.href ='http://'+host+'/MTP/create-website.php';
+                window.location.href = "../create-website.php";
             }
         });
     }
@@ -291,7 +292,7 @@ $(document).ready(function(){
             },
             Cancel: function () {
                 $(this).dialog("close");
-                window.location.href ='http://'+host+'/MTP/create-website.php';
+                window.location.href = "../create-website.php";
             }
         },
         close: function () {
@@ -338,11 +339,11 @@ $(document).ready(function(){
                 if(data == 1){
                 $(that).dialog("close");
                 alert('Main page of your website is now saved');
-                window.location.href ='http://'+host+'/MTP/create-website.php';
+                window.location.href = "../create-website.php";
             }else{
                 $(that).dialog("close");
                 alert('Some error occurred,please try again.');
-                window.location.href ='http://'+host+'/MTP/create-website.php';
+                window.location.href = "../create-website.php";
             }
         });
     }
@@ -370,7 +371,7 @@ $(document).ready(function () {
             },
             Cancel: function () {
                 $(this).dialog("close");
-                window.location.href ='http://'+host+'/MTP/create-website.php';
+                window.location.href = "../create-website.php";
             }
         },
         close: function () {

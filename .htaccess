@@ -19,7 +19,7 @@ RewriteEngine On
 RewriteBase /MTP/
 RewriteCond %{SCRIPT_FILENAME} !-d
 RewriteCond %{SCRIPT_FILENAME} !-f
-RewriteRule ^addpages/([0-9]+)$ add-pages.php?website_id=1
+RewriteRule ^addpages/([0-9]+)$ add-pages.php?website_id=$1
 
 #RewriteRule ^websites$ create-website.php [L]
 
