@@ -3,9 +3,8 @@ session_start();
 if (!isset($_SESSION['username'])) {
     header("Location: index.php");
 }
-include_once("header.php");
+include_once("preview_header.php");
 include_once('includes/website.php');
-// include_once('../includes/library.php');
 
 if (isset($_GET['website_id'])) {
     $_SESSION['website_id']=$_GET['website_id'];
@@ -43,10 +42,11 @@ if(isset($_GET['pageurlid']))
 ?>
 Header content
 <!-- BEGIN: Page Content -->
-    <title><?php echo $websitetitle ?></title>
+    <title><?php echo $websitetitle."-".$pagename; ?></title>
     <meta name="description" content="<?php if($webdescription !=NULL) echo $webdescription ; ?>">
     <meta name="keywords" content="<?php if($webkeyword!=NULL) echo $webkeyword;?>">
     <meta charset="UTF-8">
+    </head>
     <div id ='menu'>
     <ul>
     <?php
@@ -56,7 +56,10 @@ Header content
 
     while ($row = $website->fetch_array($result)) {
     ?>
-        <li><?php echo "<a href='websitepreview.php?website_id=".$website_id."&pageurlid=$row[page_id]'>$row[page_name]</a>";?></li>
+        <li><?php 
+            // echo "<a href='websitepreview.php?website_id=".$website_id."&pageurlid=$row[page_id]'>$row[page_name]</a>";
+        echo "<a href='/MTP/preview/".$website_id."/".$row['page_id']."'>".$row['page_name']."</a>";
+        ?></li>
     <?php
     }
     ?>

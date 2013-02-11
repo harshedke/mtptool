@@ -112,7 +112,7 @@ function validatefileupload () {
 
 function goto (link) {
 	// alert(link);
-	self.location = "http://localhost/MTP/"+link;
+	self.location = "/MTP/"+link;
 }
 
 function validatelogin () {

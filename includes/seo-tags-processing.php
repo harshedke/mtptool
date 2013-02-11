@@ -36,13 +36,14 @@ if (isset($_POST['btnsubmit'])) {
 		$result = $website->setseotags($website_id,$keywords,$sitetitle,$description);
 		if ($website->rowsaffected()>0) {
 			echo "<script>alert('SEO settings has been updated.')</script>";
-			echo "<script>window.location.href='../seo-settings.php'</script>";
-
+			// echo "<script>window.location.href='../seo-settings.php'</script>";
+			echo "<script>window.location.href='../seo'</script>";
 		}
 		else
 		{
 			echo "<script>alert('SEO settings not updated.')</script>";
-			echo "<script>window.location.href='../seo-settings.php'</script>";
+			// echo "<script>window.location.href='../seo-settings.php'</script>";
+			echo "<script>window.location.href='../seo'</script>";
 		}
 
 	}
@@ -56,12 +57,14 @@ if (isset($_POST['btnupdate'])){
 	$result = $website->updateseotags($website_id,$keywords,$sitetitle,$description);
 	if ($website->rowsaffected()>0) {
 		echo "<script>alert('SEO settings has been updated.')</script>";
-		echo "<script>window.location.href='../seo-settings.php'</script>";
+		// echo "<script>window.location.href='../seo-settings.php'</script>";
+		echo "<script>window.location.href='../seo'</script>";
 	}
 	else
 	{
 		echo "<script>alert('SEO settings not updated.')</script>";
-		echo "<script>window.location.href='../seo-settings.php'</script>";
+		// echo "<script>window.location.href='../seo-settings.php'</script>";
+		echo "<script>window.location.href='../seo'</script>";
 	}
 }
 ?>
