@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION['username'])) {
-     header('Location: login');
+     header('Location: index.php');
  }
     include_once('header.php');
     include_once('menu.php');

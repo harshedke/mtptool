@@ -3,9 +3,9 @@ session_start();
 if ($_SESSION['username'] != null) {
 include_once("header.php");
 include_once('menu.php');
- if (!isset($_GET['website_id'])) {
- 	header("Location: create-website.php");
- } else {
+// if (!isset($_GET['website_id'])) {
+// 	header("Location: create-website.php");
+// } else {
 	
 ?>
 <body>
@@ -27,8 +27,8 @@ include_once('menu.php');
 </body>
 <?php 
 include_once("footer.php");
-	 }
+	// }
 } else {
-	header('Location: ../login');
+	header('Location: ./index.php');
 }
 ?>

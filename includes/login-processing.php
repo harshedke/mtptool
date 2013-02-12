@@ -32,8 +32,7 @@ if (isset($_POST['btnsubmit']))
 			if ($row->status!='inactive') {
 				$_SESSION['username'] = $username;
  				echo "<script>alert('Login Successful')</script>";
-				// echo "<script>window.location.href='../create-website.php'</script>";
-				echo "<script>window.location.href='../websites'</script>";
+				echo "<script>window.location.href='../create-website.php'</script>";
 			} else {
 				echo "<script>alert('Please verify your account.')</script>";
 				echo "<script>window.location.href='../instructions.php'</script>";

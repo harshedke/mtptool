@@ -40,17 +40,14 @@ session_start();
 	        	$main_page= $row['main_page'];
 	        	// error_log("main page ".$main_page);
 	        	if (is_null($main_page)) {
-	        		// echo "<tr><td><a href='set-home-page.php?website_id=".$row['website_id']."' title='Set home page for website'>".$row['website_name']."</a></td>";
-	        		echo "<tr><td><a href='set_home_page/".$row['website_id']."' title='Click to go website'>".$row['website_name']."</a></td>";
+	        		echo "<tr><td><a href='set-home-page.php?website_id=".$row['website_id']."' title='Click to go website' target='_blank'>".$row['website_name']."</a></td>";
 	        		 // echo "<script>alert('Please set your website home page first.')</script>";
 	        	} else {
-	            	// echo "<tr>
-	            	//  <td><a href=websitepreview.php?website_id=".$row['website_id']."&pageurlid=".$main_page." title='Click to go website' target='_blank'>".$row['website_name']."</a></td>";
 	            	echo "<tr>
-	            	 <td><a href=preview/".$row['website_id']."/".$main_page." title='Click to go website' target='_blank'>".$row['website_name']."</a></td>";
+	            	<td><a href=websitepreview.php?website_id=".$row['website_id']."&pageurlid=".$main_page." title='Click to go website' target='_blank'>".$row['website_name']."</a></td>";
 	            }
-	            // echo "<td><a href=add-pages.php?website_id=".$row['website_id'].">Add Pages</a></td><td><a href=viewpages.php?website_id=".$row['website_id'].">View pages</td>";
-	            echo "<td><a href=addpages/".$row['website_id'].">Add Pages</a></td><td><a href=viewpages.php?website_id=".$row['website_id'].">View pages</td>";
+	            echo "<td><a href=add-pages.php?website_id=".$row['website_id'].">Add Pages</a></td><td><a href=viewpages.php?website_id=".$row['website_id'].">View pages</td>";
+	            
 	            // echo "<td><a href=change-main-page.php?website_id=".$row['website_id'].">Change main page</a></td></tr>";
 	        }
 	    }

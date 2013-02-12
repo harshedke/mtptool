@@ -60,7 +60,7 @@ class Fileclass extends DBLibrary
 		return $result_set;
 	}
 	public function affected_rows() {
-	    return $this->database->affected_rows($this->database);
+	    return $this->database->affected_rows($this->connection);
 	}
 }
 ?>

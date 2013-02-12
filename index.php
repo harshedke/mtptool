@@ -2,7 +2,7 @@
 session_start();
 include_once("header.php");
 if (isset($_SESSION['username'])) {
-	 header("Location: websites.php");
+	 header("Location: create-website.php");
 }else{
 ?>
 <body>
@@ -22,4 +22,4 @@ Password :<input type ='password' name ='password'> <br/>
 <?php
 include_once("footer.php");
 }
-?>\
+?>

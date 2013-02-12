@@ -4,421 +4,12 @@
 		"selected_items":
 		[
 			[
-<<<<<<< HEAD
-				"we",
-				"website_id"
-			],
-			[
 				"re",
 				"return"
 			],
 			[
 				"t",
 				"true"
-=======
-				"pa",
-				"pages"
-			],
-			[
-				"di",
-				"divid"
-			],
-			[
-				"div",
-				"divid"
-			],
-			[
-				"re",
-				"removebutton"
-			],
-			[
-				"hede",
-				"header"
-			],
-			[
-				"we",
-				"website_id"
-			],
-			[
-				"page",
-				"page_id"
-			],
-			[
-				"resu",
-				"result1"
-			],
-			[
-				"fe",
-				"fetch_array"
-			],
-			[
-				"webs",
-				"website_id"
-			],
-			[
-				"pag",
-				"Page"
-			],
-			[
-				"inclu",
-				"includes"
-			],
-			[
-				"te",
-				"text"
-			],
-			[
-				"use",
-				"user_id"
-			],
-			[
-				"user",
-				"username"
-			],
-			[
-				"Pag",
-				"page_id"
-			],
-			[
-				"w",
-				"webiste"
-			],
-			[
-				"main",
-				"main_page"
-			],
-			[
-				"website",
-				"website"
-			],
-			[
-				"for",
-				"foreach	foreach …"
-			],
-			[
-				"text",
-				"textStatus"
-			],
-			[
-				"va",
-				"value"
-			],
-			[
-				"chec",
-				"checked"
-			],
-			[
-				"a",
-				"alert"
-			],
-			[
-				"fu",
-				"fun	Function"
-			],
-			[
-				"websi",
-				"website"
-			],
-			[
-				"header",
-				"header"
-			],
-			[
-				"php",
-				"php"
-			],
-			[
-				"inc",
-				"include_once"
-			],
-			[
-				"view",
-				"viewpage"
-			],
-			[
-				"er",
-				"error_log"
-			],
-			[
-				"addTo",
-				"addToMenu"
-			],
-			[
-				"me",
-				"menu_flag"
-			],
-			[
-				"fo",
-				"for	for (…) {…}"
-			],
-			[
-				"array_p",
-				"array_push"
-			],
-			[
-				"is_N",
-				"is_null"
-			],
-			[
-				"PAGE",
-				"page_id"
-			],
-			[
-				"WE",
-				"website_id"
-			],
-			[
-				"We",
-				"website_id"
-			],
-			[
-				"add",
-				"addToMenu"
-			],
-			[
-				"web",
-				"website_id"
-			],
-			[
-				"create",
-				"create-website"
-			],
-			[
-				"dia",
-				"dialog-add-menu"
-			],
-			[
-				"lo",
-				"loadurl"
-			],
-			[
-				"check",
-				"checkbox"
-			],
-			[
-				"update",
-				"updateTips"
-			],
-			[
-				"incl",
-				"includes"
-			],
-			[
-				"INCLU",
-				"include_once"
-			],
-			[
-				"dialog-",
-				"dialog-add-menu"
-			],
-			[
-				"tes",
-				"test"
-			],
-			[
-				"test",
-				"textStatus"
-			],
-			[
-				"creat",
-				"create"
-			],
-			[
-				"cre",
-				"create"
-			],
-			[
-				"butt",
-				"button"
-			],
-			[
-				"cli",
-				"click"
-			],
-			[
-				"btn",
-				"btncreate"
-			],
-			[
-				"ec",
-				"echo	echo \"…\""
-			],
-			[
-				"my",
-				"mysql_fetch_object"
-			],
-			[
-				"stat",
-				"status"
-			],
-			[
-				"sta",
-				"status"
-			],
-			[
-				"t",
-				"table"
-			],
-			[
-				"local",
-				"localhost"
-			],
-			[
-				"website_",
-				"website_id"
-			],
-			[
-				"_",
-				"_GET"
-			],
-			[
-				"ap",
-				"appendTo"
-			],
-			[
-				"j",
-				"jQuery"
-			],
-			[
-				"i",
-				"i"
-			],
-			[
-				"td",
-				"td"
-			],
-			[
-				"mar",
-				"margin-top"
-			],
-			[
-				"ba",
-				"background-color"
-			],
-			[
-				"li",
-				"li	Tag"
-			],
-			[
-				"u",
-				"ul	Tag"
-			],
-			[
-				"ma",
-				"main_page"
-			],
-			[
-				"is_n",
-				"is_null"
-			],
-			[
-				"mai",
-				"main_page"
-			],
-			[
-				"po",
-				"posting"
-			],
-			[
-				"s",
-				"script	Tag"
-			],
-			[
-				"pos",
-				"posting"
-			],
-			[
-				"si",
-				"site_title"
-			],
-			[
-				"de",
-				"description"
-			],
-			[
-				"met",
-				"metdescription"
-			],
-			[
-				"mysql_fet",
-				"mysql_fetch_assoc"
-			],
-			[
-				"meta",
-				"meta_description"
-			],
-			[
-				"ro",
-				"row"
-			],
-			[
-				"key",
-				"keyword"
-			],
-			[
-				"WEB",
-				"website_id"
-			],
-			[
-				"r",
-				"row"
-			],
-			[
-				"p",
-				"page_name"
-			],
-			[
-				"f",
-				"for	for …"
-			],
-			[
-				"is_",
-				"is_array"
-			],
-			[
-				"get",
-				"getElementsByName"
-			],
-			[
-				"rep",
-				"Replace"
-			],
-			[
-				"err",
-				"error_log"
-			],
-			[
-				"h",
-				"h4	Tag"
-			],
-			[
-				"fil",
-				"filename"
-			],
-			[
-				"so",
-				"source_path"
-			],
-			[
-				"back",
-				"backup_path"
-			],
-			[
-				"file",
-				"filename"
-			],
-			[
-				"fi",
-				"file_name"
-			],
-			[
-				"file_",
-				"file_path"
-			],
-			[
-				"co",
-				"copy"
->>>>>>> parent of 5d75ffc... 04-02-2013
 			],
 			[
 				"Val",
@@ -429,35 +20,50 @@
 				"echo"
 			],
 			[
-<<<<<<< HEAD
 				"DB",
 				"DB_SERVER"
-=======
-				"na",
-				"name"
-			],
-			[
-				"IMG",
-				"img	Tag"
-			],
-			[
-				"Use",
-				"username"
-			],
-			[
-				"echo",
-				"echo	echo \"…\""
->>>>>>> parent of 5d75ffc... 04-02-2013
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "index.php",
+			"file": ".htaccess",
 			"settings":
 			{
-				"buffer_size": 769,
+				"buffer_size": 877,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "includes/website-processing.php",
+			"settings":
+			{
+				"buffer_size": 2286,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "add-pages.php",
+			"settings":
+			{
+				"buffer_size": 975,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "create-website.php",
+			"settings":
+			{
+				"buffer_size": 1091,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/jquery_function.js",
+			"settings":
+			{
+				"buffer_size": 11900,
 				"line_ending": "Windows"
 			}
 		}
@@ -465,86 +71,9 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 117.0,
+		"height": 392.0,
 		"selected_items":
 		[
-			[
-<<<<<<< HEAD
-				"push",
-				"Git: Push"
-=======
-				"cu",
-				"Git: Custom Command"
-			],
-			[
-				"add",
-				"Git: Add..."
-			],
-			[
-				"st",
-				"Git: Status"
-			],
-			[
-				"spa",
-				"Trailing Spaces: Delete Trailing Spaces"
-			],
-			[
-				"sap",
-				"Git: Stash Apply"
-			],
-			[
-				"cus",
-				"Git: Custom Command"
-			],
-			[
-				"SPA",
-				"Trailing Spaces: Delete Trailing Spaces"
-			],
-			[
-				"sta",
-				"Git: Status"
-			],
-			[
-				"cut",
-				"Git: Custom Command"
-			],
-			[
-				"ins",
-				"Package Control: Install Package"
-			],
-			[
-				"remo",
-				"Package Control: Remove Package"
-			],
-			[
-				"inst",
-				"Package Control: Install Package"
-			],
-			[
-				"gi",
-				"Git: Gui"
-			],
-			[
-				"spac",
-				"Trailing Spaces: Delete Trailing Spaces"
-			],
-			[
-				"space",
-				"Trailing Spaces: Delete Trailing Spaces"
->>>>>>> parent of 5d75ffc... 04-02-2013
-			],
-			[
-				"co",
-				"Git: Commit"
-			],
-			[
-				"add",
-				"Git: Add..."
-			],
-			[
-				"pu",
-				"Git: Push"
-			],
 			[
 				"sa",
 				"File: Save All"
@@ -558,8 +87,16 @@
 				"Git: Commit"
 			],
 			[
+				"add",
+				"Git: Add..."
+			],
+			[
 				"Package Control: ",
 				"Package Control: Install Package"
+			],
+			[
+				"push",
+				"Git: Push"
 			],
 			[
 				"cus",
@@ -572,6 +109,10 @@
 			[
 				"sta",
 				"Git: Status"
+			],
+			[
+				"co",
+				"Git: Commit"
 			],
 			[
 				"c",
@@ -602,7 +143,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 575.0
+		"width": 449.0
 	},
 	"console":
 	{
@@ -619,169 +160,21 @@
 	},
 	"file_history":
 	[
-<<<<<<< HEAD
-		"/home/harsh/PhpWork/MTP/.htaccess",
-		"/home/harsh/PhpWork/MTP/includes/website-processing.php",
-		"/home/harsh/PhpWork/MTP/js/jquery_function.js",
-		"/home/harsh/PhpWork/MTP/websitepreview.php",
-		"/home/harsh/PhpWork/MTP/preview_header.php",
-		"/home/harsh/PhpWork/MTP/create-website.php",
-		"/home/harsh/PhpWork/MTP/add-pages.php",
-		"/home/harsh/PhpWork/MTP/edit-file.php",
-		"/home/harsh/PhpWork/MTP/index.php",
-		"/home/harsh/PhpWork/MTP/loadcontents.php",
-		"/home/harsh/PhpWork/MTP/logout.php",
-		"/home/harsh/PhpWork/MTP/seo-settings.php",
-		"/home/harsh/PhpWork/MTP/set-home-page.php",
-		"/home/harsh/PhpWork/MTP/upload-file.php",
-		"/home/harsh/PhpWork/MTP/view-file.php",
-		"/home/harsh/PhpWork/MTP/view-page.php",
-		"/home/harsh/PhpWork/MTP/viewpages.php",
-		"/home/harsh/PhpWork/MTP/menu.php",
-		"/home/harsh/PhpWork/MTP/includes/seo-tags-processing.php",
 		"/home/harsh/PhpWork/MTP/header.php",
 		"/home/harsh/PhpWork/MTP/js/validation.js",
-		"/home/harsh/PhpWork/MTP/includes/file.php",
-		"/home/harsh/PhpWork/MTP/includes/login-processing.php",
+		"/home/harsh/PhpWork/MTP/.htaccess",
+		"/home/harsh/PhpWork/MTP/add-pages.php",
+		"/home/harsh/PhpWork/MTP/js/jquery_function.js",
 		"/home/harsh/.cache/.fr-p6Yo1u/add-pages-09-02/add-pages.php",
 		"/home/harsh/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
 		"/home/harsh/PhpWork/MTP/z",
+		"/home/harsh/PhpWork/MTP/edit-file.php",
 		"/home/harsh/PhpWork/MTP/includes/dbconfig.php",
 		"/home/harsh/PhpWork/MTP/z1.htaccess",
 		"/home/harsh/PhpWork/MTP/includes/dbconnect.php",
 		"/home/harsh/PhpWork/MTP/phpinfo.php",
 		"/home/harsh/PhpWork/MTP/<?php.php",
 		"/var/www/<?php?>"
-=======
-		"/C/wamp/www/MTP/add-pages.php",
-		"/C/wamp/www/MTP/includes/website.php",
-		"/C/wamp/www/MTP/js/jquery_function.js",
-		"/C/wamp/www/MTP/view-sitemap.php",
-		"/C/wamp/www/MTP/loadcontents.php",
-		"/C/wamp/www/MTP/js/jquery-ui.js",
-		"/C/wamp/www/MTP/includes/website-processing.php",
-		"/C/wamp/www/MTP/create-website.php",
-		"/C/wamp/www/MTP/sitemap.php",
-		"/C/wamp/www/MTP/change-main-page.php",
-		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/C/wamp/www/MTP/set-home-page.php",
-		"/C/wamp/www/MTP/includes/add-menu-processing.php",
-		"/C/wamp/www/MTP/includes/add-main-page.php",
-		"/C/wamp/www/MTP/stylesheet/jquery-ui.css",
-		"/C/wamp/www/MTP/my.php",
-		"/C/wamp/www/MTP/websitepreview.php",
-		"/C/wamp/www/MTP/includes/seo-tags-processing.php",
-		"/C/wamp/www/MTP/seo-settings.php",
-		"/C/wamp/www/MTP/includes/login-processing.php",
-		"/C/wamp/www/MTP/viewpages.php",
-		"/C/wamp/www/MTP/includes/dbconfig.php",
-		"/C/wamp/www/MTP/header.php",
-		"/C/wamp/www/MTP/stylesheet/stylesheet.css",
-		"/C/wamp/www/MTP/includes/dblibrary.php",
-		"/C/wamp/www/MTP/includes/user.php",
-		"/C/wamp/www/MTP/includes/file.php",
-		"/C/wamp/www/MTP/includes/add-pages-processing.php",
-		"/C/wamp/www/MTP/js/test.php",
-		"/C/wamp/www/admin/Pages/status.php",
-		"/C/wamp/www/MTP/js/validation.js",
-		"/C/wamp/www/MTP/bkpadd-pages.php",
-		"/C/wamp/www/MTP/test.php",
-		"/C/wamp/www/admin/Pages/main.php",
-		"/C/wamp/www/MTP/queries.txt",
-		"/C/wamp/www/admin/utils/conn.php",
-		"/C/wamp/www/admin/Pages/bkpmain.php",
-		"/C/wamp/www/admin/login/login.php",
-		"/C/Documents and Settings/All Users/Documents/Shared Docs/test/test1.php",
-		"/C/wamp/www/MTP/view-page.php",
-		"/D/MTP Back/25-01-2013/MTP/MTP/add-pages.php",
-		"/C/wamp/www/MTP/includes/upload-file-processing.php",
-		"/C/Documents and Settings/Admin/Desktop/PPCache/drivers/CacheFile.php",
-		"/C/Documents and Settings/Admin/Desktop/PPCache/drivers/CacheAPC.php",
-		"/C/wamp/www/MTP/index.php",
-		"/C/wamp/www/MTP/footer.php",
-		"/C/wamp/www/menupopup/1.php",
-		"/C/wamp/www/Seo-settings/seo-settings.php",
-		"/C/wamp/www/Seo-settings/includes/seo-tags-processing.php",
-		"/C/wamp/www/Seo-settings/js/jquery_function.js",
-		"/C/wamp/www/Seo-settings/includes/website.php",
-		"/C/wamp/www/MTP/includes/get-seo-tags.php",
-		"/C/wamp/www/MTP/includes/dbconnect.php",
-		"/C/wamp/www/MTP/edit-file.php",
-		"/C/wamp/www/MTP/view-file.php",
-		"/C/wamp/www/MTP/menu.php",
-		"/C/wamp/www/MTP/includes/edit-file-processing.php",
-		"/C/wamp/www/MTP/includes/register-processing.php",
-		"/C/wamp/www/popup/create-website.php",
-		"/C/wamp/www/popup/includes/website.php",
-		"/C/wamp/www/popup/includes/website-processing.php",
-		"/C/wamp/www/popup/js/jquery-1.8.2.js",
-		"/C/wamp/www/popup/js/jquery-ui.js",
-		"/C/wamp/www/popup/js/jquery_function.js",
-		"/C/wamp/www/popup/header.php",
-		"/C/wamp/www/popup/footer.php",
-		"/C/wamp/www/popup/menu.php",
-		"/C/wamp/www/popup/includes/dbconfig.php",
-		"/C/wamp/www/popup/includes/dbconnect.php",
-		"/C/wamp/www/popup/stylesheet/jquery-ui.css",
-		"/C/wamp/www/popup/stylesheet/style.css",
-		"/C/wamp/www/MTP/hello.php",
-		"/C/wamp/www/MTP/upload-file.php",
-		"/C/xampp/htdocs/1.php",
-		"/C/wamp/www/MTP/1.php",
-		"/D/New Folder/Finance/public/javascript/jquery_lib.js",
-		"/C/wamp/www/MTP/stylesheet/style.css",
-		"/C/wamp/www/index.php",
-		"/C/wamp/www/1.php",
-		"/C/wamp/www/hello.php",
-		"/C/wamp/www/websachin/public/viewpages.php",
-		"/C/wamp/www/MTP/includes/add-pages.php",
-		"/C/wamp/www/MTP/includes/initialize.ph",
-		"/C/wamp/www/MTP/register.php",
-		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Package Control.sublime-settings",
-		"/C/wamp/www/twitteroauth-master/html.inc",
-		"/C/wamp/www/twitteroauth-master/index.php",
-		"/C/wamp/www/MTP/logout.php",
-		"/C/wamp/www/twitteroauth-master/logout.php",
-		"/C/wamp/www/MTP/instructions.php",
-		"/C/wamp/www/websachin/Facebook2/config/functions.php",
-		"/C/wamp/www/websachin/Facebook2/facebook/facebook.php",
-		"/C/wamp/www/websachin/Facebook2/config/fbconfig.php",
-		"/C/wamp/www/websachin/Facebook2/home.php",
-		"/C/wamp/www/MTP/COMMIT_EDITMSG.COMMIT_EDITMSG",
-		"/C/wamp/www/MTP/twitter.test",
-		"/C/WINDOWS/system32/drivers/etc/hosts",
-		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/Git/Git.sublime-settings",
-		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Git.sublime-settings",
-		"/C/Documents and Settings/Admin/.ssh/id_rsa.pub",
-		"/C/wamp/www/tinymce_3.5.8/tinymce/examples/index.html",
-		"/D/New Folder/Finance/public/viewvoucher.php",
-		"/C/wamp/www/MTP/includes/edit-file.php",
-		"/D/New Folder/Finance/public/menu.php",
-		"/D/New Folder/Finance/public/javascript/validate.js",
-		"/C/wamp/www/MTP/login.php",
-		"/C/wamp/www/code_igniter/application/models/Employee_model.php",
-		"/C/wamp/www/code_igniter/application/controllers/mysite.php",
-		"/C/wamp/www/code_igniter/application/views/employee.php",
-		"/C/wamp/www/code_igniter/application/config/database.php",
-		"/C/wamp/www/code_igniter/application/models/connection.php",
-		"/C/wamp/www/code_igniter/application/index.html",
-		"/C/wamp/www/code_igniter/application/config/config.php",
-		"/C/wamp/www/code_igniter/application/config/constants.php",
-		"/E/Codeignetar/ci/application/views/about.php",
-		"/C/wamp/www/testfile.php",
-		"/C/wamp/www/code_igniter/application/controllers/index.html",
-		"/C/wamp/www/code_igniter/application/controllers/welcome.php",
-		"/C/wamp/www/Codeignitar/ci/index.php",
-		"/E/Codeignetar/ci/application/controllers/mysite.php",
-		"/C/wamp/www/code_igniter/application/views/welcome_message.php",
-		"/C/wamp/www/Codeignitar/ci/application/config/database.php",
-		"/C/wamp/www/Codeignitar/ci/application/config/config.php",
-		"/C/wamp/www/code_igniter/application/views/about.php",
-		"/C/wamp/www/code_igniter/application/views/index.html",
-		"/C/wamp/www/code_igniter/application/models/index.html",
-		"/c/Documents and Settings/Admin/My Documents/GitHub/.git/COMMIT_EDITMSG",
-		"/C/Documents and Settings/Admin/.ssh/sshkey.txt.pub"
->>>>>>> parent of 5d75ffc... 04-02-2013
 	],
 	"find":
 	{
@@ -799,23 +192,6 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-<<<<<<< HEAD
-			"-",
-			"websites",
-			"create-website.php",
-			"../",
-=======
-			"addToUsers",
-			"var host =window.location.hostname;",
-			"Home",
-			"error_log",
-			"viewpage",
-			"seo",
-			"echo \"",
-			"\"",
->>>>>>> parent of 5d75ffc... 04-02-2013
-			"..",
-			"url+",
 			"\"http://localhost/MTP/",
 			"webiction.",
 			"http://webiction.localhost/",
@@ -838,27 +214,182 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "index.php",
+					"file": ".htaccess",
 					"settings":
 					{
-						"buffer_size": 769,
+						"buffer_size": 877,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								769,
-								769
+								562,
+								562
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "includes/website-processing.php",
+					"settings":
+					{
+						"buffer_size": 2286,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1937,
+								1937
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 64.0,
+						"translation.y": 408.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "add-pages.php",
+					"settings":
+					{
+						"buffer_size": 975,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "create-website.php",
+					"settings":
+					{
+						"buffer_size": 1091,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "js/jquery_function.js",
+					"settings":
+					{
+						"buffer_size": 11900,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2334,
+								2334
+							],
+							[
+								2974,
+								2974
+							],
+							[
+								5063,
+								5063
+							],
+							[
+								5286,
+								5286
+							],
+							[
+								7061,
+								7061
+							],
+							[
+								8175,
+								8175
+							],
+							[
+								8457,
+								8457
+							],
+							[
+								8646,
+								8646
+							],
+							[
+								9383,
+								9383
+							],
+							[
+								10804,
+								10804
+							],
+							[
+								10993,
+								10993
+							],
+							[
+								11744,
+								11744
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -923,16 +454,8 @@
 		"selected_items":
 		[
 			[
-				"co",
-				"/home/harsh/PhpWork/code_igniter/codeigniter.sublime-project"
-			],
-			[
-				"c",
-				"/home/harsh/PhpWork/code_igniter/codeigniter.sublime-project"
-			],
-			[
 				"",
-				"/home/harsh/PhpWork/MTP/mtp.sublime-project"
+				"/home/harsh/PhpWork/Test/Test.sublime-project"
 			]
 		],
 		"width": 380.0

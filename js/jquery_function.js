@@ -83,13 +83,12 @@ $(function () {
     function addToWebsite(form,that) {
         var websitename =$('[name="name"]', form);
         website_name = websitename.val();
-        jQuery.post( "includes/website-processing.php",
+        jQuery.post( "../includes/website-processing.php",
                 {website_name:website_name},
                 function(data, textStatus){
                 if(data != 0){
                     $(that).dialog("close");
-                    // window.location.href ='http://'+host+'/MTP/add-pages.php?website_id='+data;
-                    window.location.href ='addpages/'+data;
+                    window.location.href ='http://'+host+'/MTP/add-pages.php?website_id='+data;
                 }else{
                     $(that).dialog("close");
                     alert('Some error occurred,please try agian');
@@ -102,7 +101,7 @@ $(document).ready(function () {
 $('#website_id').change(function () {
     var id = $(this).val();
     var site_title, keywords, description ;
-    jQuery.post( "includes/seo-tags-processing.php",
+    jQuery.post( "../includes/seo-tags-processing.php",
         {id:id},
         function(data, textStatus){
             $('#sitetitle').val(data.site_title);
@@ -157,11 +156,12 @@ $(document).ready(function () {
                  array[i++]= object.value.trim();
             });
             $.post(
-                  "../includes/add-pages-processing.php",
+                  "includes/add-pages-processing.php",
                  { page: JSON.stringify(array), website_id:website_id},
                  function(data) {
+                    alert(data);
                     if (data == 1) {
-                        var loadurl =  "../loadcontents.php";
+                        var loadurl =  "loadcontents.php";
                         $('#dialog-add-menu').load(loadurl,{website_id:website_id});
                         $("#dialog-add-menu").dialog("open");
                     } else {
@@ -215,12 +215,12 @@ $(document).ready(function () {
             },
             Cancel: function () {
                 $(this).dialog("close");
-                window.location.href = "../websites";
+                window.location.href = "./create-website.php";
             }
         },
         close: function () {
             allFields.val("").removeClass("ui-state-error");
-            window.location.href = "../websites";
+            window.location.href = "./create-website.php";
         }
     });
 
@@ -256,17 +256,17 @@ $(document).ready(function () {
         });
         var website_id =$('[name="website_id"]');
         website_id = website_id.val();
-        jQuery.post( "../includes/add-menu-processing.php",
+        jQuery.post( "includes/add-menu-processing.php",
             {pages :array ,website_id:website_id},
             function(data, textStatus){
             if(data == 1){
                 $(that).dialog("close");
                 alert('Menu list updated');
-                window.location.href = "../websites";
+                window.location.href = "./create-website.php";
             }else{
                 $(that).dialog("close");
                 alert('Some error occurred,please try again.');
-                window.location.href = "../websites";
+                window.location.href = "./create-website.php";
             }
         });
     }
@@ -294,12 +294,12 @@ $(document).ready(function(){
             },
             Cancel: function () {
                 $(this).dialog("close");
-                window.location.href = "../websites";
+                window.location.href = "./create-website.php";
             }
         },
         close: function () {
             allFields.val("").removeClass("ui-state-error");
-            window.location.href = "../websites";
+            window.location.href = "./create-website.php";
         }
     });
 
@@ -336,23 +336,22 @@ $(document).ready(function(){
         });
         var website_id =$('[name="website_id"]');
         website_id = website_id.val();
-        jQuery.post("../includes/add-main-page.php",
+        jQuery.post("includes/add-main-page.php",
             { page:page, website_id:website_id },
             function(data,textStatus) {
-                alert(data);
                 if(data == 1){
                 $(that).dialog("close");
                 alert('Main page of your website is now saved');
-                window.location.href = "../websites";
+                window.location.href = "./create-website.php";
             }else{
                 $(that).dialog("close");
                 alert('Some error occurred,please try again.');
-                window.location.href = "../websites";
+                window.location.href = "./create-website.php";
             }
         });
     }
 });
-/*
+
 $(document).ready(function () {
     var form = $('#dialog-change-main-page'),
         allFields = $(':text', form);
@@ -375,11 +374,11 @@ $(document).ready(function () {
             },
             Cancel: function () {
                 $(this).dialog("close");
-                window.location.href = "../websites";
+                window.location.href = "../create-website.php";
             }
         },
         close: function () {
             allFields.val("").removeClass("ui-state-error");
         }
     });
-})*/
+})
