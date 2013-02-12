@@ -22,4 +22,4 @@ Password :<input type ='password' name ='password'> <br/>
 <?php
 include_once("footer.php");
 }
-?>
+?>\
